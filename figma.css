@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Quicksand', sans-serif; 
+}
+
+.from_tags{ 
+   width: 450px;
+   height: 950px;
+   border: 1px solid black;
+   margin: 20px  auto;
+   padding-top: 50px;
+   }
+
+.h2{
+padding-left: 35px;
+cursor: pointer; 
+}
+
+.hr1{
+width: 350px;
+margin-left: 35px;  
+margin-top: 20px;  
+}
+
+label{    
+border-radius: 10px;    
+}
+
+.input_group{
+margin: 30px; 
+}
+
+.input1{
+width: 350px;    
+border-radius: 4px;
+border: 1px solid black;
+height: 35px;
+}
+
+.number_class{
+margin-left: 32px;    
+}
+
+.input2{
+   width: 50px;    
+   border-radius: 4px;
+   border: 1px solid black;
+   height: 35px;
+
+}
+
+.input3{
+   width: 290px;    
+   border-radius: 4px;
+   border: 1px solid black;
+   height: 35px;  
+}
+
+.forstate{
+   width:350px;   
+   height: 35px; 
+   }
+   
+
+.areatext{
+border-radius: 7px;    
+}
+
+.checkbox1{
+   margin-left: 35px; 
+   margin-bottom: 15px;  
+   }
+
+.btn{
+margin-left: 35px;
+background-color: blue;
+border-radius:5px;
+border: none;
+color:white;    
+width: 350px;
+height: 35px;
+} 

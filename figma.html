@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="figma.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>    
+
+<form class="from_tags" >
+    <p><h2 class="h2" style="font-family:verdana">Contact Form</h2></p> <hr class="hr1">
+
+<div class="input_group">  
+<label for="name">Name</label><br>
+<input class="input1" type="text" id="name"  required  placeholder="Jack Sullivan" style="font-weight: bold;">
+</div>  
+
+<div class="input_group">
+    <label for="e-mail">Email</label> <br>
+    <input class="input1" type="email" id="Email" placeholder="jack.s@email.com" style="font-weight: bold;">
+</div>
+
+<div class=number_class>
+ <label for="phone">Phone No.</label><br>
+ <input class="input2" value="+994" type="tel" id="phone" readonly>  
+ <input class="input3" type="number" id="phone" placeholder="554342332" style="font-weight: bold;">  
+ </div>
+
+<div class="input_group">
+<label for="birth_date">Date of Birth</label><br>   
+<input class="input1" type="date" id="birth_date">
+</div>
+
+<div class="input_group">
+<label for="state">State</label> <br>
+<select class="forstate" name="city" id="State">
+<option value="goa"> Goa</option>
+<option value="newyork">New York</option>
+<option value="columbia">Columbia</option>
+</select>
+</div>
+
+<div class="input_group">
+<label for="number">Pincode</label> <br>
+<input class="input1" type="number" id="number" placeholder="403001" style="font-weight: bold;">
+</div>
+
+<div class="input_group">
+<label for="textformessage">Message</label> <br>  
+<textarea class="areatext" name="Message" id="textformessage" cols="45" rows="10"  placeholder="Write your message" style="font-weight: bold;"></textarea>
+</div>
+
+
+<div>
+<input class="checkbox1" type="checkbox"> <span>I agree with the privacy political</span>
+</div>
+
+<div>
+<input class="btn" type="submit" >    
+</div>
+
+</form>    
+    
+</body>
+</html>
