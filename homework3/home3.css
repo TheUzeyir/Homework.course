@@ -1,0 +1,127 @@
+.shadow_card{
+width: 800px;
+height: 500px;
+margin: 20px;    
+position: relative;
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.picture{
+width: 400px;
+height: 300px;  
+}
+.freeshipping{
+transform: translate(50%,-50%);
+top: 10%;
+left: 40.8%;
+width: 100px;
+height: 20px;
+padding-left: 10px;
+border-radius:20px;
+border: 1px solid black;
+background-color: #0c2f6f;
+color: white;
+position: absolute;
+}
+.headset_name1{
+transform: translate(50%,-50%);
+top: 16%;
+left: 27%;
+position: absolute;
+font-size: 25px;
+color: #0c2f6f;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.headset_name2{
+transform: translate(50%,-50%);
+top: 21%;
+left: 37.4%;
+position: absolute;
+font-size: 25px;
+color: #0c2f6f;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.price1{
+transform: translate(50%,-50%);
+top: 30%;
+left: 46%;
+position: absolute;
+font-size: 15px;
+}
+.price2{
+transform: translate(50%,-50%);
+top: 40%;
+left: 43%;
+position: absolute;
+font-size: 35px;  
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+.name3{
+transform: translate(50%,-50%);
+top: 47%;
+left: 30%;
+position: absolute; 
+color: gray;
+font-size: 13px;
+}
+.card{
+width: 315px;
+height: 50px;
+background-color:#406dc0 ;
+border-radius: 10px;
+position: absolute;
+transform: translate(50%,-50%);
+right: 33%;
+bottom: 30%;
+}
+.addtocard{
+color: white;
+}
+.circlelittle{
+position: absolute;
+width: 10px;
+height: 10px;
+background-color: rgb(115, 215, 87);
+border-radius: 50%;
+left: 375px;
+top:344px;
+}
+.stock_information{
+position: absolute;
+transform: translate(50%,-50%);
+left: 340px;
+bottom: 134px;
+}
+.icon_scales{
+position: absolute;
+width: 150px;
+height: 50px;
+border: 1px solid black;    
+border-radius: 10px;
+position: absolute;
+left:375px ;
+bottom: 80px;
+}
+.icon_heart{
+width: 150px;
+height: 50px;
+border: 1px solid black;    
+border-radius: 10px;
+position: absolute;
+right: 110px;
+bottom: 80px;
+}
+.scales{
+padding-top:12.5px ;
+padding-left: 20px;
+}
+.add_to_card{
+padding-left: 10px;
+}
+.heart{
+padding-top:15px ;
+padding-left:10px;   
+}
+.add_to_wishlist{
+padding-left: 10px;
+}

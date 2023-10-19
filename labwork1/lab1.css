@@ -1,0 +1,9 @@
+.all_box{
+    display: flex;
+    justify-content: space-between;
+}
+.company_team_card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 400px;
+    width: 400px;
+}  

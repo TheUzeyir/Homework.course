@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.h1{
+text-align: center;    
+}
+.section{
+ text-align: center;
+}
+.card{
+width: 250px;
+height: max-content;
+display: inline-block;
+border: none;
+margin-top: 70px;
+}
+
+.house_icon{
+color: rgba(173, 61, 61, 0.721);  
+font-size: 50px;  
+}
+
+.p_basic{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.h2_free{
+font-size: 30px; 
+margin-top: 20px;
+}
+
+.ul_card1{
+margin-top: 50px;
+
+}
+
+.li_card1{
+list-style: none;
+margin-top: 15px;
+font-size: 20px;
+}
+
+.btn_submit_1{
+    background-color: rgb(227, 81, 106);
+ width: 100px;    
+ height: 35px;
+ border-radius: 20px;
+ margin-top: 50px;
+ border: none;
+ }
+.span_btn{
+    color: white;
+
+}
+
+.card2{
+    width: 250px;
+    height: max-content;
+    border: none;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    
+}
+
+.cupa_icon{
+    color: green;    
+    font-size: 50px;
+    }
+
+    .p_pro{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .h2_dollar1{
+        font-size: 30px;
+        margin-top: 20px;    
+        }
+
+        .ul_card2{
+            margin-top: 50px;
+            
+            }
+            
+            .li_card2{
+            list-style: none;
+            margin-top: 15px;
+            font-size: 20px;
+            }
+            .btn_submit_2{
+                background-color:green;
+             width: 100px;    
+             height: 35px;
+             border-radius: 20px;
+             margin-top: 50px;
+             border: none;
+             }
+            .span_btn2{
+                color: white;
+            
+            }
+
+            .card3{
+                width: 250px;
+                height: max-content;
+                display: inline-block;
+                border: none;
+                }
+                .gift_icon{
+                    color:blue;    
+                    font-size: 50px;
+                    }
+
+                    .p_enterprise{
+                        font-size: 30px;
+                       margin-top: 20px;
+                    }
+                    .h2_dollar2{
+                        font-size: 30px;
+                        margin-top: 20px;   
+                        }
+
+                        .ul_card3{
+                            margin-top: 50px;
+                            
+                            }
+                               .li_card3{list-style: none;
+                            margin-top: 15px;                  
+                            font-size: 20px;
+                            }
+                            .btn_submit_3{
+                                background-color:blue;
+                            
+                             width: 100px;    
+                             height: 35px;
+                             border-radius: 20px;
+                             margin-top: 50px;
+                             border: none;
+                             }
+                            .span_btn3{
+                                color: white;
+                            
+                            }

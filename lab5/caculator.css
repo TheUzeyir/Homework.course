@@ -1,0 +1,10 @@
+.registration_imput_card{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+}
+.registration_imput{
+  width: 250px;
+  height: 100px;
+  border: 1px solid gray;
+  padding-top: 100px;
+} 
