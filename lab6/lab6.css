@@ -29,7 +29,7 @@ header .container .header {
   justify-content: space-between;
 }
 header .container .header img:nth-child(1) {
-  width: 14rem;
+  width: 15rem;
 }
 header .container .header img:nth-child(2) {
   display: none;
@@ -91,7 +91,7 @@ header .container .icon {
   }
   header .header .header_imgbox img:nth-child(2) {
     display: block;
-    width: 35rem;
+    width: 15rem;
   }
   header .header .icon {
     display: block;
