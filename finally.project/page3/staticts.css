@@ -1,0 +1,400 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #2A5055;
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  padding: 0 108.5px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+  html .container,
+  body .container {
+    padding: 0 7rem;
+  }
+}
+header {
+  border: 1px solid black;
+  background-color: #F0F1F3;
+  height: 3.4rem;
+  padding: 5px;
+}
+header .header_box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: center;
+  align-content: _;
+  gap: _;
+  margin-top: 10px;
+}
+header .header_box_logo_name {
+  color: #2A5055;
+  font-size: 1rem;
+  line-height: 32px;
+}
+header .header_box_nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: _;
+  justify-content: _;
+  align-items: _;
+  align-content: _;
+  gap: 2rem;
+  color: #2A5055;
+  font-size: 0.8rem;
+}
+header .header_box_button {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: _;
+  justify-content: _;
+  align-items: _;
+  align-content: _;
+  gap: 0.6rem;
+}
+header .header_box_button_donate {
+  min-width: 4.2rem;
+  min-height: 2rem;
+  background-color: #2A5055;
+  color: white;
+  border-radius: 0.4rem;
+  font-size: 0.7rem;
+}
+header .header_box_button_signup {
+  min-width: 4.25rem;
+  min-height: 2rem;
+  border: 1px solid #2A5055;
+  border-radius: 0.4rem;
+  font-size: 0.7rem;
+}
+header .header_box_icon {
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  header .header_box_logo_name {
+    font-size: 20px;
+  }
+  header .header_box_nav {
+    display: none;
+  }
+  header .header_box_button {
+    display: none;
+  }
+  header .header_box_icon {
+    display: block;
+    font-size: 25px;
+  }
+}
+.helping_child {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: _;
+  justify-content: _;
+  align-items: _;
+  align-content: _;
+  gap: _;
+}
+.helping_child_card {
+  margin-top: 60px;
+  width: 704px;
+  height: 852px;
+}
+.helping_child_card h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+.helping_child_card h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+.helping_child_card img {
+  margin-top: 20px;
+}
+.helping_child_card_text {
+  margin-top: 20px;
+}
+.helping_child_card_text_maintext {
+  font-size: 18px;
+  line-height: 28px;
+}
+.helping_child_card_text_read_more {
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -2%;
+}
+.helping_child_card_text_information {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: _;
+  align-content: _;
+  gap: _;
+  margin-top: 28px;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: -2%;
+}
+.helping_child_donate_card {
+  width: 497px;
+  height: 432px;
+  margin: 168px 0 0 24px;
+}
+.helping_child_donate_card_price_now {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 44px;
+}
+.helping_child_donate_card_price_goal {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+}
+.helping_child_donate_card_donatebar {
+  margin-top: 8px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #F0F1F3;
+}
+.helping_child_donate_card_donatebar_left {
+  width: 70%;
+  height: 10px;
+  background-color: #FBAB73;
+}
+.helping_child_donate_card_donate_time {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: nowrap;
+  justify-content: space-between;
+  align-items: _;
+  align-content: _;
+  gap: _;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.helping_child_donate_card_human {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: nowrap;
+  justify-content: _;
+  align-items: center;
+  align-content: _;
+  gap: _;
+  margin-top: 32px;
+}
+.helping_child_donate_card_human h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 17px;
+}
+.helping_child_donate_card_human button {
+  width: 87px;
+  height: 40px;
+  margin-left: 104px;
+  border-radius: 8px;
+  color: #2A5055;
+  border: 1px solid #2A5055;
+}
+.helping_child_donate_card_joined_box {
+  margin-top: 172px;
+}
+.helping_child_donate_card_joined_box h6 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+.helping_child_donate_card_joined_box button {
+  width: 100%;
+  height: 48px;
+  background-color: #2A5055;
+  color: white;
+  border-radius: 8px;
+}
+
+.similar_announcements {
+  margin-top: 76px;
+}
+.similar_announcements_head {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: _;
+  align-content: _;
+  gap: _;
+}
+.similar_announcements_head h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+.similar_announcements_head button {
+  width: 132px;
+  height: 48px;
+  border-radius: 8px;
+  color: #2A5055;
+  border: 1px solid #2A5055;
+}
+.similar_announcements_box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: _;
+  align-content: _;
+  gap: _;
+  margin-top: 22px;
+}
+.similar_announcements_box_card {
+  width: 288px;
+  height: 348px;
+}
+.similar_announcements_box_card img {
+  width: 100%;
+  height: 268px;
+}
+.similar_announcements_box_card_head_text {
+  font-size: 16px;
+  line-height: 24px;
+}
+.similar_announcements_box_card_donatebox_bar {
+  margin-top: 10px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: #D9D9D9;
+}
+.similar_announcements_box_card_donatebox_bar_left {
+  width: 50%;
+  height: 8px;
+  background-color: #FBAB73;
+}
+.similar_announcements_box_card_price_now {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.similar_announcements_box_card_price_goal {
+  margin-left: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+footer {
+  height: 23.3rem;
+  background-color: #F0F1F3;
+}
+footer .footer_navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: center;
+  align-content: _;
+  gap: 6.4rem;
+  width: 61.15rem;
+  height: 18.8rem;
+}
+footer .footer_navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: _;
+  align-items: _;
+  align-content: _;
+  gap: 0.7rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin-top: 0.8rem;
+}
+footer .footer_navigation_singup input {
+  padding-left: 20px;
+  width: 12.15rem;
+  height: 2.4rem;
+  border-radius: 8px;
+  background-color: transparent;
+}
+footer .footer_navigation_singup ::-moz-placeholder {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: #667085;
+}
+footer .footer_navigation_singup ::placeholder {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: #667085;
+}
+footer .footer_navigation_singup button {
+  width: 5.5rem;
+  height: 2.4rem;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: #FA8F45;
+}
+footer .footer_emphty {
+  width: 100%;
+  border-top: 1px solid black;
+}
+footer .page_information {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: _;
+  align-content: _;
+  gap: _;
+  margin-top: 43px;
+  width: 61.15rem;
+}
+footer .page_information_card {
+  margin-left: 143.5px;
+  display: flex;
+  gap: 1rem;
+  width: 15.75rem;
+  height: 1.2rem;
+  font-size: 0.7rem;
+}
+footer .page_information_contack {
+  display: flex;
+  gap: 30px;
+  color: gray;
+  padding-left: 1.5rem;
+}/*# sourceMappingURL=staticts.css.map */

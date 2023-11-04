@@ -1,0 +1,409 @@
+@import "../mixins";
+
+$--colorgreen:#2A5055;
+$--colororange:#FA8F45; 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $--colorgreen;
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    padding: 0 108.5px;
+    margin: 0 auto;
+}
+
+button{
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px) {
+
+    html,
+    body {
+        font-size: 8px;
+
+        .container {
+            padding: 0 7rem;
+
+        }
+    }
+}
+
+// ----------------------------Header start---------------------------
+
+header {
+    border: 1px solid black;
+    background-color: #F0F1F3;
+    height: 3.4rem;
+    padding: 5px;
+
+    .header_box {
+        @include d-flex(flex, nowrap, _, space-between, center, _, _);
+        margin-top: 10px;
+
+        &_logo_name {
+            color: $--colorgreen;
+            font-size: 1rem;
+            line-height: 32px;
+        }
+
+        &_nav ul {
+            @include d-flex(flex, nowrap, _, _, _, _, 2rem);
+            color: $--colorgreen;
+            font-size: 0.8rem
+        }
+
+        &_button {
+            @include d-flex(flex, _, _, _, _, _, 0.6rem);
+
+
+            &_donate {
+                min-width: 4.2rem;
+                min-height: 2rem;
+                background-color: $--colorgreen;
+                color: white;
+                border-radius: 0.4rem;
+                font-size: 0.7rem;
+            }
+
+            &_signup {
+                min-width: 4.25rem;
+                min-height: 2rem;
+                border: 1px solid $--colorgreen;
+                border-radius: 0.4rem;
+                font-size: 0.7rem;
+            }
+        }
+
+        &_icon {
+            min-width: 1.75rem;
+            min-height: 1.75rem;
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    header {
+        .header_box_logo_name {
+            font-size: 20px;
+        }
+
+        .header_box_nav {
+            display: none;
+        }
+
+        .header_box_button {
+            display: none;
+        }
+
+        .header_box_icon {
+            display: block;
+            font-size: 25px;
+        }
+    }
+}
+
+// ----------------------------Header finis----------------------------
+
+//-------------------------------------------------------- Main start --------------------------------------------------------
+
+
+//-------------------------------helping_child start
+.helping_child{
+    @include d-flex(flex,nowrap, _, _, _, _,_);
+    
+    &_card{
+        margin-top: 60px;
+        width: 704px;
+        height: 852px;
+
+        h2{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        h3{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        img{
+            margin-top: 20px;
+        }
+
+        &_text{
+            margin-top: 20px;
+
+            &_maintext{
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            &_read_more{
+                cursor: pointer;
+                margin-top: 20px;
+                font-size: 18px;
+                line-height: 32px;
+                letter-spacing: -2%;
+            }
+
+            &_information{
+              @include d-flex(flex,_, _, space-between, _, _,_);
+                margin-top: 28px;
+                font-size: 14px;
+                line-height: 32px;
+                letter-spacing: -2%;
+            }
+        }
+    }
+
+    &_donate_card{
+        width: 497px;
+        height: 432px;
+        margin:168px 0 0 24px;
+
+        &_price{
+
+            &_now{
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 44px;
+            }
+
+            &_goal{
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 36px;
+            }
+
+        }
+        &_donatebar{
+            margin-top: 8px;
+            height: 10px;
+            border-radius: 2px;
+            background-color:#F0F1F3;
+
+            &_left{
+                width: 70%;
+                height: 10px;
+                background-color:#FBAB73;
+            }
+        }
+
+        &_donate_time{
+            @include d-flex(flex,_,nowrap, space-between, _, _,_);
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+
+        &_human{
+            @include d-flex(flex,_,nowrap,_,center, _,_);
+            margin-top: 32px;
+
+            h4{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-left: 17px;
+            }
+
+            button{
+                width: 87px;
+                height: 40px;
+                margin-left: 104px;
+                border-radius: 8px;
+                color: #2A5055;
+                border: 1px solid #2A5055;
+            }
+        }
+
+        &_joined_box{
+            margin-top: 172px;
+
+            h6{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            button{
+                width: 100%;
+                height: 48px;
+                background-color: #2A5055;
+                color: white;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+//-------------------------------helping_child end
+
+
+//-------------------------------similar_announcements start
+
+.similar_announcements{
+    margin-top:76px;
+
+    &_head{
+        @include d-flex(flex,_, _, space-between, _, _, _);
+
+        h2{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        button{
+            width: 132px;
+            height: 48px;
+            border-radius: 8px;
+            color: #2A5055;
+            border:1px solid #2A5055;
+        }
+    }
+
+    &_box{
+        @include d-flex(flex,nowrap, _, space-between, _, _, _);
+        margin-top: 22px;
+        
+        &_card{
+            width: 288px;
+            height: 348px;
+
+            img{
+                width: 100%;
+                height: 268px;
+            }
+
+            &_head_text{
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &_donatebox_bar{
+                margin-top: 10px;
+                height: 8px;
+                border-radius: 2px;
+                background-color: #D9D9D9;
+
+                &_left{
+                    width: 50%;
+                    height: 8px;
+                    background-color: #FBAB73;
+                }
+            }
+
+            &_price_now{
+             font-weight: 400;
+             font-size: 16px;
+             line-height: 24px;   
+            }
+            &_price_goal{
+            margin-left: 8px;
+             font-weight: 300;
+             font-size: 14px;
+             line-height: 24px;   
+            }
+        }
+    }
+}
+
+
+//-------------------------------------------------------- Footer start --------------------------------------------------------
+
+footer {
+    height: 23.3rem;
+    background-color: #F0F1F3;
+    // @include d-flex(flex, nowrap, _,_, _, _, _);  
+
+
+    .footer_navigation {
+        @include d-flex(flex, nowrap, _,space-between, center, _, 6.4rem);
+        width: 61.15rem;
+        height: 18.8rem;
+
+        ul {
+            @include d-flex(flex, wrap, column, _, _, _, 0.7rem);
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+            margin-top: 0.8rem;
+
+        }
+
+        &_singup {
+
+            input {
+                padding-left:20px;
+                width: 12.15rem;
+                height: 2.4rem;
+                border-radius: 8px;
+                background-color: transparent;
+            }
+
+            ::placeholder {
+                font-size: 0.7rem;
+                line-height: 1.2rem;
+                color: #667085;
+            }
+
+            button {
+                width: 5.5rem;
+                height: 2.4rem;
+                border-radius: 8px;
+                border: none;
+                color: white;
+                background-color: #FA8F45;
+            }
+        }
+    }
+
+    .footer_emphty {
+        width:100%;
+        border-top: 1px solid black;
+    }
+
+    .page_information {
+        @include d-flex(flex, _, _,space-between,_, _,_);
+        margin-top: 43px;
+        width: 61.15rem;
+
+        &_card {
+            margin-left: 143.5px;
+            display: flex;
+            gap: 1rem;
+            width: 15.75rem;
+            height: 1.2rem;
+            font-size: 0.7rem;
+        }
+
+        &_contack {
+            display: flex;
+            gap: 30px;
+            color: gray;
+            padding-left: 1.5rem;
+        }
+    }
+}

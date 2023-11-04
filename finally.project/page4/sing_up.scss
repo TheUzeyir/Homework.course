@@ -1,0 +1,279 @@
+@import "../mixins";
+
+$--colorgreen:#2A5055;
+$--colororange:#FA8F45; 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:blue;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    padding: 0 108.5px;
+    margin: 0 auto;
+}
+
+button{
+    cursor: pointer;
+}
+@media screen and (max-width:992px) {
+
+    html,
+    body {
+        font-size: 8px;
+
+        .container {
+            padding: 0 7rem;
+
+        }
+    }
+}
+
+// ----------------------------Header start---------------------------
+header{
+    border: 1px solid black;
+    background-color: #F0F1F3;
+    height: 3.4rem;
+    padding:0.25rem;
+}
+.header_logo_name{
+    color: $--colorgreen;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top:0.5rem;
+}
+
+// ----------------------------Header finis---------------------------
+.registration{
+    @include d-flex(flex, nowrap, _,space-between, _, _, _); 
+    text-align: center;
+
+    img{
+        max-width: 100%;
+    }
+
+    &_card{
+                
+        &_main_text{
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            margin-top: 7.6rem;
+            margin-left: max(10.6rem);
+        }
+
+        &_signup{
+                width:19.6rem;
+                height:36.6rem;
+                margin:1.4rem 0 0 10.6rem;
+
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.2rem;
+                    
+                    input{
+                        width: 100%;
+                        height:2.6rem;
+                        padding-left: 1rem;
+                        border-radius: 8px;
+                        border: 1px solid #858D9D;
+                        font-size:0.9rem;
+                        line-height:1.4rem;
+                    }                
+                    
+                    input:nth-child(4){
+                        position: relative;
+                    }
+                }
+
+                &_form_icon{
+                    color:#858D9D;
+                    position: absolute;
+                }
+
+                p:nth-child(2){
+                    font-weight: 300;
+                    font-size: 0.7rem;
+                    line-height:1.2rem;
+                    margin: 0.75rem 0 0 -10.5rem;    
+                    color: #667085;
+                }
+
+                button{
+                    width: 100%;
+                    height:2.6rem;
+                    border-radius: 8px;
+                    font-size: 0.9rem;
+                    line-height:1.4rem;
+                    font-weight: 500;
+                }
+                &_create_account{
+                    background-color: #2A5055;
+                    color: white;
+                    margin-top:1.2rem;
+                }
+
+                p:nth-child(4){
+                    color: #475467;
+                    margin-top: 1.2rem;
+                }
+                
+                &_google{
+                    margin-top:1.2rem;
+                    background-color: white;
+                    color:#2A5055;
+                    &_icon{
+                        padding-right: 5.25px;
+                    }
+                }
+
+                &_facebook{
+                    margin-top:1.2rem;
+                    background-color: #0C63D4;
+                    color: white;
+                    border: none;
+
+                    &_icon{
+                        padding-right: 5.25px;
+                    }
+                }
+
+                span{
+                    font-size:0.7rem;
+                    font-weight: 300;
+                    line-height:1.2rem;
+                }
+                &_login{
+                    display: inline-block;
+                    font-size:0.7rem;
+                    font-weight:600;
+                    line-height: 1.2rem;
+                    margin: 8px 0 0 8px;
+                    cursor: pointer;
+                }
+        }
+
+    }
+
+}
+
+// @media screen and (max-width:992px) {
+// body{
+//   .registration{
+
+//   }
+// }
+// }
+//-------------------------------------------------------- Footer start --------------------------------------------------------
+
+footer {
+    height: 23.3rem;
+    background-color: #F0F1F3;
+
+
+    .footer_navigation {
+        @include d-flex(flex, nowrap, _,space-between, center, _, 6.4rem);
+        max-width: 61.15rem;
+        height: 18.8rem;
+
+        ul {
+            @include d-flex(flex, wrap, column, _, _, _, 0.7rem);
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+            margin-top: 0.8rem;
+
+        }
+
+        &_singup {
+
+            input {
+                padding-left:1rem;
+                width: 12.15rem;
+                height: 2.4rem;
+                border-radius: 8px;
+                background-color: transparent;
+            }
+
+            ::placeholder {
+                font-size: 0.7rem;
+                line-height: 1.2rem;
+                color: #667085;
+            }
+
+            button {
+                width: 5.5rem;
+                height: 2.4rem;
+                border-radius: 8px;
+                border: none;
+                color: white;
+                background-color: #FA8F45;
+            }
+        }
+    }
+
+    .footer_emphty {
+        width:100%;
+        border-top: 1px solid black;
+    }
+
+    .page_information {
+        @include d-flex(flex, _, _,space-between,_, _,_);
+        margin-top: 43px;
+        width: 61.15rem;
+
+        &_card {
+            margin-left:7.175rem;
+            display: flex;
+            gap: 1rem;
+            width: 15.75rem;
+            height: 1.2rem;
+            font-size: 0.7rem;
+        }
+
+        &_contack {
+            cursor: pointer;
+            display: flex;
+            gap: 30px;
+            color: gray;
+            padding-left: 1.5rem;
+        }
+        &_contack:hover{
+            color: #0C63D4;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    header {
+        .header_box_logo_name {
+            font-size: 20px;
+        }
+    }
+
+    main{
+        img{
+            display: none;
+        }
+    }
+}

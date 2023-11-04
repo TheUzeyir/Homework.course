@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  padding: 0 108.5px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+  html .container,
+  body .container {
+    padding: 0 7rem;
+  }
+}
+header {
+  border: 1px solid black;
+  background-color: #F0F1F3;
+  height: 3.4rem;
+  padding: 0.25rem;
+}
+
+.header_logo_name {
+  color: #2A5055;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+.registration {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: _;
+  align-content: _;
+  gap: _;
+  text-align: center;
+}
+.registration img {
+  max-width: 100%;
+}
+.registration_card_main_text {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-top: 7.6rem;
+  margin-left: 10.6rem;
+}
+.registration_card_signup {
+  width: 19.6rem;
+  height: 36.6rem;
+  margin: 1.4rem 0 0 10.6rem;
+}
+.registration_card_signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.registration_card_signup form input {
+  width: 100%;
+  height: 2.6rem;
+  padding-left: 1rem;
+  border-radius: 8px;
+  border: 1px solid #858D9D;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.registration_card_signup form input:nth-child(4) {
+  position: relative;
+}
+.registration_card_signup_form_icon {
+  color: #858D9D;
+  position: absolute;
+}
+.registration_card_signup p:nth-child(2) {
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  margin: 0.75rem 0 0 -10.5rem;
+  color: #667085;
+}
+.registration_card_signup button {
+  width: 100%;
+  height: 2.6rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+}
+.registration_card_signup_create_account {
+  background-color: #2A5055;
+  color: white;
+  margin-top: 1.2rem;
+}
+.registration_card_signup p:nth-child(4) {
+  color: #475467;
+  margin-top: 1.2rem;
+}
+.registration_card_signup_google {
+  margin-top: 1.2rem;
+  background-color: white;
+  color: #2A5055;
+}
+.registration_card_signup_google_icon {
+  padding-right: 5.25px;
+}
+.registration_card_signup_facebook {
+  margin-top: 1.2rem;
+  background-color: #0C63D4;
+  color: white;
+  border: none;
+}
+.registration_card_signup_facebook_icon {
+  padding-right: 5.25px;
+}
+.registration_card_signup span {
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 1.2rem;
+}
+.registration_card_signup_login {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  margin: 8px 0 0 8px;
+  cursor: pointer;
+}
+
+footer {
+  height: 23.3rem;
+  background-color: #F0F1F3;
+}
+footer .footer_navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: center;
+  align-content: _;
+  gap: 6.4rem;
+  max-width: 61.15rem;
+  height: 18.8rem;
+}
+footer .footer_navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: _;
+  align-items: _;
+  align-content: _;
+  gap: 0.7rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  margin-top: 0.8rem;
+}
+footer .footer_navigation_singup input {
+  padding-left: 1rem;
+  width: 12.15rem;
+  height: 2.4rem;
+  border-radius: 8px;
+  background-color: transparent;
+}
+footer .footer_navigation_singup ::-moz-placeholder {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: #667085;
+}
+footer .footer_navigation_singup ::placeholder {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  color: #667085;
+}
+footer .footer_navigation_singup button {
+  width: 5.5rem;
+  height: 2.4rem;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: #FA8F45;
+}
+footer .footer_emphty {
+  width: 100%;
+  border-top: 1px solid black;
+}
+footer .page_information {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: _;
+  align-content: _;
+  gap: _;
+  margin-top: 43px;
+  width: 61.15rem;
+}
+footer .page_information_card {
+  margin-left: 7.175rem;
+  display: flex;
+  gap: 1rem;
+  width: 15.75rem;
+  height: 1.2rem;
+  font-size: 0.7rem;
+}
+footer .page_information_contack {
+  cursor: pointer;
+  display: flex;
+  gap: 30px;
+  color: gray;
+  padding-left: 1.5rem;
+}
+footer .page_information_contack:hover {
+  color: #0C63D4;
+}
+
+@media screen and (max-width: 992px) {
+  header .header_box_logo_name {
+    font-size: 20px;
+  }
+  main img {
+    display: none;
+  }
+}/*# sourceMappingURL=sing_up.css.map */

@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="annoucments.css">
     <title>Document</title>
 </head>
 <body>
- 
-<!-- container qeyd Ele 
-classda card sozu 2ci olsun
- --> 
 
     <header>
         <div class="container">
@@ -23,22 +20,23 @@ classda card sozu 2ci olsun
                         </ul>
                     </nav>
                   <div class="header_box_button">
-                    <div class="header_box_button_donate">Donate</div>
-                    <div class="header_box_button_signup">Sign up</div>
+                    <button class="header_box_button_donate">Donate</button>
+                    <button class="header_box_button_signup">Sign up</button>
                   </div>
                   <i class=" header_box_icon fa-solid fa-bars"></i>
                 </section>
             </div>
     </header>
-    <main>
-        <div><h2>Announcements</h2></div>
 
+    <main>
+        <div class="container">
+        <h2 class="page_name">Announcements</h2>
         <section class="announcements">
-           <nav>
-            <div>
-                <div>
+           <nav class="announcements_navbar">
+            <div class="announcements_navbar_search">
+                <div class="announcements_navbar_search_bar" >
                   <input type="text" placeholder="Search announce">
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <i class="announcements_navbar_search_bar_icon fa-solid fa-magnifying-glass"></i>
                 </div>
                 <button>All</button>
                 <button>Education</button>
@@ -46,162 +44,180 @@ classda card sozu 2ci olsun
                 <button>Children</button>
                 <button>Animals</button>
             </div>
-            <div>
+            <div class="announcements_navbar_type">
                 <button>Sort by  date 
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
             </div>
            </nav>
-
-           <div class="announcements_cards">
-            <div class="announcements_card">
-                <div>
-                    <img src="./img/page2/img1.png" alt="family">
-                </div>
-                <aside>
+           <div class="announcements_card">
+            <div class="announcements_card_box">
+                    <div class="announcements_card_box_imgbox">
+                        <img src="./page2.img/img1.png" alt="family">
+                    <i class="announcements_card_box_imgbox_icon fa-regular fa-heart"></i>
+                    </div>
+                <article class="announcements_card_box_information">
                     <h3>Support Kenny & family through...</h3>
-                    <h4>On 8th September, Kenny Collins' world stopped and his life hung in a...</h4>
-                    <h6>Last donation 10m ago</h6>
-                    <div>
-                        <div></div>
-                        <div></div>
+                    <p class="announcements_card_box_information_story">On 8th September, Kenny Collins' world stopped and his life hung in a...</p>
+                    <div class="announcements_card_box_information_donationbox">
+                    <span class="announcements_card_box_information_donationbox_time">Last donation 10m ago</span>
+                    <div class="announcements_card_box_information_donationbox_bar">
+                        <div class="announcements_card_box_information_donationbox_bar_left_card1"></div>
+                        <div class="announcements_card_box_information_donationbox_bar_right_card1"></div>
                     </div>
-                    <h4>£13,092 raised</h4><span>of £20,000 goal</span>
-                </aside>
-            </div>
-            <div class="announcements_card">
-                <div>
-                    <img src="./img/page2/img2.png" alt="dog">
+                    <div><span class="announcements_card_box_information_donationbox_pricenow">£13,092 raised</span><span class="announcements_card_box_information_donationbox_pricegoal">of £20,000 goal</span></div>
                 </div>
-                <aside>
+                </article>
+            </div>
+            <div class="announcements_card_box">
+                    <div class="announcements_card_box_imgbox">
+                        <img src="./page2.img/img2.png" alt="dog">
+                    <i class="announcements_card_box_imgbox_icon fa-regular fa-heart"></i>
+                    </div>
+                <article class="announcements_card_box_information">
                     <h3>Help for Luna</h3>
-                    <h4>Hi! I am one of Ashley’s friends and next door neighbors . Yesterday for  Ashley...</h4>
-                    <h6>Last donation 25m ago</h6>
-                    <div>
-                        <div></div>
-                        <div></div>
+                    <p class="announcements_card_box_information_story">Hi! I am one of Ashley’s friends and next door neighbors . Yesterday for  Ashley...</p class="announcements_card_box_information_story">
+                        <div class="announcements_card_box_information_donationbox">
+                    <span class="announcements_card_box_information_donationbox_time">Last donation 25m ago</span >
+                    <div class="announcements_card_box_information_donationbox_bar">
+                        <div class="announcements_card_box_information_donationbox_bar_left_card2"></div>
+                        <div class="announcements_card_box_information_donationbox_bar_right_card2"></div>
                     </div>
-                    <h4>£1,030 raised</h4><span>of £2,500 goal</span>
-                </aside>
-            </div>
-            <div class="announcements_card">
-                <div>
-                    <img src="./img/page2/img3.png" alt="ill">
+                    <div><span class="announcements_card_box_information_donationbox_pricenow">£1,030 raised</span><span class="announcements_card_box_information_donationbox_pricegoal">of £2,500 goal</span></div>
                 </div>
-                <aside>
+                </article>
+            </div>
+            <div class="announcements_card_box">
+                    <div class="announcements_card_box_imgbox">
+                        <img src="./page2.img/img3.png" alt="ill">
+                    <i class="announcements_card_box_imgbox_icon fa-regular fa-heart"></i>
+                    </div>
+                <article class="announcements_card_box_information">
                     <h3>Betty's Big Climb for Naomi's...</h3>
-                    <h4>During the summer holidays, Betty has been out and about with me ....</h4>
-                    <h6>Last donation 5m ago</h6>
-                    <div>
-                        <div></div>
-                        <div></div>
+                    <p class="announcements_card_box_information_story">During the summer holidays, Betty has been out and about with me ....</p>
+                    <div class="announcements_card_box_information_donationbox">
+                    <span class="announcements_card_box_information_donationbox_time">Last donation 5m ago</span>
+                    <div class="announcements_card_box_information_donationbox_bar">
+                        <div class="announcements_card_box_information_donationbox_bar_left_card3"></div>
+                        <div class="announcements_card_box_information_donationbox_bar_right_card3"></div>
                     </div>
-                    <h4>£10,165 raised</h4><span>of £2,000 goal</span>
-                </aside>
-            </div>
-            <div class="announcements_card">
-                <div>
-                    <img src="./img/page2/img4.png" alt="ill">
+                    <div><span class="announcements_card_box_information_donationbox_pricenow">£10,165 raised</span><span class="announcements_card_box_information_donationbox_pricegoal">of £2,000 goal</span></div>
                 </div>
-                <aside>
+                </article>
+            </div>
+            <div class="announcements_card_box">
+                    <div class="announcements_card_box_imgbox">
+                        <img src="./page2.img/img4.png" alt="ill">
+                    <i class="announcements_card_box_imgbox_icon fa-regular fa-heart"></i>
+                    </div>
+                <article class="announcements_card_box_information">
                     <h3>BCharlie Rugby - Help Fund Knee...</h3>
-                    <h4>I am a current Ireland International in rugby league and Exeter Chiefs....</h4>
-                    <h6>Last donation 1h ago</h6>
-                    <div>
-                        <div></div>
-                        <div></div>
+                    <p class="announcements_card_box_information_story">I am a current Ireland International in rugby league and Exeter Chiefs....</p>
+                    <div class="announcements_card_box_information_donationbox">
+                    <span class="announcements_card_box_information_donationbox_time">Last donation 1h ago</span>
+                    <div class="announcements_card_box_information_donationbox_bar">
+                        <div class="announcements_card_box_information_donationbox_bar_left_card4"></div>
+                        <div class="announcements_card_box_information_donationbox_bar_right_card4"></div>
                     </div>
-                    <h4>£8,443 raised</h4><span>of ££10,000 goal</span>
-                </aside>
-            </div>
-            <div class="announcements_card">
-                <div>
-                    <img src="./img/page2/img5.png" alt="cat">
+                    <div><span class="announcements_card_box_information_donationbox_pricenow">£8,443 raised</span><span class="announcements_card_box_information_donationbox_time">of ££10,000 goal</span></div>
                 </div>
-                <aside>
+                </article>
+            </div>
+            <div class="announcements_card_box">                
+                  <div class="announcements_card_box_imgbox">
+                    <img src="./page2.img/img5.png" alt="cat">
+                    <i class="announcements_card_box_imgbox_icon fa-regular fa-heart"></i>
+                </div>  
+                <article class="announcements_card_box_information">
                     <h3>Lewi Oliver</h3>
-                    <h4>IAs some may know, our good friend Lewi was diagnosed around late...</h4>
-                    <h6>Last donation 14m ago</h6>
-                    <div>
-                        <div></div>
-                        <div></div>
+                    <p class="announcements_card_box_information_story">IAs some may know, our good friend Lewi was diagnosed around late...</p>
+                    <div class="announcements_card_box_information_donationbox">
+                    <span class="announcements_card_box_information_donationbox_time">Last donation 14m ago</span>
+                    <div class="announcements_card_box_information_donationbox_bar">
+                        <div class="announcements_card_box_information_donationbox_bar_left_card5"></div>
+                        <div class="announcements_card_box_information_donationbox_bar_right_card5"></div>
                     </div>
-                    <h4>£2,415 raised</h4><span>of £5,000 goal</span>
-                </aside>
+                    <div></div><span class="announcements_card_box_information_donationbox_pricenow">£2,415 raised</span><span class="announcements_card_box_information_donationbox_time">of £5,000 goal</span>
+                </article>
             </div>
-            <div class="announcements_card">
-                <div>
-                    <img src="./img/page2/img6.png" alt="ill">
-                </div>
-                <aside>
+            <div class="announcements_card_box">              
+                   <div class="announcements_card_box_imgbox">
+                    <img src="./page2.img/img6.png" alt="ill">
+                    <i class="announcements_card_box_imgbox_icon fa-regular fa-heart"></i>
+                </div> 
+                <article class="announcements_card_box_information">
                     <h3>Save Nala from euthanasia...</h3>
-                    <h4>As many no, my beautiful 16 week old British short-haired Nala has been....</h4>
-                    <h6>Last donation 3m ago</h6>
-                    <div>
-                        <div></div>
-                        <div></div>
+                    <p class="announcements_card_box_information_story">As many no, my beautiful 16 week old British short-haired Nala has been....</p>
+                    <div class="announcements_card_box_information_donationbox">
+                    <span class="announcements_card_box_information_donationbox_time">Last donation 3m ago</span>
+                    <div class="announcements_card_box_information_donationbox_bar">
+                        <div class="announcements_card_box_information_donationbox_bar_left_card6"></div>
+                        <div class="announcements_card_box_information_donationbox_bar_right_card6"></div>
                     </div>
-                    <h4>£4,813 raised</h4><span>of £5,000 goal</span>
-                </aside>            
+                    <div></div><span class="announcements_card_box_information_donationbox_pricenow">£4,813 raised</span><span class="announcements_card_box_information_donationbox_time">of £5,000 goal</span>
+                </article>            
             </div>
            </div>
-           <button>Load more</button>
         </section>
+        <button class="announcements_button">Load more</button>
+        </div>
     </main>
-    <!-- <footer>
+
+    <footer>
         <div class="container">
-            <section class="information">
+            <section class="footer_navigation">
             <div>
-                <h2>About</h2>
+                <h3>About</h3>
                 <ul>
-                    <li>Contack</li>
-                    <li>Mission</li>
-                    <li>Support</li>
-                    <li>Blog</li>
-                    <li>FAQs</li>
+                    <li><a href="">Contack</a></li>
+                    <li><a href="">Mission</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">FAQs</a></li>
                 </ul>
             </div>
             <div>
-                <h2>Donors</h2>
+                <h3>Donors</h3>
                 <ul>
-                    <li>Give or Redeem Gift Cards</li>
-                    <li>Donate in Honor</li>
-                    <li>Project of the Month Club</li>
-                    <li>Start a Fundraiser</li>
-                    <li>Success Stories</li>
+                    <li><a href="">Give or Redeem Gift Cards</a></li>
+                    <li><a href="">Donate in Honor</a></li>
+                    <li><a href="">Project of the Month Club</a></li>
+                    <li><a href="">Start a Fundraiser</a></li>
+                    <li><a href="">Success Stories</a></li>
                 </ul>
             </div>
             <div>
-                <h2>Fundarise for</h2>
+                <h3>Fundarise for</h3>
                 <ul>
-                    <li>Medical</li>
-                    <li>Education</li>
-                    <li>Charity</li>
-                    <li>Childiren</li>
-                    <li>Animals</li>
+                    <li><a href="">Medical</a></li>
+                    <li><a href="">Education</aE</li>
+                    <li><a href="">Charity</a></li>
+                    <li><a href="">Childiren</a></li>
+                    <li><a href="">Animals</a></li>
                 </ul>
             </div>
-            <div>
-                <input type="text" placeholder="Email">
+            <div class="footer_navigation_singup">
+                <input type="text" placeholder="Email" required>
                 <button>Subscribe</button>
             </div>
         </section>
-        </div>
-        <section class="contact">
-            <div>
+    </div>
+    <div class="footer_emphty"></div>
+        <section class="page_information">
+            <div class="page_information_card">
                 <span>© 2010-2022 Helpers</span>
                 <span>Terms</span>
                 <span>Privacy</span>
                 <span>Legal</span>
             </div>
-            <div>
+            <div class="page_information_contack">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-linkedin-in"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-youtube"></i>
             </div>
         </section>
-    </footer> -->
+    </footer>
     <script src="https://kit.fontawesome.com/c8d8ccd748.js" crossorigin="anonymous"></script>
 </body>
 </html>

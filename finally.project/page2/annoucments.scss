@@ -1,0 +1,396 @@
+@import "../mixins";
+
+$--colorgreen:#2A5055;
+$--colororange:#FA8F45; 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $--colorgreen;
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    padding: 0 108.5px;
+    margin: 0 auto;
+}
+
+button{
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px) {
+
+    html,
+    body {
+        font-size: 8px;
+
+        .container {
+            padding: 0 7rem;
+
+        }
+    }
+}
+
+// ----------------------------Header start---------------------------
+
+header {
+    border: 1px solid black;
+    height: 3.4rem;
+    padding: 5px;
+    background-color: #F0F1F3;
+
+    .header_box {
+        @include d-flex(flex, nowrap, _, space-between, center, _, _);
+        margin-top: 10px;
+
+        &_logo_name {
+            color: $--colorgreen;
+            font-size: 1rem;
+            line-height: 32px;
+        }
+
+        &_nav ul {
+            @include d-flex(flex, nowrap, _, _, _, _, 2rem);
+            color: $--colorgreen;
+            font-size: 0.8rem
+        }
+
+        &_button {
+            @include d-flex(flex, _, _, _, _, _, 0.6rem);
+
+
+            &_donate {
+                min-width: 4.2rem;
+                min-height: 2rem;
+                background-color: $--colorgreen;
+                color: white;
+                border-radius: 0.4rem;
+                font-size: 0.7rem;
+            }
+
+            &_signup {
+                min-width: 4.25rem;
+                min-height: 2rem;
+                border: 1px solid $--colorgreen;
+                border-radius: 0.4rem;
+                font-size: 0.7rem;
+            }
+        }
+
+        &_icon {
+            min-width: 1.75rem;
+            min-height: 1.75rem;
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    header {
+        .header_box_logo_name {
+            font-size: 20px;
+        }
+
+        .header_box_nav {
+            display: none;
+        }
+
+        .header_box_button {
+            display: none;
+        }
+
+        .header_box_icon {
+            display: block;
+            font-size: 25px;
+        }
+    }
+}
+
+// ----------------------------Header finis----------------------------
+
+//-------------------------------------------------------- Main start ---------------------------------------------------------
+
+.page_name{
+    margin-top: 52px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.announcements{
+    margin-top: 52px;
+
+    &_navbar{
+       @include d-flex(flex,_,_,space-between,_,_,_);
+
+       &_search{
+       @include d-flex(flex,_,_,space-between,_,_,12px);
+
+       &_bar{
+       @include d-flex(flex,nowrap,_,_,center,_,12px);
+           
+           input{
+            width:240px;
+            height:44px;
+            border-radius: 8px;
+            position: relative;
+            padding-left: 56px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        
+        &_icon{
+            position: absolute;
+            color: gray;
+            padding-left:1.2rem;
+        }
+       }
+
+       button{
+        height: 44px;
+        border-radius: 8px;
+        border: none;
+        font-size: 16px;
+        line-height: 24px;
+        color: #667085;
+    }
+    
+    button:nth-child(2){
+        color: white;
+        width: 67px;
+        background-color: #2A5055;
+       }
+       button:nth-child(3){
+        width: 129px;
+        background-color: #F0F1F3;
+       }
+       button:nth-child(4){
+        width: 90px;
+        background-color: #F0F1F3;
+       }
+       button:nth-child(5){
+        width: 116px;
+        background-color: #F0F1F3;
+       }
+       button:nth-child(6){
+        width: 113px;
+        background-color: #F0F1F3;
+       }
+
+       }
+        
+       &_type{
+        button{
+            width: 182px;
+            height: 44px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            line-height: 24px;
+            color: #667085;
+        }
+       }
+   }
+
+
+   &_card{
+    @include d-flex(flex,wrap,_,space-between,_,_,56px);
+    margin-top: 28px;
+
+    &_box{
+        width: 392px;
+        height: 532px;
+        
+        &_imgbox{
+            position: relative;
+            display: flex;
+
+            img{
+                border-radius: 8px;
+            }
+
+            &_icon{
+                right:21px;
+                top: 16px;
+                position: absolute;
+                background-color:#F0F1F3;
+            }
+
+        }
+
+
+        &_information{
+            h3{
+                font-size: 20px;
+                line-height: 32px;
+                margin-top: 19px;
+            }
+
+            &_story{
+                font-weight: 300;
+                font-size: 1rem;
+                line-height: 32px;
+                margin-top: 8px;
+            }
+
+            &_donationbox{
+                margin-top: 15px;
+
+                &_time{
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                &_bar{
+                    height: 10px;
+                    border-radius: 2px;
+                    background-color:#F0F1F3;
+    
+                    &_left_card1{
+                        width: 30%;
+                        height: 10px;
+                        background-color:#FA8F45;
+                    }
+                    &_left_card2{
+                        width: 50%;
+                        height: 10px;
+                        background-color:#FA8F45;
+                    }
+                    &_left_card3{
+                        width: 70%;
+                        height: 10px;
+                        background-color:#FA8F45;
+                    }
+                    &_left_card4{
+                        width: 90%;
+                        height: 10px;
+                        background-color:#FA8F45;
+                    }
+                    &_left_card5{
+                        width: 50%;
+                        height: 10px;
+                        background-color:#FA8F45;
+                    }
+                    &_left_card6{
+                        width: 90%;
+                        height: 10px;
+                        background-color:#FA8F45;
+                    }
+            }
+
+            &_pricenow{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+            }
+            &_pricegoal{
+                padding-left: 8px;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+            }
+            }
+        }
+    }
+   }
+
+   &_button{
+    width: 107px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: transparent;
+    margin:72px 0 0 50%;
+   }
+}
+//-------------------------------------------------------- Footer start --------------------------------------------------------
+footer {
+    height: 23.3rem;
+    background-color: #F0F1F3;
+    // @include d-flex(flex, nowrap, _,_, _, _, _);  
+
+
+    .footer_navigation {
+        @include d-flex(flex, nowrap, _,space-between, center, _, 6.4rem);
+        width: 61.15rem;
+        height: 18.8rem;
+
+        ul {
+            @include d-flex(flex, wrap, column, _, _, _, 0.7rem);
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+            margin-top: 0.8rem;
+
+        }
+
+        &_singup {
+
+            input {
+                padding-left:20px;
+                width: 12.15rem;
+                height: 2.4rem;
+                border-radius: 8px;
+                background-color: transparent;
+            }
+
+            ::placeholder {
+                font-size: 0.7rem;
+                line-height: 1.2rem;
+                color: #667085;
+            }
+
+            button {
+                width: 5.5rem;
+                height: 2.4rem;
+                border-radius: 8px;
+                border: none;
+                color: white;
+                background-color: #FA8F45;
+            }
+        }
+    }
+
+    .footer_emphty {
+        width:100%;
+        border-top: 1px solid black;
+    }
+
+    .page_information {
+        @include d-flex(flex, _, _,space-between,_, _,_);
+        margin-top: 43px;
+        width: 61.15rem;
+
+        &_card {
+            margin-left: 143.5px;
+            display: flex;
+            gap: 1rem;
+            width: 15.75rem;
+            height: 1.2rem;
+            font-size: 0.7rem;
+        }
+
+        &_contack {
+            display: flex;
+            gap: 30px;
+            color: gray;
+            padding-left: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,627 @@
+@import "../mixins";
+
+$--colorgreen:#2A5055;
+$--colororange:#FA8F45; 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $--colorgreen;
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    padding: 0 108.5px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-top: 96px;
+}
+
+button{
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px) {
+
+    html,
+    body {
+        font-size: 8px;
+
+        .container {
+            padding: 0 7rem;
+
+        }
+    }
+}
+
+// ----------------------------Header start---------------------------
+
+header {
+    border: 1px solid black;
+    height: 3.4rem;
+    padding: 5px;
+    background-color: #F0F1F3;
+
+    .header_box {
+        @include d-flex(flex, nowrap, _, space-between, center, _, _);
+        margin-top: 10px;
+
+        &_logo_name {
+            color: $--colorgreen;
+            font-size: 1rem;
+            line-height: 32px
+        }
+
+        &_nav ul {
+            @include d-flex(flex, nowrap, _, _, _, _, 2rem);
+            color: $--colorgreen;
+            font-size: 0.8rem
+        }
+
+        &_button {
+            @include d-flex(flex, _, _, _, _, _, 0.6rem);
+
+
+            &_donate {
+                min-width: 4.2rem;
+                min-height: 2rem;
+                background-color: $--colorgreen;
+                color: white;
+                border-radius: 0.4rem;
+                font-size: 0.7rem;
+            }
+
+            &_signup {
+                min-width: 4.25rem;
+                min-height: 2rem;
+                border: 1px solid $--colorgreen;
+                border-radius: 0.4rem;
+                font-size: 0.7rem;
+            }
+        }
+
+        &_icon {
+            min-width: 1.75rem;
+            min-height: 1.75rem;
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    header {
+        .header_box_logo_name {
+            font-size: 20px;
+        }
+
+        .header_box_nav {
+            display: none;
+        }
+
+        .header_box_button {
+            display: none;
+        }
+
+        .header_box_icon {
+            display: block;
+            font-size: 25px;
+        }
+    }
+}
+
+// ----------------------------Header finis----------------------------
+
+//-------------------------------------------------------- Main start --------------------------------------------------------
+
+//----------------------------joined start----------------------------
+.joined {
+    max-width: 100%;
+    height: 24rem;
+    background-image: url(./page1.img/hand.png);
+    @include d-flex(flex, _, _, center, center, _, _);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &_imgbox {
+        height: 24rem;
+    }
+
+    &_box {
+        @include d-flex(flex, _, _, space-between, center, _, _);
+        object-fit: cover;
+        max-width: 28.2rem;
+        height: 12.8rem;
+        color: white;
+        text-align: center;
+        flex-direction: column;
+
+        & h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: white;
+        }
+
+
+        button {
+            cursor: pointer;
+            width: 11.45rem;
+            height: 3rem;
+            border-radius: 0.4rem;
+            background-color: $--colororange;
+            border: none;
+            color: white;
+
+            span {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .joinedbox {
+        width: 217px;
+        height: 108px;
+
+    }
+}
+
+//----------------------------Joined finis----------------------------
+
+
+//----------------------------Categories start----------------------------
+
+.categories {
+
+    h2 {
+        font-weight: 500;
+        font-size: 32px;
+
+    }
+
+    &_imgcard {
+        margin-top: 1rem;
+        @include d-flex(flex, nowrap, _, _, _, _, 1.2rem);
+
+
+        &_box {
+            position: relative;
+            max-width: 288px;
+            max-height: 268px;
+
+
+            img {
+                width: 100%;
+                gap: 1.2rem;
+                border-radius: 8px;
+            }
+
+            &_icon_box {
+                display: flex;
+                justify-content: space-between;
+                width:80%;
+                left: 20px;
+                bottom: 10px;
+                position: absolute;
+                color: white;
+
+
+                span {
+                    font-size: 16px;
+                }
+
+            }
+        }
+
+    }
+
+    &_imgcard_responsive {
+        @include d-flex(flex, nowrap, _, _, _, _, 1.2rem);
+        display: none;
+        
+
+        img {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .categories{
+        
+        h2{
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+    .categories_imgcard {
+        display: none;
+    }
+
+    .categories_imgcard_responsive {
+        display: block;
+    }
+}
+
+//----------------------------Categories finis----------------------------
+
+
+// ------------------------------ volunteers started--------------------------
+
+.volunteers {
+    &_cards {
+        display: grid;
+        gap: 1.2rem;
+        grid-template-columns:auto auto auto ;
+    }
+
+
+    h2 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+    }
+
+    &_card:nth-child(6) {
+        border: 2px solid #667085;
+        display: flex;
+        flex-direction: column;
+        padding: 102px 52px;
+
+        // h3 {
+        //     line-height: 36px;
+        // }
+
+        span {
+            padding-top: 16px;
+        }
+
+        button {
+            width: 8.8rem;
+            height: 2.4rem;
+            background-color: #C9EAEF;
+            border-radius: 8px;
+            border: none;
+            margin-top: 3rem;
+            color: #0E0F0F;
+            font-size: 0.8rem;
+
+            .volunteers_card_icon_arrow {
+                color: #344054;
+                padding-left: 12px;
+            }
+        }
+    }
+
+
+
+    &_card {
+        width: 19.6rem;
+        height: 21.4rem;
+        border-radius: 8px;
+        border: 1px solid rgb(168, 167, 167);
+
+        &_title {
+            @include d-flex(flex, wrap, column, _, center, _, 1.2rem);
+            width: 17.05rem;
+            height: 14rem;
+            margin: 3.7rem 0 0 1.275rem;
+
+            &_icon {
+                padding-top: 2rem;
+                font-size: 2rem;
+                color: #65c5d5;
+            }
+
+            article {
+                @include d-flex(flex, _, column, _, center, _, _);
+                color: #292D35;
+                font-size: 0.7rem;
+                font-weight: 300;
+                line-height: 1.2rem;
+
+            }
+
+            h3 {
+                padding-top: 1rem;
+                color: #292D35;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:992px) {
+    .volunteers{
+
+        &_cards {
+            display: grid;
+            gap: 1.2rem;
+            grid-template-columns:auto auto ;
+    
+            p{
+                display: none;
+            }
+        }
+
+
+        &_card{
+
+            &_title_icon{
+                font-size: 30px;
+            }
+
+            h3{
+                font-size: 10px;
+                margin-top: 20px;
+                font-weight: 500;
+            }
+
+            &_display_on_text{
+                
+                p{
+                    font-size: 10px;
+
+                }
+            }
+
+            &_display_none_text{
+                display: none;
+            }
+
+
+        }
+    }
+
+}
+// -------------------------volunteers finis-------------------------
+
+
+// -------------------------statistics start -------------------------
+
+// .statistics {
+//     @include d-flex(flex, wrap, _, space-evenly, center, _, _);
+//     height: 13.8rem;
+//     background-color: #E4F4F7;
+
+//     &_boxs {
+//         @include d-flex(flex, wrap, _, _, _, _, 5.6rem);
+
+//         .statistics_box {
+//             border-left: 1px solid #C4DFE4;
+//             padding: 0 8px 0 24px;
+//         }
+
+//         p {
+//             font-weight: 600;
+//             margin-bottom: 6px;
+//         }
+//     }
+
+// }
+
+// -------------------------statistics finis-------------------------
+
+//------------------------- helping_card start -------------------------
+
+// .helping_card {
+//     height: 17.2rem;
+//     @include d-flex(flex, _, _, space-between, center, _, _);
+
+//     img {
+//         width: 24.8rem;
+//         height: 17.2rem;
+//         border-radius: 8px;
+//     }
+
+//     h3 {
+//         padding-bottom: 1.2rem;
+//     }
+
+//     article {
+//         width: 650px;
+//         height: 144px;
+//         font-size: 1rem;
+//         line-height: 1.8rem;
+//     }
+// }
+
+//------------------------- helping_card end-------------------------
+
+// -------------------------help_human_cards start-------------------------
+
+// .help_human {
+//     height: 16rem;
+//     background-color: #F3FDFF;
+//     padding-left: 5.475rem;
+
+//     &_cards {
+//         @include d-flex(flex, _, _, space-between, _, _, _);
+//         width: 61.05rem;
+//         height: 13.45rem;
+
+//         .help_human_card {
+//             @include d-flex(flex, _, column, _, center, _, 6px);
+
+//             span {
+//                 font-size: 12px;
+//                 font-weight: 300;
+//             }
+
+//             h5 {
+//                 font-weight: 400;
+//             }
+//         }
+
+//         .help_human_card {
+//             width: 6.3rem;
+//             height: 7.7rem;
+//         }
+
+//         img {
+//             width: 4.9rem;
+//             height: 4.9rem;
+//         }
+//     }
+
+//     h3 {
+//         padding-top: 2.55rem;
+//         padding-bottom: 1.4rem;
+//     }
+
+// }
+
+
+// // -------------------------help_human_cards end-------------------------
+
+// // -------------------------succes_story_card start -------------------------
+
+// .succes_story_card {
+//     height: 17.2rem;
+//     @include d-flex(flex, _, _, space-between, center, _, _);
+
+//     img {
+//         width: 24.8rem;
+//         height: 17.2rem;
+//         border-radius: 8px;
+//     }
+
+//     &_text {
+//         h3 {
+//             padding-bottom: 1.2rem;
+//         }
+
+//         article {
+//             width: 650px;
+//             height: 144px;
+//             font-size: 1rem;
+//             line-height: 1.8rem;
+//         }
+//     }
+
+//     .succes_story_card_icon1 {
+//         color: #A3A9B6;
+//         padding-right: 1rem;
+//         font-size: 0.8rem;
+//     }
+
+//     .succes_story_card_icon {
+//         font-size: 0.8rem;
+//     }
+
+// }
+
+// // -------------------------succes_story_card end-------------------------
+
+// //------------------------- partners_card start -------------------------
+
+// .partners_box {
+//     @include d-flex(flex, _, column, space-between, _, _, _);
+//     height: 8.5rem;
+
+//     &_card {
+//         @include d-flex(flex, wrap, _, space-between, center, _, _);
+//         width: 59.2855rem;
+//         height: 3.5rem;
+//     }
+// }
+
+// // // -------------------------partners_card end-------------------------
+
+
+// //-------------------------------------------------------- Footer start --------------------------------------------------------
+
+// footer {
+//     height: 23.3rem;
+//     background-color: #F0F1F3;
+//     // @include d-flex(flex, nowrap, _,_, _, _, _);  
+
+
+//     .footer_navigation {
+//         @include d-flex(flex, nowrap, _,space-between, center, _, 6.4rem);
+//         width: 61.15rem;
+//         height: 18.8rem;
+
+//         ul {
+//             @include d-flex(flex, wrap, column, _, _, _, 0.7rem);
+//             font-size: 0.8rem;
+//             line-height: 1.2rem;
+//             margin-top: 0.8rem;
+
+//         }
+
+//         &_singup {
+
+//             input {
+//                 padding-left:20px;
+//                 width: 12.15rem;
+//                 height: 2.4rem;
+//                 border-radius: 8px;
+//                 background-color: transparent;
+//             }
+
+//             ::placeholder {
+//                 font-size: 0.7rem;
+//                 line-height: 1.2rem;
+//                 color: #667085;
+//             }
+
+//             button {
+//                 width: 5.5rem;
+//                 height: 2.4rem;
+//                 border-radius: 8px;
+//                 border: none;
+//                 color: white;
+//                 background-color: #FA8F45;
+//             }
+//         }
+//     }
+
+//     .footer_emphty {
+//         width:100%;
+//         border-top: 1px solid black;
+//     }
+
+//     .page_information {
+//         @include d-flex(flex, _, _,space-between,_, _,_);
+//         margin-top: 43px;
+//         width: 61.15rem;
+
+//         &_card {
+//             margin-left: 143.5px;
+//             display: flex;
+//             gap: 1rem;
+//             width: 15.75rem;
+//             height: 1.2rem;
+//             font-size: 0.7rem;
+//         }
+
+//         &_contack {
+//             display: flex;
+//             gap: 30px;
+//             color: gray;
+//             padding-left: 1.5rem;
+//         }
+//     }
+// }
