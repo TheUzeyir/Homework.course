@@ -35,7 +35,7 @@ button {
 @media screen and (max-width: 992px) {
   html,
   body {
-    font-size: 8px;
+    font-size: 10px;
   }
   html .container,
   body .container {
@@ -45,7 +45,6 @@ button {
 header {
   border: 1px solid black;
   height: 3.4rem;
-  padding: 5px;
   background-color: #F0F1F3;
 }
 header .header_box {
@@ -56,11 +55,12 @@ header .header_box {
   align-items: center;
   align-content: _;
   gap: _;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 header .header_box_logo_name {
   color: #2A5055;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   line-height: 32px;
 }
 header .header_box_nav ul {
@@ -74,26 +74,18 @@ header .header_box_nav ul {
   color: #2A5055;
   font-size: 0.8rem;
 }
-header .header_box_button {
-  display: flex;
-  flex-wrap: _;
-  flex-direction: _;
-  justify-content: _;
-  align-items: _;
-  align-content: _;
-  gap: 0.6rem;
-}
 header .header_box_button_donate {
-  min-width: 4.2rem;
-  min-height: 2rem;
+  width: 4.2rem;
+  height: 2rem;
   background-color: #2A5055;
   color: white;
   border-radius: 0.4rem;
   font-size: 0.7rem;
 }
 header .header_box_button_signup {
-  min-width: 4.25rem;
-  min-height: 2rem;
+  margin-left: 12px;
+  width: 4.25rem;
+  height: 2rem;
   border: 1px solid #2A5055;
   border-radius: 0.4rem;
   font-size: 0.7rem;
@@ -103,9 +95,12 @@ header .header_box_icon {
 }
 
 @media screen and (max-width: 992px) {
+  header .container {
+    padding: 0 20px;
+  }
   header .header_box_logo_name {
     font-size: 20px;
-    margin-top: -20px;
+    margin-top: -15px;
   }
   header .header_box_nav {
     display: none;
@@ -116,7 +111,7 @@ header .header_box_icon {
   header .header_box_icon {
     display: block;
     font-size: 25px;
-    margin-top: -20px;
+    margin-top: -15px;
   }
 }
 .joined {
@@ -209,6 +204,7 @@ header .header_box_icon {
   bottom: 10px;
   position: absolute;
   color: white;
+  cursor: pointer;
 }
 .categories_imgcard_box_icon_box span {
   font-size: 16px;
@@ -235,8 +231,12 @@ header .header_box_icon {
 }
 .volunteers_cards {
   display: grid;
-  gap: 1.2rem;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: _;
+  justify-content: _;
+  align-items: _;
+  align-content: _;
+  gap: 1.2rem;
 }
 .volunteers h2 {
   font-size: 1.6rem;
@@ -317,7 +317,12 @@ header .header_box_icon {
   }
   .volunteers_cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: _;
+    justify-content: _;
+    align-items: _;
+    align-content: _;
+    gap: _;
   }
   .volunteers_cards p {
     display: none;
@@ -469,9 +474,11 @@ header .header_box_icon {
   color: #A3A9B6;
   padding-right: 1rem;
   font-size: 0.8rem;
+  cursor: pointer;
 }
 .succes_story_card .succes_story_card_icon {
   font-size: 0.8rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
@@ -560,7 +567,7 @@ footer .footer_navigation_singup ::placeholder {
   color: #667085;
 }
 footer .footer_navigation_singup button {
-  max-width: 5.5rem;
+  width: 5.5rem;
   height: 2.4rem;
   border-radius: 8px;
   border: none;
@@ -598,10 +605,4 @@ footer .page_information_contack:hover {
 }
 footer .footer_tablet {
   display: flex;
-}
-
-@media screen and (max-width: 992px) {
-  .footer_navigation_web {
-    display: none;
-  }
 }/*# sourceMappingURL=main.css.map */

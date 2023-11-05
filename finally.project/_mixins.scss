@@ -7,3 +7,13 @@
     align-content:$content;
     gap: $gap;
 }
+
+@mixin d-grid($display,$grid-colums,$grid-row,$justify,$items,$content,$gap){
+    display: $display;
+    grid-template-columns: $grid-colums;
+    grid-template-rows: $grid-row;
+    justify-content: $justify;
+    align-items: $items;
+    align-content:$content;
+    gap: $gap;
+}

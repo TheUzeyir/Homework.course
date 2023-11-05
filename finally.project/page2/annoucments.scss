@@ -49,7 +49,6 @@ button{
 // ----------------------------Header start---------------------------
 
 header {
-    border: 1px solid black;
     height: 3.4rem;
     padding: 5px;
     background-color: #F0F1F3;
@@ -104,6 +103,7 @@ header {
     header {
         .header_box_logo_name {
             font-size: 20px;
+            margin-top: -20px;
         }
 
         .header_box_nav {
@@ -116,7 +116,8 @@ header {
 
         .header_box_icon {
             display: block;
-            font-size: 25px;
+            font-size: 20px;
+            margin-top: -20px;
         }
     }
 }
@@ -126,32 +127,32 @@ header {
 //-------------------------------------------------------- Main start ---------------------------------------------------------
 
 .page_name{
-    margin-top: 52px;
+    margin-top: 2.6rem;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 .announcements{
-    margin-top: 52px;
+    margin-top: 2.6rem;
 
     &_navbar{
        @include d-flex(flex,_,_,space-between,_,_,_);
 
        &_search{
-       @include d-flex(flex,_,_,space-between,_,_,12px);
+       @include d-flex(flex,_,_,space-between,_,_,0.6rem);
 
        &_bar{
-       @include d-flex(flex,nowrap,_,_,center,_,12px);
+       @include d-flex(flex,nowrap,_,_,center,_,0.6rem);
            
            input{
-            width:240px;
-            height:44px;
+            width:12rem;
+            height:2.2rem;
             border-radius: 8px;
             position: relative;
-            padding-left: 56px;
-            font-size: 12px;
-            line-height: 18px;
+            padding-left: 2.8rem;
+            font-size: 0.6rem;
+            line-height: 0.9rem;
         }
         
         &_icon{
@@ -162,33 +163,33 @@ header {
        }
 
        button{
-        height: 44px;
+        height: 2.2rem;
         border-radius: 8px;
         border: none;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
         color: #667085;
     }
     
     button:nth-child(2){
         color: white;
-        width: 67px;
+        width: 3.35rem;
         background-color: #2A5055;
        }
        button:nth-child(3){
-        width: 129px;
+        // width: 6.45rem;
         background-color: #F0F1F3;
        }
        button:nth-child(4){
-        width: 90px;
+        // width: 4.5rem;
         background-color: #F0F1F3;
        }
        button:nth-child(5){
-        width: 116px;
+        // width: 5.8rem;
         background-color: #F0F1F3;
        }
        button:nth-child(6){
-        width: 113px;
+        // width: 5.5rem;
         background-color: #F0F1F3;
        }
 
@@ -196,12 +197,12 @@ header {
         
        &_type{
         button{
-            width: 182px;
-            height: 44px;
+            // width:9.1rem ;
+            height: 2.2rem;
             border-radius: 8px;
             border: none;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 0.8rem;
+            line-height: 1.2rem;
             color: #667085;
         }
        }
@@ -209,12 +210,13 @@ header {
 
 
    &_card{
-    @include d-flex(flex,wrap,_,space-between,_,_,56px);
-    margin-top: 28px;
+    @include d-grid(grid,1fr 1fr 1fr,_,space-between,_,_,2.8rem);
+    border: 1px solid black;
+    margin-top:1.4rem;
 
     &_box{
-        width: 392px;
-        height: 532px;
+        max-width: 19.6rem;
+        height: 26.75rem;
         
         &_imgbox{
             position: relative;
@@ -222,11 +224,12 @@ header {
 
             img{
                 border-radius: 8px;
+                max-width: 100%;
             }
 
             &_icon{
-                right:21px;
-                top: 16px;
+                right:5%;
+                top: 5%;
                 position: absolute;
                 background-color:#F0F1F3;
             }
@@ -236,15 +239,15 @@ header {
 
         &_information{
             h3{
-                font-size: 20px;
-                line-height: 32px;
-                margin-top: 19px;
+                font-size: 1rem;
+                line-height: 1.6rem;
+                margin-top: 0.95rem;
             }
 
             &_story{
                 font-weight: 300;
                 font-size: 1rem;
-                line-height: 32px;
+                line-height: 1.6rem;
                 margin-top: 8px;
             }
 
@@ -253,8 +256,8 @@ header {
 
                 &_time{
                     font-weight: 300;
-                    font-size: 16px;
-                    line-height: 24px;
+                    font-size: 0.8rem;
+                    line-height: 1.2rem;
                 }
 
                 &_bar{
@@ -264,46 +267,46 @@ header {
     
                     &_left_card1{
                         width: 30%;
-                        height: 10px;
+                        height: 0.5rem;
                         background-color:#FA8F45;
                     }
                     &_left_card2{
                         width: 50%;
-                        height: 10px;
+                        height: 0.5rem;
                         background-color:#FA8F45;
                     }
                     &_left_card3{
                         width: 70%;
-                        height: 10px;
+                        height: 0.5rem;
                         background-color:#FA8F45;
                     }
                     &_left_card4{
                         width: 90%;
-                        height: 10px;
+                        height: 0.5rem;
                         background-color:#FA8F45;
                     }
                     &_left_card5{
                         width: 50%;
-                        height: 10px;
+                        height: 0.5rem;
                         background-color:#FA8F45;
                     }
                     &_left_card6{
                         width: 90%;
-                        height: 10px;
+                        height: 0.5rem;
                         background-color:#FA8F45;
                     }
             }
 
             &_pricenow{
                 font-weight: 500;
-                font-size: 20px;
-                line-height: 32px;
+                font-size: 1rem;
+                line-height: 1.6rem;
             }
             &_pricegoal{
                 padding-left: 8px;
                 font-weight: 300;
-                font-size: 18px;
-                line-height: 28px;
+                font-size: 0.9rem;
+                line-height: 1.4rem;
             }
             }
         }
@@ -311,17 +314,27 @@ header {
    }
 
    &_button{
-    width: 107px;
-    height: 40px;
+    width: 5.35rem;
+    height: 2rem;
     border-radius: 8px;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
     background-color: transparent;
-    margin:72px 0 0 50%;
+    margin:3.6rem 0 0 50%;
    }
 }
+
+@media screen and (max-width:992px) {
+    .announcements{
+        &_card{
+        @include d-grid(grid,1fr 1fr,_,_,_,_,_);
+        }
+    }
+}
+
 //-------------------------------------------------------- Footer start --------------------------------------------------------
 footer {
+    margin-top: 3.65rem;
     height: 23.3rem;
     background-color: #F0F1F3;
     // @include d-flex(flex, nowrap, _,_, _, _, _);  
@@ -343,7 +356,7 @@ footer {
         &_singup {
 
             input {
-                padding-left:20px;
+                padding-left:1rem;
                 width: 12.15rem;
                 height: 2.4rem;
                 border-radius: 8px;
@@ -374,11 +387,11 @@ footer {
 
     .page_information {
         @include d-flex(flex, _, _,space-between,_, _,_);
-        margin-top: 43px;
+        margin-top: 2.15rem;
         width: 61.15rem;
 
         &_card {
-            margin-left: 143.5px;
+            margin-left:2.175rem;
             display: flex;
             gap: 1rem;
             width: 15.75rem;
@@ -388,7 +401,7 @@ footer {
 
         &_contack {
             display: flex;
-            gap: 30px;
+            gap: 1.5rem;
             color: gray;
             padding-left: 1.5rem;
         }

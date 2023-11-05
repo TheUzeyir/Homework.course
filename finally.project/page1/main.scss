@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-    padding: 0 108.5px;
+    padding: 0 108.5px;  
     margin: 0 auto;
 }
 
@@ -41,7 +41,7 @@ button{
 
     html,
     body {
-        font-size: 8px;
+        font-size: 10px;
 
         .container {
             padding: 0 7rem;
@@ -55,32 +55,29 @@ button{
 header {
     border: 1px solid black;
     height: 3.4rem;
-    padding: 5px;
     background-color: #F0F1F3;
-
+    
     .header_box {
-        @include d-flex(flex, nowrap, _, space-between, center, _, _);
-        margin-top: 10px;
+        @include d-flex(flex, nowrap, _, space-between,center, _, _);
+        margin-top: 15px;
 
         &_logo_name {
             color: $--colorgreen;
-            font-size: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
             line-height: 32px
         }
 
-        &_nav ul {
+        &_nav ul{
             @include d-flex(flex, nowrap, _, _, _, _, 2rem);
             color: $--colorgreen;
             font-size: 0.8rem
         }
 
         &_button {
-            @include d-flex(flex, _, _, _, _, _, 0.6rem);
-
-
             &_donate {
-                min-width: 4.2rem;
-                min-height: 2rem;
+                width: 4.2rem;
+                height: 2rem;
                 background-color: $--colorgreen;
                 color: white;
                 border-radius: 0.4rem;
@@ -88,8 +85,9 @@ header {
             }
 
             &_signup {
-                min-width: 4.25rem;
-                min-height: 2rem;
+                margin-left: 12px;
+                width: 4.25rem;
+                height: 2rem;
                 border: 1px solid $--colorgreen;
                 border-radius: 0.4rem;
                 font-size: 0.7rem;
@@ -104,10 +102,12 @@ header {
 
 @media screen and (max-width:992px) {
     header {
-        
+        .container{
+            padding: 0 20px;
+        }
         .header_box_logo_name {
             font-size: 20px;
-            margin-top: -20px;
+            margin-top: -15px;
         }
 
         .header_box_nav {
@@ -121,7 +121,7 @@ header {
         .header_box_icon {
             display: block;
             font-size: 25px;
-            margin-top: -20px;
+            margin-top: -15px;
         }
     }
 }
@@ -222,6 +222,7 @@ header {
                 bottom: 10px;
                 position: absolute;
                 color: white;
+                cursor: pointer;
 
 
                 span {
@@ -270,9 +271,7 @@ header {
 .volunteers {
 
     &_cards {
-        display: grid;
-        gap: 1.2rem;
-        grid-template-columns:1fr 1fr 1fr ;
+    @include d-grid(grid,1fr 1fr 1fr,_,_,_,_,1.2rem);
     }
 
 
@@ -352,8 +351,7 @@ header {
     
 
         &_cards {
-            display: grid;
-            grid-template-columns:1fr 1fr  ;
+            @include d-grid(grid,1fr 1fr 1fr,_,_,_,_,_);
     
             p{
                 display: none;
@@ -522,10 +520,12 @@ header {
         color: #A3A9B6;
         padding-right: 1rem;
         font-size: 0.8rem;
+        cursor: pointer;
     }
 
     .succes_story_card_icon {
         font-size: 0.8rem;
+        cursor: pointer;
     }
 
 }
@@ -580,13 +580,8 @@ footer {
     background-color: #F0F1F3;
     margin-top: 90px;
 
-    .footer_navigation {
+    .footer_navigation{
         @include d-flex(flex, nowrap, _,space-between, center, _, 6.4rem);
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr 1fr;
-        // justify-content: space-between;
-        // align-items: center;
-        // gap: 6.4rem;
         height: 18.8rem;
 
         ul {
@@ -614,7 +609,7 @@ footer {
             }
 
             button {
-                max-width: 5.5rem;
+                width: 5.5rem;
                 height: 2.4rem;
                 border-radius: 8px;
                 border: none;
@@ -653,12 +648,10 @@ footer {
     .footer_tablet{
         display: flex;
     
-    }
+    } 
 }
 
 
 @media screen and (max-width:992px) {
-.footer_navigation_web{
-    display: none;
-}
+
 }

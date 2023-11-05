@@ -39,7 +39,6 @@ button {
   }
 }
 header {
-  border: 1px solid black;
   height: 3.4rem;
   padding: 5px;
   background-color: #F0F1F3;
@@ -103,6 +102,7 @@ header .header_box_icon {
 @media screen and (max-width: 992px) {
   header .header_box_logo_name {
     font-size: 20px;
+    margin-top: -20px;
   }
   header .header_box_nav {
     display: none;
@@ -112,18 +112,19 @@ header .header_box_icon {
   }
   header .header_box_icon {
     display: block;
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: -20px;
   }
 }
 .page_name {
-  margin-top: 52px;
+  margin-top: 2.6rem;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 .announcements {
-  margin-top: 52px;
+  margin-top: 2.6rem;
 }
 .announcements_navbar {
   display: flex;
@@ -141,7 +142,7 @@ header .header_box_icon {
   justify-content: space-between;
   align-items: _;
   align-content: _;
-  gap: 12px;
+  gap: 0.6rem;
 }
 .announcements_navbar_search_bar {
   display: flex;
@@ -150,16 +151,16 @@ header .header_box_icon {
   justify-content: _;
   align-items: center;
   align-content: _;
-  gap: 12px;
+  gap: 0.6rem;
 }
 .announcements_navbar_search_bar input {
-  width: 240px;
-  height: 44px;
+  width: 12rem;
+  height: 2.2rem;
   border-radius: 8px;
   position: relative;
-  padding-left: 56px;
-  font-size: 12px;
-  line-height: 18px;
+  padding-left: 2.8rem;
+  font-size: 0.6rem;
+  line-height: 0.9rem;
 }
 .announcements_navbar_search_bar_icon {
   position: absolute;
@@ -167,56 +168,52 @@ header .header_box_icon {
   padding-left: 1.2rem;
 }
 .announcements_navbar_search button {
-  height: 44px;
+  height: 2.2rem;
   border-radius: 8px;
   border: none;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
   color: #667085;
 }
 .announcements_navbar_search button:nth-child(2) {
   color: white;
-  width: 67px;
+  width: 3.35rem;
   background-color: #2A5055;
 }
 .announcements_navbar_search button:nth-child(3) {
-  width: 129px;
   background-color: #F0F1F3;
 }
 .announcements_navbar_search button:nth-child(4) {
-  width: 90px;
   background-color: #F0F1F3;
 }
 .announcements_navbar_search button:nth-child(5) {
-  width: 116px;
   background-color: #F0F1F3;
 }
 .announcements_navbar_search button:nth-child(6) {
-  width: 113px;
   background-color: #F0F1F3;
 }
 .announcements_navbar_type button {
-  width: 182px;
-  height: 44px;
+  height: 2.2rem;
   border-radius: 8px;
   border: none;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
   color: #667085;
 }
 .announcements_card {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: _;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: _;
   justify-content: space-between;
   align-items: _;
   align-content: _;
-  gap: 56px;
-  margin-top: 28px;
+  gap: 2.8rem;
+  border: 1px solid black;
+  margin-top: 1.4rem;
 }
 .announcements_card_box {
-  width: 392px;
-  height: 532px;
+  max-width: 19.6rem;
+  height: 26.75rem;
 }
 .announcements_card_box_imgbox {
   position: relative;
@@ -224,22 +221,23 @@ header .header_box_icon {
 }
 .announcements_card_box_imgbox img {
   border-radius: 8px;
+  max-width: 100%;
 }
 .announcements_card_box_imgbox_icon {
-  right: 21px;
-  top: 16px;
+  right: 5%;
+  top: 5%;
   position: absolute;
   background-color: #F0F1F3;
 }
 .announcements_card_box_information h3 {
-  font-size: 20px;
-  line-height: 32px;
-  margin-top: 19px;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-top: 0.95rem;
 }
 .announcements_card_box_information_story {
   font-weight: 300;
   font-size: 1rem;
-  line-height: 32px;
+  line-height: 1.6rem;
   margin-top: 8px;
 }
 .announcements_card_box_information_donationbox {
@@ -247,8 +245,8 @@ header .header_box_icon {
 }
 .announcements_card_box_information_donationbox_time {
   font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
 }
 .announcements_card_box_information_donationbox_bar {
   height: 10px;
@@ -257,56 +255,68 @@ header .header_box_icon {
 }
 .announcements_card_box_information_donationbox_bar_left_card1 {
   width: 30%;
-  height: 10px;
+  height: 0.5rem;
   background-color: #FA8F45;
 }
 .announcements_card_box_information_donationbox_bar_left_card2 {
   width: 50%;
-  height: 10px;
+  height: 0.5rem;
   background-color: #FA8F45;
 }
 .announcements_card_box_information_donationbox_bar_left_card3 {
   width: 70%;
-  height: 10px;
+  height: 0.5rem;
   background-color: #FA8F45;
 }
 .announcements_card_box_information_donationbox_bar_left_card4 {
   width: 90%;
-  height: 10px;
+  height: 0.5rem;
   background-color: #FA8F45;
 }
 .announcements_card_box_information_donationbox_bar_left_card5 {
   width: 50%;
-  height: 10px;
+  height: 0.5rem;
   background-color: #FA8F45;
 }
 .announcements_card_box_information_donationbox_bar_left_card6 {
   width: 90%;
-  height: 10px;
+  height: 0.5rem;
   background-color: #FA8F45;
 }
 .announcements_card_box_information_donationbox_pricenow {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 1.6rem;
 }
 .announcements_card_box_information_donationbox_pricegoal {
   padding-left: 8px;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
 }
 .announcements_button {
-  width: 107px;
-  height: 40px;
+  width: 5.35rem;
+  height: 2rem;
   border-radius: 8px;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
   background-color: transparent;
-  margin: 72px 0 0 50%;
+  margin: 3.6rem 0 0 50%;
 }
 
+@media screen and (max-width: 992px) {
+  .announcements_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: _;
+    justify-content: _;
+    align-items: _;
+    align-content: _;
+    gap: _;
+  }
+}
 footer {
+  margin-top: 3.65rem;
   height: 23.3rem;
   background-color: #F0F1F3;
 }
@@ -334,7 +344,7 @@ footer .footer_navigation ul {
   margin-top: 0.8rem;
 }
 footer .footer_navigation_singup input {
-  padding-left: 20px;
+  padding-left: 1rem;
   width: 12.15rem;
   height: 2.4rem;
   border-radius: 8px;
@@ -370,11 +380,11 @@ footer .page_information {
   align-items: _;
   align-content: _;
   gap: _;
-  margin-top: 43px;
+  margin-top: 2.15rem;
   width: 61.15rem;
 }
 footer .page_information_card {
-  margin-left: 143.5px;
+  margin-left: 2.175rem;
   display: flex;
   gap: 1rem;
   width: 15.75rem;
@@ -383,7 +393,7 @@ footer .page_information_card {
 }
 footer .page_information_contack {
   display: flex;
-  gap: 30px;
+  gap: 1.5rem;
   color: gray;
   padding-left: 1.5rem;
 }/*# sourceMappingURL=annoucments.css.map */
