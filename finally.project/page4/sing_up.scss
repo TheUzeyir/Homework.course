@@ -46,7 +46,6 @@ button{
 
 // ----------------------------Header start---------------------------
 header{
-    border: 1px solid black;
     background-color: #F0F1F3;
     height: 3.4rem;
     padding:0.25rem;
@@ -195,13 +194,13 @@ body{
     }
 
     &_card{
+        
         &_signup{
             &_password_minletter{
                 margin: 0.75rem 0 0 -10rem;    
             }
         }
     }
-    
   }
 }
 }
