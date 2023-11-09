@@ -50,124 +50,94 @@ header {
   padding: 0.5rem 0 0 5.425rem;
 }
 
-.registration {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: _;
-  justify-content: space-between;
-  align-items: _;
-  align-content: _;
-  gap: 1rem;
+.login {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
-.registration_img {
-  width: 35.4rem;
+.login_img {
+  max-width: 100%;
 }
-.registration_card {
-  margin: 1.4rem 0 0 10.6rem;
-  max-width: 19.6rem;
-  min-width: 15rem;
-  text-align: center;
+.login_form {
+  max-width: 392px;
+  min-width: 200px;
+  height: 720px;
+  margin-left: 212px;
+  margin-top: 152px;
 }
-.registration_card_main_text {
-  display: inline-block;
+.login_form_maintext {
   font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 32px;
+  line-height: 48px;
 }
-.registration_card_signup {
-  height: 36.6rem;
-}
-.registration_card_signup form {
+.login_form form {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 24px;
+  margin-top: 28px;
 }
-.registration_card_signup form input {
-  width: 100%;
-  height: 2.6rem;
-  padding-left: 1rem;
+.login_form_box input {
   border-radius: 8px;
+  padding-left: 12px;
+  width: 100%;
+  height: 52px;
   border: 1px solid #858D9D;
-  font-size: 0.9rem;
-  line-height: 1.4rem;
 }
-.registration_card_signup_input-container {
+.login_form_box:nth-child(4) {
   position: relative;
 }
-.registration_card_signup_input-container_form_icon {
-  color: #858D9D;
+.login_form_box:nth-child(4) .icon {
   position: absolute;
-  cursor: pointer;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 10px;
+  padding-left: 90%;
+  padding-top: 4%;
 }
-.registration_card_signup_password_minletter {
+.login_form_password_text {
   font-weight: 300;
-  font-size: 0.7rem;
-  line-height: 1.2rem;
-  padding-top: 0.75rem;
+  font-size: 14px;
+  line-height: 24px;
   color: #667085;
 }
-.registration_card_signup_create_account {
+.login_form_btn {
+  margin-top: 24px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.registration_card_signup_create_account button {
+.login_form_btn button {
   width: 100%;
-  height: 2.6rem;
+  height: 54px;
   border-radius: 8px;
-  font-size: 0.9rem;
-  line-height: 1.4rem;
-  font-weight: 500;
-}
-.registration_card_signup_create_account_button {
-  background-color: #2A5055;
-  color: white;
-  margin-top: 1.2rem;
-}
-.registration_card_signup_create_account p:nth-child(4) {
-  color: #475467;
-  margin-top: 1.2rem;
-}
-.registration_card_signup_create_account_google {
-  margin-top: 1.2rem;
-  background-color: white;
-  color: #2A5055;
-}
-.registration_card_signup_create_account_google_icon {
-  padding-right: 5.25px;
-}
-.registration_card_signup_create_account_facebook {
-  margin-top: 1.2rem;
-  background-color: #0C63D4;
-  color: white;
   border: none;
 }
-.registration_card_signup_create_account_facebook_icon {
-  padding-right: 5.25px;
+.login_form_btn_crt-acc {
+  background-color: #2A5055;
+  color: white;
 }
-.registration_card_signup_create_account span {
-  font-size: 0.7rem;
+.login_form_btn_sign-google {
+  color: #2A5055;
+  padding-left: 8px;
+}
+.login_form_btn_sign-google_icon {
+  margin-right: 20px;
+}
+.login_form_btn_sign-facebook {
+  background-color: blue;
+  color: white;
+}
+.login_form_btn_sign-facebook_icon {
+  margin-right: 20px;
+}
+.login_form_btn_text_already-acc {
   font-weight: 300;
-  line-height: 1.2rem;
+  font-size: 14px;
+  line-height: 24px;
 }
-.registration_card_signup_create_account_login {
-  display: inline-block;
-  font-size: 0.7rem;
+.login_form_btn_text_login {
   font-weight: 600;
-  line-height: 1.2rem;
-  margin: 8px 0 0 8px;
-  cursor: pointer;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-@media screen and (max-width: 992px) {
-  body .registration img {
-    display: none;
-  }
-  body .registration_card_signup_password_minletter {
-    margin: 0.75rem 0 0 -10rem;
-  }
-}
 footer {
   background-color: #F0F1F3;
 }
