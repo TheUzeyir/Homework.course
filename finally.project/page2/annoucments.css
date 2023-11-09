@@ -35,7 +35,7 @@ button {
   }
   html .container,
   body .container {
-    padding: 0 7rem;
+    padding: 0 2rem;
   }
 }
 header {
@@ -100,9 +100,12 @@ header .header_box_icon {
 }
 
 @media screen and (max-width: 992px) {
+  header .container {
+    padding: 0 20px;
+  }
   header .header_box_logo_name {
-    font-size: 20px;
-    margin-top: -20px;
+    font-size: 15px;
+    margin-top: -15px;
   }
   header .header_box_nav {
     display: none;
@@ -112,8 +115,8 @@ header .header_box_icon {
   }
   header .header_box_icon {
     display: block;
-    font-size: 20px;
-    margin-top: -20px;
+    font-size: 15px;
+    margin-top: -15px;
   }
 }
 .page_name {
@@ -177,28 +180,49 @@ header .header_box_icon {
 }
 .announcements_navbar_search button:nth-child(2) {
   color: white;
-  width: 3.35rem;
+  padding: 0 20px;
   background-color: #2A5055;
 }
 .announcements_navbar_search button:nth-child(3) {
+  padding: 0 20px;
   background-color: #F0F1F3;
 }
 .announcements_navbar_search button:nth-child(4) {
+  padding: 0 20px;
   background-color: #F0F1F3;
 }
 .announcements_navbar_search button:nth-child(5) {
+  padding: 0 20px;
   background-color: #F0F1F3;
 }
 .announcements_navbar_search button:nth-child(6) {
+  padding: 0 20px;
   background-color: #F0F1F3;
 }
-.announcements_navbar_type button {
+.announcements_navbar_type {
+  display: flex;
+  justify-content: space-between;
+}
+.announcements_navbar_type button:nth-child(1) {
+  padding: 0 20px;
+  margin-left: 20px;
   height: 2.2rem;
   border-radius: 8px;
   border: none;
   font-size: 0.8rem;
   line-height: 1.2rem;
   color: #667085;
+}
+.announcements_navbar_type button:nth-child(2) {
+  padding: 0 20px;
+  margin-left: 20px;
+  height: 2.2rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  color: #667085;
+  display: none;
 }
 .announcements_card {
   display: grid;
@@ -208,12 +232,10 @@ header .header_box_icon {
   align-items: _;
   align-content: _;
   gap: 2.8rem;
-  border: 1px solid black;
   margin-top: 1.4rem;
 }
 .announcements_card_box {
-  max-width: 19.6rem;
-  height: 26.75rem;
+  min-height: 26.75rem;
 }
 .announcements_card_box_imgbox {
   position: relative;
@@ -305,6 +327,18 @@ header .header_box_icon {
 }
 
 @media screen and (max-width: 992px) {
+  .announcements_navbar_search {
+    display: none;
+  }
+  .announcements_navbar_type {
+    width: 100%;
+  }
+  .announcements_navbar_type button:nth-child(1) {
+    margin: 0 0;
+  }
+  .announcements_navbar_type button:nth-child(2) {
+    display: block;
+  }
   .announcements_card {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -316,84 +350,98 @@ header .header_box_icon {
   }
 }
 footer {
-  margin-top: 3.65rem;
-  height: 23.3rem;
   background-color: #F0F1F3;
+  margin-top: 3.65rem;
 }
-footer .footer_navigation {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: _;
-  justify-content: space-between;
-  align-items: center;
-  align-content: _;
-  gap: 6.4rem;
-  width: 61.15rem;
+
+.footer_navbar {
   height: 18.8rem;
-}
-footer .footer_navigation ul {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_navbar_navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.4rem;
+}
+.footer_navbar_navigation_box {
+  display: flex;
+}
+.footer_navbar_navigation_box h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-bottom: 0.8rem;
+}
+.footer_navbar_navigation_box ul {
+  display: flex;
   flex-direction: column;
-  justify-content: _;
-  align-items: _;
-  align-content: _;
   gap: 0.7rem;
   font-size: 0.8rem;
   line-height: 1.2rem;
-  margin-top: 0.8rem;
 }
-footer .footer_navigation_singup input {
-  padding-left: 1rem;
+.footer_navbar_navigation_email_form_input {
   width: 12.15rem;
   height: 2.4rem;
-  border-radius: 8px;
-  background-color: transparent;
+  border-radius: 0.4rem;
+  background-color: #F0F1F3;
+  border: 1px solid #A3A9B6;
 }
-footer .footer_navigation_singup ::-moz-placeholder {
-  font-size: 0.7rem;
-  line-height: 1.2rem;
-  color: #667085;
-}
-footer .footer_navigation_singup ::placeholder {
-  font-size: 0.7rem;
-  line-height: 1.2rem;
-  color: #667085;
-}
-footer .footer_navigation_singup button {
-  width: 5.5rem;
-  height: 2.4rem;
-  border-radius: 8px;
-  border: none;
-  color: white;
+.footer_navbar_navigation_email_form_btn {
+  padding: 12px 20px;
+  border-radius: 0.4rem;
+  font-size: 20px;
   background-color: #FA8F45;
+  color: white;
+  border: none;
 }
-footer .footer_emphty {
-  width: 100%;
-  border-top: 1px solid black;
-}
-footer .page_information {
+
+.footer_page_information {
   display: flex;
-  flex-wrap: _;
-  flex-direction: _;
-  justify-content: space-between;
-  align-items: _;
-  align-content: _;
-  gap: _;
-  margin-top: 2.15rem;
-  width: 61.15rem;
+  height: 4.5rem;
+  align-items: center;
+  gap: 32.6rem;
 }
-footer .page_information_card {
-  margin-left: 2.175rem;
+.footer_page_information_text {
   display: flex;
-  gap: 1rem;
-  width: 15.75rem;
-  height: 1.2rem;
+  justify-content: space-evenly;
   font-size: 0.7rem;
+  gap: 0.6rem;
 }
-footer .page_information_contack {
+.footer_page_information_icon {
   display: flex;
   gap: 1.5rem;
-  color: gray;
-  padding-left: 1.5rem;
+  color: #A3A9B6;
+}
+
+@media screen and (max-width: 992px) {
+  html, body footer {
+    font-size: 10px;
+  }
+  .footer_navbar_navigation_email_form_btn {
+    padding: 7px 10px;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html .container, body footer .container {
+    margin: 0 20px;
+  }
+  html .footer_page_information, body footer .footer_page_information {
+    gap: 10rem;
+  }
+  html .footer_navbar_navigation_email_form_input, body footer .footer_navbar_navigation_email_form_input {
+    width: 100%;
+  }
+  html .footer_navbar_navigation_email_form_btn, body footer .footer_navbar_navigation_email_form_btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .footer_page_information {
+    margin-top: 200px;
+  }
 }/*# sourceMappingURL=annoucments.css.map */

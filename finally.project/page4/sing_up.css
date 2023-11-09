@@ -24,8 +24,7 @@ body {
 }
 
 .container {
-  padding: 0 108.5px;
-  margin: 0 auto;
+  margin: 0 108.5px;
 }
 
 button {
@@ -36,10 +35,6 @@ button {
   html,
   body {
     font-size: 8px;
-  }
-  html .container,
-  body .container {
-    padding: 0 7rem;
   }
 }
 header {
@@ -53,7 +48,7 @@ header {
   color: #2A5055;
   font-size: 1rem;
   line-height: 1.6rem;
-  margin-top: 0.5rem;
+  padding: 0.5rem 0 0 5.425rem;
 }
 
 .registration {
@@ -63,23 +58,25 @@ header {
   justify-content: space-between;
   align-items: _;
   align-content: _;
-  gap: _;
+  gap: 1rem;
+}
+.registration_img {
+  width: 35.4rem;
+}
+.registration_card {
+  margin: 1.4rem 0 0 10.6rem;
+  max-width: 19.6rem;
+  min-width: 15rem;
   text-align: center;
 }
-.registration img {
-  max-width: 100%;
-}
 .registration_card_main_text {
+  display: inline-block;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.4rem;
-  margin-top: 7.6rem;
-  margin-left: 10.6rem;
 }
 .registration_card_signup {
-  width: 19.6rem;
   height: 36.6rem;
-  margin: 1.4rem 0 0 10.6rem;
 }
 .registration_card_signup form {
   display: flex;
@@ -95,21 +92,28 @@ header {
   font-size: 0.9rem;
   line-height: 1.4rem;
 }
-.registration_card_signup form input:nth-child(4) {
+.registration_card_signup_input-container {
   position: relative;
 }
-.registration_card_signup_form_icon {
+.registration_card_signup_input-container_form_icon {
   color: #858D9D;
   position: absolute;
+  cursor: pointer;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 10px;
 }
-.registration_card_signup p:nth-child(2) {
+.registration_card_signup_password_minletter {
   font-weight: 300;
   font-size: 0.7rem;
   line-height: 1.2rem;
-  margin: 0.75rem 0 0 -10.5rem;
+  padding-top: 0.75rem;
   color: #667085;
 }
-.registration_card_signup button {
+.registration_card_signup_create_account {
+  text-align: center;
+}
+.registration_card_signup_create_account button {
   width: 100%;
   height: 2.6rem;
   border-radius: 8px;
@@ -117,38 +121,38 @@ header {
   line-height: 1.4rem;
   font-weight: 500;
 }
-.registration_card_signup_create_account {
+.registration_card_signup_create_account_button {
   background-color: #2A5055;
   color: white;
   margin-top: 1.2rem;
 }
-.registration_card_signup p:nth-child(4) {
+.registration_card_signup_create_account p:nth-child(4) {
   color: #475467;
   margin-top: 1.2rem;
 }
-.registration_card_signup_google {
+.registration_card_signup_create_account_google {
   margin-top: 1.2rem;
   background-color: white;
   color: #2A5055;
 }
-.registration_card_signup_google_icon {
+.registration_card_signup_create_account_google_icon {
   padding-right: 5.25px;
 }
-.registration_card_signup_facebook {
+.registration_card_signup_create_account_facebook {
   margin-top: 1.2rem;
   background-color: #0C63D4;
   color: white;
   border: none;
 }
-.registration_card_signup_facebook_icon {
+.registration_card_signup_create_account_facebook_icon {
   padding-right: 5.25px;
 }
-.registration_card_signup span {
+.registration_card_signup_create_account span {
   font-size: 0.7rem;
   font-weight: 300;
   line-height: 1.2rem;
 }
-.registration_card_signup_login {
+.registration_card_signup_create_account_login {
   display: inline-block;
   font-size: 0.7rem;
   font-weight: 600;
@@ -157,97 +161,106 @@ header {
   cursor: pointer;
 }
 
+@media screen and (max-width: 992px) {
+  body .registration img {
+    display: none;
+  }
+  body .registration_card_signup_password_minletter {
+    margin: 0.75rem 0 0 -10rem;
+  }
+}
 footer {
-  height: 23.3rem;
   background-color: #F0F1F3;
 }
-footer .footer_navigation {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: _;
-  justify-content: space-between;
-  align-items: center;
-  align-content: _;
-  gap: 6.4rem;
-  max-width: 61.15rem;
+
+.footer_navbar {
   height: 18.8rem;
-}
-footer .footer_navigation ul {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_navbar_navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.4rem;
+}
+.footer_navbar_navigation_box {
+  display: flex;
+}
+.footer_navbar_navigation_box h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding-bottom: 0.8rem;
+}
+.footer_navbar_navigation_box ul {
+  display: flex;
   flex-direction: column;
-  justify-content: _;
-  align-items: _;
-  align-content: _;
   gap: 0.7rem;
   font-size: 0.8rem;
   line-height: 1.2rem;
-  margin-top: 0.8rem;
 }
-footer .footer_navigation_singup input {
-  padding-left: 1rem;
+.footer_navbar_navigation_email_form_input {
   width: 12.15rem;
   height: 2.4rem;
-  border-radius: 8px;
-  background-color: transparent;
+  border-radius: 0.4rem;
+  background-color: #F0F1F3;
+  border: 1px solid #A3A9B6;
 }
-footer .footer_navigation_singup ::-moz-placeholder {
-  font-size: 0.7rem;
-  line-height: 1.2rem;
-  color: #667085;
-}
-footer .footer_navigation_singup ::placeholder {
-  font-size: 0.7rem;
-  line-height: 1.2rem;
-  color: #667085;
-}
-footer .footer_navigation_singup button {
-  width: 5.5rem;
-  height: 2.4rem;
-  border-radius: 8px;
-  border: none;
-  color: white;
+.footer_navbar_navigation_email_form_btn {
+  padding: 12px 20px;
+  border-radius: 0.4rem;
+  font-size: 20px;
   background-color: #FA8F45;
+  color: white;
+  border: none;
 }
-footer .footer_emphty {
-  width: 100%;
-  border-top: 1px solid black;
-}
-footer .page_information {
+
+.footer_page_information {
   display: flex;
-  flex-wrap: _;
-  flex-direction: _;
-  justify-content: space-between;
-  align-items: _;
-  align-content: _;
-  gap: _;
-  margin-top: 43px;
-  width: 61.15rem;
+  height: 4.5rem;
+  align-items: center;
+  gap: 32.6rem;
 }
-footer .page_information_card {
-  margin-left: 7.175rem;
+.footer_page_information_text {
   display: flex;
-  gap: 1rem;
-  width: 15.75rem;
-  height: 1.2rem;
+  justify-content: space-evenly;
   font-size: 0.7rem;
+  gap: 0.6rem;
 }
-footer .page_information_contack {
-  cursor: pointer;
+.footer_page_information_icon {
   display: flex;
-  gap: 30px;
-  color: gray;
-  padding-left: 1.5rem;
-}
-footer .page_information_contack:hover {
-  color: #0C63D4;
+  gap: 1.5rem;
+  color: #A3A9B6;
 }
 
 @media screen and (max-width: 992px) {
-  header .header_box_logo_name {
-    font-size: 20px;
+  html, body footer {
+    font-size: 10px;
   }
-  main img {
-    display: none;
+  .footer_navbar_navigation_email_form_btn {
+    padding: 7px 10px;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html .container, body footer .container {
+    margin: 0 20px;
+  }
+  html .footer_page_information, body footer .footer_page_information {
+    gap: 10rem;
+  }
+  html .footer_navbar_navigation_email_form_input, body footer .footer_navbar_navigation_email_form_input {
+    width: 100%;
+  }
+  html .footer_navbar_navigation_email_form_btn, body footer .footer_navbar_navigation_email_form_btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .footer_page_information {
+    margin-top: 200px;
   }
 }/*# sourceMappingURL=sing_up.css.map */
