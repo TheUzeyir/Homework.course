@@ -62,8 +62,10 @@ header{
     display: grid;
     grid-template-columns: 1fr auto;
 
-    &_img{
-        max-width: 100%;
+    img{
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
     }
 
     &_form{
@@ -167,7 +169,13 @@ header{
     }
 }
 
-
+@media screen and (max-width:992px){
+    .login{
+        img{
+            display: none;
+        }
+    }
+}
 //-------------------------------------------------------- Footer start --------------------------------------------------------
 
 footer{
