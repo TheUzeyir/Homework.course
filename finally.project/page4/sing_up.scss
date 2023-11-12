@@ -61,6 +61,7 @@ header{
 .login{
     display: grid;
     grid-template-columns: 1fr auto;
+    gap: 1rem;
 
     img{
         width: 100%;
@@ -69,31 +70,31 @@ header{
     }
 
     &_form{
-        max-width: 392px;
-        min-width: 200px;
-        height: 720px;
-        margin-left: 212px;
-        margin-top: 152px;
+       width: 19.6rem;
+        // width: 200px;
+        height: 36rem;
+        margin-left: 10.6rem;
+        margin-top: 7.6rem;
 
         &_maintext{
             font-weight: 500;
-            font-size: 32px;
-            line-height: 48px;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
         }
 
         form{
             display: flex;
             flex-direction: column;
-            gap: 24px;
-            margin-top: 28px;
+            gap: 1.2rem;
+            margin-top: 1.4rem;
         }
         &_box{
             
             input{
-                border-radius: 8px;
-                padding-left: 12px;
+                border-radius: 0.4rem;
+                padding-left: 0.6rem;
                 width: 100%;
-                height: 52px;
+                height:2.6rem ;
                 border: 1px solid #858D9D;
             }
         }
@@ -110,21 +111,21 @@ header{
 
         &_password_text{
             font-weight: 300;
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 0.7rem;
+            line-height: 1.2rem;
             color: #667085;
         }
 
         &_btn{
-            margin-top: 24px;
+            margin-top: 1.2rem;
             text-align: center;
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 1.2rem;
 
             button{
                 width: 100%;
-                height: 54px;
+                height: 2.7rem;
                 border-radius: 8px;
                 border: none;
             }
@@ -138,7 +139,7 @@ header{
                 padding-left: 8px;
 
                 &_icon{
-                    margin-right: 20px;
+                    margin-right: 1rem;
                 }
             }
             &_sign-facebook{
@@ -146,24 +147,22 @@ header{
                 color: white;
 
                 &_icon{
-                    margin-right: 20px;
+                    margin-right: 1rem;
                 }
             }
 
             &_text{
-
+                &_already-acc{
+                font-weight: 300;
+                font-size: 0.7rem;
+                line-height: 1.2rem;
+                }
                 
-                            &_already-acc{
-                                font-weight: 300;
-                                font-size: 14px;
-                                line-height: 24px;
-                            }
-                
-                            &_login{
-                                font-weight: 600;
-                                font-size: 14px;
-                                line-height: 24px;
-                            }
+                &_login{
+                font-weight: 600;
+                font-size: 0.7rem;
+                line-height: 1.2rem;
+                }
             }
         }
     }
@@ -171,6 +170,9 @@ header{
 
 @media screen and (max-width:992px){
     .login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         img{
             display: none;
         }

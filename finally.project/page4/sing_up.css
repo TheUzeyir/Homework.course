@@ -53,6 +53,7 @@ header {
 .login {
   display: grid;
   grid-template-columns: 1fr auto;
+  gap: 1rem;
 }
 .login img {
   width: 100%;
@@ -61,28 +62,27 @@ header {
      object-fit: cover;
 }
 .login_form {
-  max-width: 392px;
-  min-width: 200px;
-  height: 720px;
-  margin-left: 212px;
-  margin-top: 152px;
+  width: 19.6rem;
+  height: 36rem;
+  margin-left: 10.6rem;
+  margin-top: 7.6rem;
 }
 .login_form_maintext {
   font-weight: 500;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 .login_form form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-top: 28px;
+  gap: 1.2rem;
+  margin-top: 1.4rem;
 }
 .login_form_box input {
-  border-radius: 8px;
-  padding-left: 12px;
+  border-radius: 0.4rem;
+  padding-left: 0.6rem;
   width: 100%;
-  height: 52px;
+  height: 2.6rem;
   border: 1px solid #858D9D;
 }
 .login_form_box:nth-child(4) {
@@ -95,20 +95,20 @@ header {
 }
 .login_form_password_text {
   font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
   color: #667085;
 }
 .login_form_btn {
-  margin-top: 24px;
+  margin-top: 1.2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.2rem;
 }
 .login_form_btn button {
   width: 100%;
-  height: 54px;
+  height: 2.7rem;
   border-radius: 8px;
   border: none;
 }
@@ -121,27 +121,32 @@ header {
   padding-left: 8px;
 }
 .login_form_btn_sign-google_icon {
-  margin-right: 20px;
+  margin-right: 1rem;
 }
 .login_form_btn_sign-facebook {
   background-color: blue;
   color: white;
 }
 .login_form_btn_sign-facebook_icon {
-  margin-right: 20px;
+  margin-right: 1rem;
 }
 .login_form_btn_text_already-acc {
   font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
 }
 .login_form_btn_text_login {
   font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
 }
 
 @media screen and (max-width: 992px) {
+  .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .login img {
     display: none;
   }

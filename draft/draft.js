@@ -60,7 +60,7 @@
 
 // message=hello
 // alert(message)
-//------------------------------------sual---------------------------------------------------------------------------------
+//------------------------------------------------------------------------ 
 // let name, admin;
 // name="john"
 // admin=name;
@@ -104,12 +104,6 @@
 // alert( "not a number" / 2 ); NaN veir ardini oxumur
 //------------------------------------------------------------------
 
-
-// console.log(9007199254740991 + 1); 
-// console.log(9007199254740991 + 2);
-//-------------------------------------------------------sual-----------
-
-
 // const arr=[];
 // //push data sonuna elave edir
 // arr.push("hello")  //nese elave edir
@@ -133,7 +127,7 @@
 // console.log(arr)
 // //------------------------------------------------------------------arr1ci hisse bitis
 
-const arr1=[1,12,123,1234,12345,123456,'str'];
+// const arr1=[1,12,123,1234,12345,123456,'str'];
 // const arr2=[21,213,2134,21345,213456,2134567];
 
 // let val1=arr1.slice(2,5) //neceden basdiyib neceye qeder kesim demekdir, bir reqem yazdiqda onnan evveli kesir---indeksleme 1den badiyir
@@ -167,7 +161,7 @@ const arr1=[1,12,123,1234,12345,123456,'str'];
 
 // ----------------------------- metods
 
-// let metn="some young dream Country of America";
+let metn="some young dream Country of America";
 
 // let val=metn.toUpperCase(); //butun hamisini boyuk herfle yazir
 
@@ -190,7 +184,9 @@ const arr1=[1,12,123,1234,12345,123456,'str'];
 
 // let val=metn.concat(); //stringleri birlesdirir
  
-// let val=metn.replace("some","azzar") //
+// let val=metn.replace("some","azzar") //deyerdeki ilk yazdigimiz soznen ikinci yazdigimiz sozun yerini deyisir
+
+let val=metn.split("  ")
 
 // let val=metn.
 // 
@@ -204,10 +200,58 @@ const arr1=[1,12,123,1234,12345,123456,'str'];
 // 
 // let val=metn.
 
-// let val=metn.
 
-// let val=metn.
-
-
+console.log(val)
+// ----------------------------- // ----------------------------- // ----------------------------- // ----------------------------- 
 
 // console.log(val)
+
+// const persons = [
+//     {
+//         name: 'Luke Skywalker',
+//         height: '172',
+//         mass: '177s',
+//         eye_color: 'blue',
+//         gender: 'male',
+//     },
+//     {
+//         name: 'Darth Vader',
+//         height: '202',
+//         mass: '136',
+//         eye_color: 'yellow',
+//         gender: 'male',
+//     },
+//     {
+//         name: 'Leia Organa',
+//         height: '150',
+//         mass: '49',
+//         eye_color: 'brown',
+//         gender: 'female',
+//     },
+//     {
+//         name: 'Anakin Skywalker',
+//         height: '188',
+//         mass: '84',
+//         eye_color: 'blue',
+//         gender: 'male',
+//     },
+//   ];
+
+
+//   let foundMass=persons.filter((item)=>Number(item.mass)>100)
+//   console.log(foundMass)
+
+//   let foundGender=persons.filter((item)=>item.gender==="male")
+//   console.log(foundGender)
+
+
+// let foundGender1=persons.every((gender)=>typeof gender==="male")
+// console.log(foundGender1)
+
+// const  filteredByEyecolor=persons.filter((item)=>item.eye_color==="blue");
+
+// const longedData=filteredByEyecolor.map((i)=>`Adi-${i.name} cekisi-${i.height} cinsi-${i.gender}`)
+// console.log(longedData)
+
+// -----------------------------// ----------------------------- // ----------------------------- 
+
