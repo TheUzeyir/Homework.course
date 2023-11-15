@@ -243,22 +243,24 @@ const persons = [
 
 
 
-//TASK4.1-------------------
-// let numbers=[2,4,6,8] 
-
-// let getNumber=(numbers)=>{
-//  result=numbers*numbers;
-// }
-// console.log(result)
+//TASK4.1
+// let numbers = [1, 2, 3, 4, 5];
+// let squaredNumbers = numbers.map((num) => num ** 2);
+// console.log(squaredNumbers);
 
 
-//TASK4.2--------------
+//TASK4.2
+// let strings = ["America", "Tokyo", "New-york", "Baku", "Mali","Fiji"];
+// let longString = strings.filter((str) => str.length > 5);
+// console.log(longString);
 
 
+//TASK4.3
+let prices = [10.99, 35.49, 23.67, 18.75];
 
-//TASK4.3---------------
-// function calculateTotal(numbers1,number2){
-//   let numbers1=(2)
-//   let number2=(3)
-// }
-// console.log(numbers1+number2)
+function calculateTotal(price) {
+  return price.reduce((acc, curr) => acc + curr, 0);
+}
+
+let totalPriice = calculateTotal(prices);
+console.log(`Total cost  ${totalPriice.toFixed(2)}`);
