@@ -5,7 +5,6 @@
 //         tersineSoz += yazi[i];
 //     }
 //     return tersineSoz;
-
 // }
 
 

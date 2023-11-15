@@ -13,40 +13,40 @@ const inventors = [
     { first: "Hanna", last: "Hammarström", year: 1829, passed: 1909 },
   ];
 
-  let foundBorn=inventors.filter((item)=>item.year>=1500 & item.year<1600)
-  console.log(foundBorn)
+//   let foundBorn=inventors.filter((item)=>item.year>=1500 & item.year<1600)
+//   console.log(foundBorn)
 
 
-const giveFullName = inventors.map(({ first, last }) => ({ [first]: last }));
-console.log(giveFullName);
+// const giveFullName = inventors.map(({ first, last }) => ({ [first]: last }));
+// console.log(giveFullName);
 
 
-let giveSort=inventors.sort((a,b)=>a.year-b.year )
-console.log(giveSort)
+// let giveSort=inventors.sort((a,b)=>a.year-b.year )
+// console.log(giveSort)
 
 
-let giveAllYears=inventors.reduce((acc,cur)=>{
-    return acc+(cur.passed-cur.year)
-},0)
-console.log(giveAllYears)
+// let giveAllYears=inventors.reduce((acc,cur)=>{
+//     return acc+(cur.passed-cur.year)
+// },0)
+// console.log(giveAllYears)
 
 
-let giveLimitYear=inventors.every((item)=>item.passed-item.year>=45)
-console.log(giveLimitYear)
+// let giveLimitYear=inventors.every((item)=>item.passed-item.year>=45)
+// console.log(giveLimitYear)
 
 
-let givYear=inventors.some((item)=>item.year>=45)
-console.log(givYear)
+// let givYear=inventors.some((item)=>item.year>=45)
+// console.log(givYear)
 
 
 
 
-function generateRange(a,b,c){
-    let result=[]
-    for(let i=a; i<=b; i=i+c){
-        result.push(i)
-    }
-    return result
-}
+// function generateRange(a,b,c){
+//     let result=[]
+//     for(let i=a; i<=b; i=i+c){
+//         result.push(i)
+//     }
+//     return result
+// }
 
-console.log(generateRange(3,15,4))
+// console.log(generateRange(3,15,4))

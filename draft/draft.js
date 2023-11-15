@@ -127,7 +127,7 @@
 // console.log(arr)
 // //------------------------------------------------------------------arr1ci hisse bitis
 
-// const arr1=[1,12,123,1234,12345,123456,'str'];
+// const arr1=[1,12,123,1234,12345,123456];
 // const arr2=[21,213,2134,21345,213456,2134567];
 
 // let val1=arr1.slice(2,5) //neceden basdiyib neceye qeder kesim demekdir, bir reqem yazdiqda onnan evveli kesir---indeksleme 1den badiyir
@@ -145,7 +145,7 @@
 // let val=arr1.forEach((item)=> console.log(item))  //dovr eliyir orginal arraya toxunur callback qebul eleyen itemdir
 
 // let val=arr1.map((x)=>console.log(x)) //dovr eliyir orginal arraya toxunmur,con.log-daki x-a *2 veya basqa reqem yazsaq ona vurur eyni mesele
-// toplama veya cixmadada eynidi, string yazdiqda NaN verir--sual undifined verir ---sual(mende str yazanda nan vermir ancaq mlmda verib) callback qebul eleyen itemdir
+// toplama veya cixmadada eynidi, string yazdiqda NaN verir--sual undifined verir callback qebul eleyen itemdir
 
 // let val=arr1.filter((item)=>item>25) //filter eliyir callback qebul eleyen itemdir  bir cox datani bize gosterir
 
@@ -156,8 +156,35 @@
 
 // let val=arr1.length  //uzunlugunu gosterir
 
+// let val=arr1.sort((x,y)=>x-y); 
+//funksiyanin acilisi let val=arr1.sort(function(x,y){return x-y;});
+//stringler ucun elifba sirasiyla duzur amma number ucun isdifade etsek bunun ucun callback gonderirik,
+// funksiyada y-x yazdiqda azalan sirayla sort eliyir
+
+// let val=arr1.some() //sertlerden her hansisa biri odenerse true qaytarir neticeni boleanla verir
+// let val=arr1.every() //sertlerden hamisi odenerse true qaytarir neticeni boleanla verir
+
+// let val=arr1.reduce((acc,curr)=>acc+curr,0)    //acc,curr normal addi biri birinci indeksi gooturur digeri ikinci birde data gelmese
+//  veya string fala olarsa insual value verilir ki buda sonda ,0 olaraq qeyd edilir
 // console.log(val)
 
+// --------------------------------------------------------------OBYEKTLER---------
+// let obj={} mes;
+// let obj={
+//         name: 'Luke Skywalker',
+//         height: '172',
+//         mass: '77',
+//         eye_color: 'blue',
+//         gender: 'male',
+// }
+
+// let keys=Object.keys(obj)       //obyektdekileri qutuya yigir arraya gecirir
+// let values=Object.values(obj)    //obyektdeki valueleri qutuya yigir arraya gecirir
+// let entries=Object.entries(obj)   //key ve valueleri bir yere yigir
+
+// console.log(keys)   
+// console.log(values) 
+// console.log(entries)  
 
 // ----------------------------- metods
 
@@ -187,18 +214,6 @@
 // let val=metn.replace("some","azzar") //deyerdeki ilk yazdigimiz soznen ikinci yazdigimiz sozun yerini deyisir
 
 // let val=metn.split("  ")
-
-// let val=metn.
-// 
-// let val=metn.
-// 
-// let val=metn.
-// 
-// let val=metn.
-// 
-// let val=metn.
-// 
-// let val=metn.
 
 
 // console.log(val)
@@ -256,59 +271,4 @@
 // -----------------------------// ----------------------------- // ----------------------------- 
 
 
-
-
-
-// const inventors = [
-//     { first: "Albert", last: "Einstein", year: 1879, passed: 1955 },
-//     { first: "Isaac", last: "Newton", year: 1643, passed: 1727 },
-//     { first: "Galileo", last: "Galilei", year: 1564, passed: 1642 },
-//     { first: "Marie", last: "Curie", year: 1867, passed: 1934 },
-//     { first: "Johannes", last: "Kepler", year: 1571, passed: 1630 },
-//     { first: "Nicolaus", last: "Copernicus", year: 1473, passed: 1543 },
-//     { first: "Max", last: "Planck", year: 1858, passed: 1947 },
-//     { first: "Katherine", last: "Blodgett", year: 1898, passed: 1979 },
-//     { first: "Ada", last: "Lovelace", year: 1815, passed: 1852 },
-//     { first: "Sarah E.", last: "Goode", year: 1855, passed: 1905 },
-//     { first: "Lise", last: "Meitner", year: 1878, passed: 1968 },
-//     { first: "Hanna", last: "Hammarström", year: 1829, passed: 1909 },
-//   ];
-
-//   let foundBorn=inventors.filter((item)=>item.year>=1500 & item.year<1600)
-//   console.log(foundBorn)
-
-
-// const giveFullName = inventors.map(({ first, last }) => ({ [first]: last }));
-// console.log(giveFullName);
-
-
-// let giveSort=inventors.sort((a,b)=>a.year-b.year )
-// console.log(giveSort)
-
-
-// let giveAllYears=inventors.reduce((acc,cur)=>{
-//     return acc+(cur.passed-cur.year)
-// },0)
-// console.log(giveAllYears)
-
-
-// let giveLimitYear=inventors.every((item)=>item.passed-item.year>=45)
-// console.log(giveLimitYear)
-
-
-// let givYear=inventors.some((item)=>item.year>=45)
-// console.log(givYear)
-
-
-
-
-function generateRange(a,b,c){
-    let result=[]
-    for(let i=a; i<=b; i=i+c){
-        result.push(i)
-    }
-    return result
-}
-
-console.log(generateRange(3,15,4))
 
