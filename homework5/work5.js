@@ -256,7 +256,7 @@ const persons = [
 
 
 //TASK4.3
-let prices = [10.99, 35.49, 23.67, 18.75];
+let prices = [25, 452,458.35, 584.648];
 
 function calculateTotal(price) {
   return price.reduce((acc, curr) => acc + curr, 0);
