@@ -247,7 +247,7 @@ const persons = [
 // let numbers = [1, 2, 3, 4, 5];
 // let squaredNumbers = numbers.map((num) => num ** 2);
 // console.log(squaredNumbers);
-
+ 
 
 //TASK4.2
 // let strings = ["America", "Tokyo", "New-york", "Baku", "Mali","Fiji"];
@@ -256,11 +256,13 @@ const persons = [
 
 
 //TASK4.3
-let prices = [25, 452,458.35, 584.648];
+// let prices = [25, 452,458.35, 584.648];
 
-function calculateTotal(price) {
-  return price.reduce((acc, curr) => acc + curr, 0);
-}
+// function calculateTotal(price) {
+//   return price.reduce((acc, curr) => acc + curr, 0);
+// }
 
-let totalPriice = calculateTotal(prices);
-console.log(`Total cost  ${totalPriice.toFixed(2)}`);
+// let totalPriice = calculateTotal(prices);
+// console.log(`Total cost  ${totalPriice.toFixed(2)}`);
+
+

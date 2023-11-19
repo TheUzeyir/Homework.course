@@ -270,5 +270,151 @@
 
 // -----------------------------// ----------------------------- // ----------------------------- 
 
+// ----------------------------------DOM=document object model---------------------------------------------
+
+//read=oxumaq 
+
+// let text=document.getElementById("azer") //id-ye gore getirir
+// console.log(text)
+
+// let paragraf=document.getElementsByClassName("string") //id birdenedi deye onu adi ,class cox ola biler deye arrayin icinde qaytarir
+// console.log(paragraf)
 
 
+// let word=document.getElementsByTagName("p")---------------------
+// console.log(word)
+
+
+// let yazmaq isdediyimiz ad=document.querySelector("deyerin parametri ve deyer") vs let yazmaq isdediyimiz ad=document.querySelectorAll("deyerin parametri ve deyer")
+//umumi anlayisdii, bilmirki id-ye goremi yoxsa class-a goremi yoxsa tagin adina goremi axtaracam,adisi axtardigimiz ilk deyeri qaytaracaq All-olan ise hamisini arrayda
+
+// let text=document.querySelector("#azer") //umumi anlayisdii, bilmirki id-ye goremi yoxsa class-a goremi yoxsa tagin adina goremi axtaracam
+// console.log(text)
+
+// let paragraf=document.querySelector(".string")  
+// console.log(paragraf)
+
+// let paragraf=document.querySelectorAll(".string")  
+// console.log(paragraf)
+
+// --------valueni deyismek
+//bunun ucun evvelce elementi select elemek lazimdir 
+// let text=document.querySelector("#azer")
+// console.log(text)
+// text.innerHTML="test"
+
+// let text=document.querySelector("#azer")
+// console.log(text)
+// text.innerText="test"
+
+// tagi cagirdiigimiz ad.innerHTML
+// tagi cagirdiigimiz ad.innerText  //ikiside eyni isi gorur ancaq text ancaq yazini html ise hemde tag olaraq deyisir
+
+// let text=document.querySelector("#azer")
+// console.log(text)
+// text.innerHTML="<p>test</p>"   ///tagi deyisdik p-eledik
+// text.style.color="red"
+// text.style.backgroundColor="red" //iki ve daha artiq sozden ibaretdirse bitisik ve ikincisi boyuk yazilir 
+
+// let menu=document.querySelector(".menu")
+// let item=document.createElement("li")
+// menu.append(item)  //elave etmek ucun appent isdifade edirik ve elave etmek isdediyimiz classin adini yaziriq
+// item.innerText="item 1" //liye soz elave elemek
+
+
+
+
+
+// -------------------------------------task
+
+//// 1 .// Write a function findNeedle() that takes an array full of junk but containing one "needle"
+
+// After your function finds the needle it should return a message (as a string) that says:
+
+// "found the needle at position " plus the index it found the needle, so:
+// ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
+
+// strings=["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+// let findNeedle=strings.findIndex((name ) => name ==="needle");
+// console.log(findNeedle)
+
+// 2ci helli
+// function findNeedle(array) {
+//    return "found the needle at position"+array.indexOf("needle") 
+// }
+// findNeedle(Strings)
+
+
+
+
+//2 Write a function that adds two arrays
+
+// const arr1 = [1, 1, 1, 1];
+// const arr2 = [2, 2, 2, 2];
+// const arr3 = arr1.concat(arr2);
+
+// // function concatArr(array){
+// // return array.reduce((acc,curr)=>acc+curr,0)
+// // }
+// // console.log(concatArr(arr3))
+
+
+// 3.Given a array of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting array.
+// const numbers = [1,4,6,10,20,2]
+// function getNewArray(numbers){
+//     return numbers.map((num)=>{
+//         if(num>5){
+//             return 1
+//         }
+//         else{
+//             return 0
+//         }
+//     })
+// }
+//daha qisasi
+// function getNewArray(numbers){
+//     return numbers.map((num)=>num>5 ?1:0)
+// }
+// console.log(getNewArray(numbers))
+
+
+
+// 4.What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array?
+
+// Example(Input --> Output)
+// "apple ban" --> ["apple 5", "ban 3"]
+// "you will win" -->["you 3", "will 4", "win 3"]
+
+// const word="apple ban"
+// function addLengthToWords(sentence) { 
+//     let words = sentence.split(' '); 
+//     let modifiedWords = words.map(word => word +' '+ word.length); 
+//     return modifiedWords; 
+//   } 
+//   let sentence = "apple ban"; 
+//   let result = addLengthToWords(sentence); 
+//   console.log(result);
+  
+
+
+// 5.Write a function which calculates the average of the numbers in a given list.
+// Note: Empty arrays should return 0.
+
+// let number=[2,4,6]
+// function getCalculate(numbers){
+//     return numbers.reduce((acc,curr)=>(acc+curr)/number.length+1)
+// }
+// console.log(getCalculate(number))
+
+
+
+// 6./Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+// invert([]) == []
+
+// let number=[2,4,6]
+// function changeNumber(numbers) {
+//     return numbers.map(number => -number);
+// }
+// console.log(changeNumber(number))

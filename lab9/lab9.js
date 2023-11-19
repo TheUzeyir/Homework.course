@@ -27,7 +27,7 @@ const inventors = [
 
 // let giveAllYears=inventors.reduce((acc,cur)=>{
 //     return acc+(cur.passed-cur.year)
-// },0)
+// },0) 
 // console.log(giveAllYears)
 
 
