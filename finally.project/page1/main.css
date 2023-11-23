@@ -180,14 +180,13 @@ header .header_box_icon {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: _;
-  justify-content: _;
+  justify-content: space-between;
   align-items: _;
   align-content: _;
   gap: 1.2rem;
 }
 .categories_imgcard_box {
   position: relative;
-  max-width: 288px;
   max-height: 268px;
 }
 .categories_imgcard_box img {

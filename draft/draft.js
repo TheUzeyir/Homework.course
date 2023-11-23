@@ -211,7 +211,7 @@
 
 // let val=metn.concat(); //stringleri birlesdirir
  
-// let val=metn.replace("some","azzar") //deyerdeki ilk yazdigimiz soznen ikinci yazdigimiz sozun yerini deyisir
+// let val=metn.replace("some","every") //deyerdeki ilk yazdigimiz soznen ikinci yazdigimiz sozun yerini deyisir
 
 // let val=metn.split("  ")
 
@@ -322,9 +322,6 @@
 // item.innerText="item 1" //liye soz elave elemek
 
 
-
-
-
 // -------------------------------------task
 
 //// 1 .// Write a function findNeedle() that takes an array full of junk but containing one "needle"
@@ -418,3 +415,12 @@
 //     return numbers.map(number => -number);
 // }
 // console.log(changeNumber(number))
+// alert(window.innerHeight);
+
+
+// let button=document.querySelector('.btn');
+// button.addEventListener("click",()=>{
+// let value=prompt()
+// console.log(value);
+// })
+

@@ -1,6 +1,6 @@
 // 1.Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
 // [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
-// let number=[1, 2, 3, 4]
+// let number=[1, 2, 3, 4]  
 // let val=number.reduce((acc,curr)=>acc*curr)
 // console.log(val)
 
@@ -16,7 +16,8 @@
 // let val=numbers.reduce((acc,curr)=>(curr > 0 ? acc + curr : acc))  
 // console.log(val)
 
-//2ci helli// let val=numbers.reduce((acc,curr)=>{
+//2ci helli
+// let val=numbers.reduce((acc,curr)=>{
 //     if(curr>0){
 //         return acc+curr;
 //     }

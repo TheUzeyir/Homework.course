@@ -35,7 +35,7 @@ const inventors = [
 // console.log(giveLimitYear)
 
 
-// let givYear=inventors.some((item)=>item.year>=45)
+// let givYear=inventors.some((item)=>item.passed-item.year>=45)
 // console.log(givYear)
 
 

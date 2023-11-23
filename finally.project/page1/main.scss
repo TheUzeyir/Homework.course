@@ -198,12 +198,11 @@ header {
 
     &_imgcard {
         margin-top: 1rem;
-        @include d-flex(flex, nowrap, _, _, _, _, 1.2rem);
+        @include d-flex(flex, nowrap, _, space-between, _, _, 1.2rem);
 
 
         &_box {
             position: relative;
-            max-width: 288px;
             max-height: 268px;
 
 
