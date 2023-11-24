@@ -424,3 +424,11 @@
 // console.log(value);
 // })
 
+// const usernamebox=document.getElementById('username');
+// usernamebox.addEventListener('focus',()=>{
+    // usernamebox.style.backgroundColor='red';
+// })
+// usernamebox.addEventListener('blur',()=>{
+    // usernamebox.style.backgroundColor='green';
+// })
+// 
