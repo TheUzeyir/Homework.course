@@ -118,22 +118,21 @@
 
 //---TASK6--
 // Write program to find the count of each character: 'abacddbec' => {a: 2, b: 2, c: 1, d: 3, e: 1}
-// let strings='abacddbec';
-// function countCharacters(strings) {
-//     let charCount = {};
+let strings='abacddbec';
+function countCharacters(strings) {
+    let empty = {}
+    for (let item of strings) {
+      if (empty[item]) {
+        empty[item]++;
+      } else {
+        empty[item] = 1;
+      }
+    }
   
-//     for (let char of strings) {
-//       if (charCount[char]) {
-//         charCount[char]++;
-//       } else {
-//         charCount[char] = 1;
-//       }
-//     }
-  
-//     return charCount;
-//   }
-//   const result = countCharacters(strings);
-//   console.log(result);
+    return empty;
+  }
+  const result = countCharacters(strings);
+  console.log(result);
 
 
 //---TASK7--

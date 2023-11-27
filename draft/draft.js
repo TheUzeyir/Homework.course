@@ -436,13 +436,13 @@
 
 
 
-const clickBtn=document.querySelector('.btn1')
-const addTest=document.querySelector(".test")
-const closeBtn=document.querySelector('.active_icon')
+// const clickBtn=document.querySelector('.btn1')
+// const addTest=document.querySelector(".test")
+// const closeBtn=document.querySelector('.active_icon')
 
-clickBtn.addEventListener(("click"),()=>{
-addTest.classList.toggle('active')
-})
+// clickBtn.addEventListener(("click"),()=>{
+// addTest.classList.toggle('active')
+// })
 
 // clickBtn.addEventListener(("click"),()=>{
 // addTest.classList.toggle('active')
