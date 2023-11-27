@@ -1,1 +1,29 @@
-/*# sourceMappingURL=draft.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.active {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.active_icon {
+  margin-left: 10px;
+}
+.active h4 {
+  margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.active p {
+  margin-left: 10px;
+}
+
+.test {
+  display: none;
+}/*# sourceMappingURL=draft.css.map */
