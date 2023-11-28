@@ -118,21 +118,21 @@
 
 //---TASK6--
 // Write program to find the count of each character: 'abacddbec' => {a: 2, b: 2, c: 1, d: 3, e: 1}
-let strings='abacddbec';
-function countCharacters(strings) {
-    let empty = {}
-    for (let item of strings) {
-      if (empty[item]) {
-        empty[item]++;
-      } else {
-        empty[item] = 1;
-      }
-    }
+// let strings='abacddbec';
+// function countCharacters(strings) {
+//     let empty = {}
+//     for (let item of strings) {
+//       if (empty[item]) {
+//         empty[item]++;
+//       } else {
+//         empty[item] = 1;
+//       }
+//     }
   
-    return empty;
-  }
-  const result = countCharacters(strings);
-  console.log(result);
+//     return empty;
+//   }
+//   const result = countCharacters(strings);
+//   console.log(result);
 
 
 //---TASK7--
@@ -159,25 +159,27 @@ function countCharacters(strings) {
 // Write program that truncates string in a given length, but it should not break the word: 'Hello world, nice talking to you', 20 =>
 // 'Hello world, nice...'
 
-// let strings='Hello world, nice talking to you';
-// let maxLength=17;
-// function truncateString(inputString, maxLength) {
-//     if (inputString.length <= maxLength) {
-//       return inputString;
-//     } else {
-//       let truncatedString = '';
-//       for (let i = 0; i < maxLength; i++) {
-//         truncatedString += inputString[i];
-//       }
-//       return truncatedString + '...';
-//     }
-//   }
-// let truncatedString = truncateString(strings, maxLength);
-// console.log(truncatedString);
+let strings='Hello world, nice talking to you';
+let maxLength=17;
+function truncateString(inputString, maxLength) {
+    let truncatedString = '';
+    if (inputString.length <= maxLength) {
+      return inputString;
+    } else {
+      for (let i = 0; i < maxLength; i++) {
+        truncatedString += inputString[i];
+      }
+      return truncatedString + '...';
+    }
+  }
+let truncatedString = truncateString(strings, maxLength);
+console.log(truncatedString);
 
 
 
-//---TASK9--
+
+
+//---TASK9-- 
 // Create a program to calculate the sum of the elements in an array of numbers: [1, 2, 3, 4, 5] => 15    
 // let numbers=[1, 2, 3, 4, 5]
 // let sum=0

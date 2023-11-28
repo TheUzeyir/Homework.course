@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 3rem;
+}
+
+.home_btn {
+  margin: 20px;
+  --color1: #1a8516;
+  --color2: #236b19;
+  perspective: 1000px;
+  padding: 1em 1em;
+  background: linear-gradient(var(--color1), var(--color2));
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  text-shadow: 0 10px 10px #000;
+  cursor: pointer;
+  transform: rotateX(70deg) rotateZ(30deg);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.home_btn::before {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-color: var(--color2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+
+.home_btn::after {
+  content: "";
+  width: 15px;
+  height: 100%;
+  background-color: var(--color1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateY(-90deg);
+  transform-origin: right;
+}
+
+.home_btn:hover {
+  transform: rotateX(30deg) rotateZ(0);
+}
+
+.active {
+  display: none;
+}
+
+.namecard {
+  transform: translate(50%, 50%);
+  width: 50rem;
+  height: 18rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.5rem;
+}
+.namecard_box_accept {
+  color: gray;
+}
+.namecard_box_name {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.namecard_box_input {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+}
+.namecard_box_btn {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.namecard_box_btn button {
+  cursor: pointer;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+.namecard_box_btn_no {
+  background-color: white;
+}
+.namecard_box_btn_yes {
+  background-color: rgb(92, 91, 91);
+  color: white;
+  border: none;
+}
+.namecard .namecard_icon_box {
+  cursor: pointer;
+  position: relative;
+  top: 2%;
+  left: 95%;
+}
+.namecard .namecard_icon_box .icon {
+  background-color: rgb(195, 188, 188);
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  padding: 0.6rem;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=index.css.map */
