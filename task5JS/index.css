@@ -108,6 +108,7 @@ body {
   border: none;
 }
 .namecard .namecard_icon_box {
+  display: inline-block;
   cursor: pointer;
   position: relative;
   top: 2%;
