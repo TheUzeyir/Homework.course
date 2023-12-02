@@ -68,7 +68,7 @@
 // console.log(repeatedString);  
 
 
-//---TASK4--
+//---TASK4--???
 // Write program to find the first not repeated character: 'abacddbec' => 'e'
 // let str='abacddbec';
 // let empty='';
@@ -79,11 +79,11 @@
 //         for (let index = 0; index < str.length; index++) {
 //             if(val>1){
 //                 empty=str[i]
-//                 break
+//                 break;
 //             }         
 //             if (str[i]===str[index]) {
 //                 val+=1
-//             }   
+//             }     
 //         }        
 //     }
 // }
@@ -159,21 +159,21 @@
 // Write program that truncates string in a given length, but it should not break the word: 'Hello world, nice talking to you', 20 =>
 // 'Hello world, nice...'
 
-let strings='Hello world, nice talking to you';
-let maxLength=17;
-function truncateString(inputString, maxLength) {
-    let truncatedString = '';
-    if (inputString.length <= maxLength) {
-      return inputString;
-    } else {
-      for (let i = 0; i < maxLength; i++) {
-        truncatedString += inputString[i];
-      }
-      return truncatedString + '...';
-    }
-  }
-let truncatedString = truncateString(strings, maxLength);
-console.log(truncatedString);
+// let strings='Hello world, nice talking to you';
+// let maxLength=17;
+// function truncateString(inputString, maxLength) {
+//     let truncatedString = '';
+//     if (inputString.length <= maxLength) {
+//       return inputString;
+//     } else {
+//       for (let i = 0; i < maxLength; i++) {
+//         truncatedString += inputString[i];
+//       }
+//       return truncatedString + '...';
+//     }
+//   }
+// let truncatedString = truncateString(strings, maxLength);
+// console.log(truncatedString);
 
 
 

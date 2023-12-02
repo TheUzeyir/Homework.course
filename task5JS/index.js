@@ -25,4 +25,4 @@ buttonNo.addEventListener('click',()=>{
 
 buttonYes.addEventListener('click',()=>{
     nameCard.classList.add('active')
-})
+}) 

@@ -447,3 +447,55 @@
 // clickBtn.addEventListener(("click"),()=>{
 // addTest.classList.toggle('active')
 // })
+
+
+// class Car{
+//     constructor(model,year,color){
+//         this.model=model;
+//         this.year=year;
+//         this.color=color;
+//     }
+// }
+// let car=new Car('bmw',2006,'white')
+// console.log(car)
+
+
+// function Employee(fullname,age,color){
+//     this.fullname=fullname
+//         this.age=age
+//     this.color=color
+// }
+
+// let emp1=new Employee('uzeyuir',20,'yellow')
+// console.log(emp1)
+
+
+const obj={
+    fullNAme:'rakif',
+    age:34,
+    position:'front'
+}
+
+const{fullNAme,age,position}=obj    //qisaltma yazilis
+console.log(age,fullNAme,position)  //qisaltma yazilis davami
+
+function Employee(fullNAme,age,position){
+    this.fullName=fullNAme;
+    this.age=age
+    this.position=position
+    //this o demekdirki employeenin icinde colden gellen deyeri menimsedirik ilk fullNAme-ni adini isdediyimiz kimi qoymaq olar
+}
+
+class car{
+    constructor(model,year,color){
+        this.model=model;
+        this.year=year
+        this.color=color
+    }
+}
+
+let emp1=new Employee('uzeyir',20,'frontend')
+console.log(emp1);
+
+//yeni employee deye bir funksiya yaradiriq button yaradqigimiz yerde click-in yanindaki funksiyaya arraya elave ediril push edirik hemin o table
+//filderini arrayi foreach eleyim ve tabenin icine yerlesdirim
