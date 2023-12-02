@@ -13,17 +13,18 @@ const arr=[
 let i=0;
 
     left.addEventListener('click',()=>{
-        if (i<arr.length) {
-        i--;}
+        if (i>0) {
+            i--;
+            }
 
         else{
-            i>0
+            i=arr.length-1;
         }
 
         return img_box.setAttribute('src','./img/'+arr[i])
     })
     right.addEventListener('click',()=>{
-        if (i<arr.length-1) {i-1;
+        if (i<arr.length-1) {
         i++}
         else{
             i=0
