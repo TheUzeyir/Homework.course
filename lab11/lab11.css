@@ -47,14 +47,19 @@ li {
   background-color: black;
   color: white;
   list-style: none;
-  margin-left: 60px;
+  margin: 20px 0 0 60px;
   padding: 10px 0 0 10px;
 }
 
 ul {
   align-items: center;
 }
-
-i {
+ul div {
+  display: flex;
+  align-items: center;
+}
+ul i {
+  color: white;
   cursor: pointer;
+  margin: 20px 0 0 20px;
 }/*# sourceMappingURL=lab11.css.map */

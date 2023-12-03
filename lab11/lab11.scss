@@ -51,14 +51,21 @@ li{
     background-color: black;
     color: white;
     list-style: none;
-    margin-left: 60px;
+    margin:20px 0 0 60px;
     padding: 10px 0 0 10px;
 }
 ul{
     align-items: center;
+
+    div{
+        display: flex;
+        align-items: center;
+    }
+    i{
+        color: white;
+        cursor: pointer;
+        margin:20px 0 0 20px;
+    }
 }
 
-i{
-    cursor: pointer;
-}
 
