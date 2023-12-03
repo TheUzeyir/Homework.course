@@ -470,32 +470,51 @@
 // console.log(emp1)
 
 
-const obj={
-    fullNAme:'rakif',
-    age:34,
-    position:'front'
-}
+// const obj={
+//     fullNAme:'rakif',
+//     age:34,
+//     position:'front'
+// }
 
-const{fullNAme,age,position}=obj    //qisaltma yazilis
-console.log(age,fullNAme,position)  //qisaltma yazilis davami
+// const{fullNAme,age,position}=obj    //qisaltma yazilis
+// console.log(age,fullNAme,position)  //qisaltma yazilis davami
 
-function Employee(fullNAme,age,position){
-    this.fullName=fullNAme;
-    this.age=age
-    this.position=position
-    //this o demekdirki employeenin icinde colden gellen deyeri menimsedirik ilk fullNAme-ni adini isdediyimiz kimi qoymaq olar
-}
+// function Employee(fullNAme,age,position){
+//     this.fullName=fullNAme;
+//     this.age=age
+//     this.position=position
+//     //this o demekdirki employeenin icinde colden gellen deyeri menimsedirik ilk fullNAme-ni adini isdediyimiz kimi qoymaq olar
+// }
 
-class car{
-    constructor(model,year,color){
-        this.model=model;
-        this.year=year
-        this.color=color
-    }
-}
+// class car{
+//     constructor(model,year,color){
+//         this.model=model;
+//         this.year=year
+//         this.color=color
+//     }
+// }
 
-let emp1=new Employee('uzeyir',20,'frontend')
-console.log(emp1);
+// let emp1=new Employee('uzeyir',20,'frontend')
+// console.log(emp1);
 
 //yeni employee deye bir funksiya yaradiriq button yaradqigimiz yerde click-in yanindaki funksiyaya arraya elave ediril push edirik hemin o table
 //filderini arrayi foreach eleyim ve tabenin icine yerlesdirim
+ 
+// const obj1={
+//     fullNAme:'uzeyir',
+//     age:34,
+//     position:'front'
+// }
+
+// const obj2={
+//     ...obj1,
+//     l_name:'amil',
+//     fincode:58,
+//     learn:'back'
+// }
+
+
+// let arr2=['amil','coni','ruslan','uzeyir']
+// let arr=[1,3,5,7,88451,obj2,...arr2]
+
+// console.log(arr)
