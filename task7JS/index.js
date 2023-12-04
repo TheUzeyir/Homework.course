@@ -1,12 +1,9 @@
 let btn=document.querySelector('.form_box_button')
 
 btn.addEventListener('click',(e)=>{
-    e.preventDefault();
     let nameInput=document.querySelector('.form_box_name-input')
     let surNameInput=document.querySelector('.form_box_surname-input')
-    let password=document.querySelector('.form_box_password-input')
-    
-
+    let password=document.querySelector('.form_box_password-input')    
 
     let tr=document.createElement('tr')
     
@@ -18,13 +15,15 @@ btn.addEventListener('click',(e)=>{
 
     document.getElementById('tbl').appendChild(tr);
 
-    if (password.value==='') {
-        alert('Please enter password 8 caracter!');
-    }
 
     nameInput.value=""
     surNameInput.value=""
+    
+    if (password.value.length<8) {
+        alert('Please enter password 8 caracter!');
+        td1.style.display="none"
+        td2.style.display="none"
+    }
     password.value=""
-
 
 })
