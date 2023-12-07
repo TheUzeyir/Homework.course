@@ -1,113 +1,12 @@
-"use strict";
-
-// alert('hello world');
-//------------------------------------------------------------------
-
-// prompt('hello world');
-//------------------------------------------------------------------
-
-// alert(3 +1+ 2);
-//------------------------------------------------------------------
-
-// prompt(3 +1+ 2);
-//------------------------------------------------------------------
+// "use strict";
 
 // alert("Hello");
 // [1, 2].forEach(alert);
 //------------------------------------------------------------------
 
-// let message; 
-// message = 'Hello!';
-//------------------------------------------------------------------
-
-
-// let user = 'John';
-// let age = 25;
-// let message = 'Hello';
-// console.log(user, age, message )
-//------------------------------------------------------------------
-
-
-// let user = 'John';
-// user = 25;
-// user = 'Hello';
-// console.log(user )          en axirincini secir  
-//------------------------------------------------------------------
-
-
-// let user = 'John',
-//   age = 25,
-//   message = 'Hello';
-//   console.log(user, age, message )
-//------------------------------------------------------------------
-
-
-
-// let message;
-// message="hello"
-// message="world"
-
-// alert(message)
-// console.log(alert)
-//2cisini secir  
-//console.log-a verendede hecne olmur alert native cod-yazir
-//------------------------------------------------------------------
-
-
-
-// let hello,message;
-// hello="Hello world"
-
-// message=hello
-// alert(message)
-//------------------------------------------------------------------------ 
-// let name, admin;
-// name="john"
-// admin=name;
-// alert(admin)
-
-//------------------------------------------------------------------
-
-
-// let message = "This";
-// let message = "That";
-// error verecek cunki eyni adla isdifade etmisik, let sozu olmasa ikincide ise yarayacaq-birincide yox ikincide
-//------------------------------------------------------------------
-
-
-// num = 5;
-// alert(num); 
-// bu kod normalda islememelidi cunki deyer elan etmemisik ancaq "use strict modeni legv elesek iisleyecek"
-//------------------------------------------------------------------
-
-
-// const myBirthday = '18.04.1982';
-// console.log(myBirthday)
-//------------------------------------------------------------------
-
-// const myBirthday = '18.04.1982';
-// myBirthday = '01.01.2001';
-// let-den ferqli olaraq const-da deyeri ikinci defe deyisdirmek olmur
-//------------------------------------------------------------------
-
-
-// const COLOR_RED = "#F00";
-// const COLOR_GREEN = "#0F0";
-// const COLOR_BLUE = "#00F";
-// const COLOR_ORANGE = "#FF7F00";
-// 
-// ...when we need to pick a color
-// let color = COLOR_ORANGE;
-// alert(color); // #FF7F00
-//------------------------------------------------------------------
-
-// alert( "not a number" / 2 ); NaN veir ardini oxumur
-//------------------------------------------------------------------
-
-// const arr=[];
+// const arr=[1,2,3];
 // //push data sonuna elave edir
-// arr.push("hello")  //nese elave edir
-
+// arr.push("hello")  //sonuna nese elave edir
 // arr.push({name:"azerbaijan"});
 // arr.push("balaken");
 
@@ -115,13 +14,13 @@
 // arr.unshift(7777)  //evvele elave edir
 // arr.unshift('azer')  //evvele elave edir
 
-// arr.pop() //axirincini silir
-
+// let str=arr.toString() //axirincini silir
+// console.log(str);
 // arr.shift()  //evvelkini silir
 
 // // arr.concat()  //iki elementi birlesdirir
 
-// // let str=arr.toString() //  bunun ucun bir let-yaradib console.log=a elave etmek lazimdir
+// // let str=arr.toString() // yaziya cevirir bunun ucun bir let-yaradib console.log=a elave etmek lazimdir
 
 
 // console.log(arr)
@@ -130,10 +29,10 @@
 // const arr1=[1,12,123,1234,12345,123456];
 // const arr2=[21,213,2134,21345,213456,2134567];
 
-// let val1=arr1.slice(2,5) //neceden basdiyib neceye qeder kesim demekdir, bir reqem yazdiqda onnan evveli kesir---indeksleme 1den badiyir
+// let val1=arr1.slice(2,5) //neceden basdiyib neceye qeder kesim demekdir,hemin eded araligindakini saxlayir---indeksleme 1den badiyir
 // let val2=arr2.splice(1,4) //neceden basdiyib necedene kesim deyir, bir reqem yazanda onnan oyanani kesir---indeksleme 1den badiyir
 
-// console.log(arr1,val1)
+// console.log(val1)
 // console.log(arr2,val2)
 
 // let val=arr1.indexOf(1234)  //hansi elementi axtaririq onu gosterir---indeksleme 0dan baslayir olmayan reqem yazdiqda -1 verir
@@ -145,7 +44,7 @@
 // let val=arr1.forEach((item)=> console.log(item))  //dovr eliyir orginal arraya toxunur callback qebul eleyen itemdir
 
 // let val=arr1.map((x)=>console.log(x)) //dovr eliyir orginal arraya toxunmur,con.log-daki x-a *2 veya basqa reqem yazsaq ona vurur eyni mesele
-// toplama veya cixmadada eynidi, string yazdiqda NaN verir--sual undifined verir callback qebul eleyen itemdir
+// toplama veya cixmadada eynidi, yanina nese yazdiqda hamisina elave edir,NaN verir--sual undifined verir callback qebul eleyen itemdir
 
 // let val=arr1.filter((item)=>item>25) //filter eliyir callback qebul eleyen itemdir  bir cox datani bize gosterir
 
@@ -449,26 +348,6 @@
 // })
 
 
-// class Car{
-//     constructor(model,year,color){
-//         this.model=model;
-//         this.year=year;
-//         this.color=color;
-//     }
-// }
-// let car=new Car('bmw',2006,'white')
-// console.log(car)
-
-
-// function Employee(fullname,age,color){
-//     this.fullname=fullname
-//         this.age=age
-//     this.color=color
-// }
-
-// let emp1=new Employee('uzeyuir',20,'yellow')
-// console.log(emp1)
-
 
 // const obj={
 //     fullNAme:'rakif',
@@ -479,12 +358,16 @@
 // const{fullNAme,age,position}=obj    //qisaltma yazilis
 // console.log(age,fullNAme,position)  //qisaltma yazilis davami
 
+
+
 // function Employee(fullNAme,age,position){
 //     this.fullName=fullNAme;
 //     this.age=age
 //     this.position=position
 //     //this o demekdirki employeenin icinde colden gellen deyeri menimsedirik ilk fullNAme-ni adini isdediyimiz kimi qoymaq olar
 // }
+// Employee.prototype.height=170;
+
 
 // class car{
 //     constructor(model,year,color){
@@ -493,11 +376,19 @@
 //         this.color=color
 //     }
 // }
+// class HR extends car{
+//     constructor(model,year,color,height){
+//         super(model,year,color)
+//         this.height=height
+//     }
+// }
+
+
 
 // let emp1=new Employee('uzeyir',20,'frontend')
 // console.log(emp1);
 
-//yeni employee deye bir funksiya yaradiriq button yaradqigimiz yerde click-in yanindaki funksiyaya arraya elave ediril push edirik hemin o table
+//yeni employee deye bir funksiya yaradiriq button yaradqigimiz yerde click-in yanindaki funksiyaya arraya elave edirib push edirik hemin o table
 //filderini arrayi foreach eleyim ve tabenin icine yerlesdirim
  
 // const obj1={
@@ -517,4 +408,50 @@
 // let arr2=['amil','coni','ruslan','uzeyir']
 // let arr=[1,3,5,7,88451,obj2,...arr2]
 
-// console.log(arr)
+// console.log(arr) 
+
+
+
+'use strict'
+let btn=document.querySelector('.form_box_button')
+let nameInput=document.querySelector('.form_box_name-input')
+let surNameInput=document.querySelector('.form_box_surname-input')
+let email=document.querySelector('.form_box_password-input')
+let password=document.querySelector('.form_box_password-input')    
+let tr=document.createElement('tr')
+let td1=tr.appendChild(document.createElement('td'));
+let td2=tr.appendChild(document.createElement('td'));
+let td3=tr.appendChild(document.createElement('td'))
+document.getElementById('tbl').appendChild(tr);
+td3.style.display="none"
+
+let arr=[]
+btn.addEventListener('click',(e)=>{
+
+    e.preventDefault()
+    td1.textContent=nameInput.value
+    td2.textContent=surNameInput.value
+    td3.textContent=email.value
+    
+    function Employee(name,surName,email){
+        this.name=name
+        this.surName=surName
+        this.email=email
+    }
+
+
+    let person=new Employee(nameInput.value,surNameInput.value,email.value)
+    arr.push(person)
+    console.log(person)
+
+    nameInput.value=''
+    surNameInput.value=''
+    email.value=''
+
+    if (password.value.length<8) {
+        alert('Please enter password 8 caracter!');
+        td1.style.display="none"
+        td2.style.display="none"
+    }
+    password.value=""
+})

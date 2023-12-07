@@ -1,19 +1,21 @@
+'use strict'
 let btn=document.querySelector('.form_box_button')
+let nameInput=document.querySelector('.form_box_name-input')
+let surNameInput=document.querySelector('.form_box_surname-input')
+let password=document.querySelector('.form_box_password-input')    
 
-btn.addEventListener('click',(e)=>{
-    let nameInput=document.querySelector('.form_box_name-input')
-    let surNameInput=document.querySelector('.form_box_surname-input')
-    let password=document.querySelector('.form_box_password-input')    
+btn.addEventListener('submit',()=>{
 
     let tr=document.createElement('tr')
     
     let td1=tr.appendChild(document.createElement('td'));
     let td2=tr.appendChild(document.createElement('td'))
 
-    td1.textContent=nameInput.value
-    td2.textContent=surNameInput.value
+    td1.textContent+=nameInput.value
+    td2.textContent+=surNameInput.value
 
     document.getElementById('tbl').appendChild(tr);
+
 
 
     nameInput.value=""
@@ -25,5 +27,6 @@ btn.addEventListener('click',(e)=>{
         td2.style.display="none"
     }
     password.value=""
+
 
 })
