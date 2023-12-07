@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
-    <div class="form">
+        <div class="form">
 
-        <form class="form_box">
-            <input type="text" class="form_box_name-input" placeholder="Name" required>
-            <input type="text" class="form_box_surname-input" placeholder="Surname" required>
-            <input type="password" class="form_box_password-input" placeholder="Password" required>
+            <form class="form_box">
+                <input type="text" class="form_box_name-input" placeholder="Name" required>
+                <input type="text" class="form_box_surname-input" placeholder="Surname" required>
+                <input type="email" class="form_box_email-input" placeholder="email" required>
+                <input type="password" class="form_box_password-input" placeholder="Password(min 8 character)" required>
+                <button type="submit" class="form_box_button"><span
+                        class="text">Create</span><span>Thanks!</span></button>
+            </form>
+        </div>
 
-            <button type="submit" class="form_box_button"><span class="text">Create</span><span>Thanks!</span></button>
-        </form>
+        <table id="tbl">
+            <thead>
+                <th>Name</th>
+                <th>Surname</th>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+        <script src="./index.js"></script>
     </div>
-
-    <table id="tbl">
-        <thead>
-            <th>Name</th>
-            <th>Surname</th>
-        </thead>
-
-        <tbody>
-
-        </tbody>
-
-    </table>
-    <script src="./index.js"></script>
-</div>
 </body>
+
 </html>

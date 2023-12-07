@@ -40,5 +40,11 @@ body {
 }
 
 .active .information_box_text2 {
-  height: 50px;
+  height: 55px;
+  transition-duration: 1s;
+}
+
+.active .information_box_text1 .icon {
+  transform: rotate(180deg);
+  transition-duration: 1s;
 }/*# sourceMappingURL=lab12.css.map */
