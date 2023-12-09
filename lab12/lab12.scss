@@ -44,14 +44,16 @@ body{
     }
 }
 
+.information_box_text2{
+    transition: 1s;
+}
+
 .active .information_box_text2{
     height: 55px;
-    transition-duration: 1s;
 }
 
 .active .information_box_text1{
     .icon{
         transform: rotate(180deg);
-        transition-duration: 1s;
     }
 }

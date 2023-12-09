@@ -4,13 +4,13 @@ let nameInput=document.querySelector('.form_box_name-input')
 let surNameInput=document.querySelector('.form_box_surname-input')
 let email=document.querySelector('.form_box_email-input')
 let password=document.querySelector('.form_box_password-input')    
-let tr=document.createElement('tr')
-let td1=tr.appendChild(document.createElement('td'));
-let td2=tr.appendChild(document.createElement('td'));
-document.getElementById('tbl').appendChild(tr);
 
 let arr=[]
 btn.addEventListener('click',(e)=>{
+    let tr=document.createElement('tr')
+    let td1=tr.appendChild(document.createElement('td'));
+    let td2=tr.appendChild(document.createElement('td'));
+    document.getElementById('tbl').appendChild(tr);
 
     e.preventDefault()
     td1.textContent+=nameInput.value
@@ -26,7 +26,8 @@ btn.addEventListener('click',(e)=>{
 
     let person=new Employee(nameInput.value,surNameInput.value,email.value,password.value)
     arr.push(person)
-    console.log(arr)
+    
+    console.log(arr.map((item)=>item))
 
     nameInput.value=''
     surNameInput.value=''
