@@ -152,7 +152,7 @@ const persons = [
 
 // TASK1.3
 // function isEven(num){
-//   if(num%2===0){
+//   if(num%2==0){
 //     return "cutdur"
 //   }
 //   else{
@@ -214,7 +214,7 @@ const persons = [
 //  city:'Azerbaijan'
 // }
 
-// let displayPersonInfo=Object.keys(person)
+// let displayPersonInfo=Object.values(person)
 // console.log(displayPersonInfo)
 
 

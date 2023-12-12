@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 // alert("Hello");
 // [1, 2].forEach(alert);
@@ -414,47 +414,111 @@
 
 
 
-// const persons = [
-//     {
-//         name: 'Luke Skywalker',
-//         height: '172',
-//         mass: '77',
-//         eye_color: 'blue',
-//         gender: 'male',
-//     },
-//     {
-//         name: 'Darth Vader',
-//         height: '202',
-//         mass: '136',
-//         eye_color: 'yellow',
-//         gender: 'male',
-//     },
-//     {
-//         name: 'Leia Organa',
-//         height: '150',
-//         mass: '49',
-//         eye_color: 'brown',
-//         gender: 'female',
-//     },
-//     {
-//         name: 'Anakin Skywalker',
-//         height: '188',
-//         mass: '84',
-//         eye_color: 'blue',
-//         gender: 'male',
-//     },
-//   ];
-//map 3,4   sort3
+const persons = [
+    {
+        name: 'Luke Skywalker',
+        height: '172',
+        mass: '77',
+        eye_color: 'blue',
+        gender: 'male',
+    },
+    {
+        name: 'Darth Vader',
+        height: '202',
+        mass: '136',
+        eye_color: 'yellow',
+        gender: 'male',
+    },
+    {
+        name: 'Leia Organa',
+        height: '150',
+        mass: '49',
+        eye_color: 'brown',
+        gender: 'female',
+    },
+    {
+        name: 'Anakin Skywalker',
+        height: '188',
+        mass: '84',
+        eye_color: 'blue',
+        gender: 'male',
+    },
+  ];
+// //map 3,4   sort3,4
 
 
-
-let fruit=['armud','heyva','nar','kelem','xiyar','badumcan']
-
-function getName(){
-    let fruits=''
-    for (let i = 0; i < fruit.length; i++) {
-        fruits+=fruit[i]+' '
+let string='Hello world'
+function reverseString(string) {
+    for (let i = 0; i >string.length; i--) {
+        return string[i]
     }
-    return fruits
 }
-console.log(getName());
+let value=reverseString(string)
+console.log(value);
+
+let sentence=['I am writing code now']
+// let person={
+//     name:'Uzeyir',
+//     age:20,
+//     city:'baku',
+// }
+
+// function displayPersonInfo() {
+//     let string=''
+//     let personInformaton=Object.keys(person)
+//     let personInformaton2=Object.values(person)
+//     let value=personInformaton2.push(personInformaton)
+//     // string+=value
+//     return value
+// }
+
+// console.log(value);
+
+
+
+//JSON------------------------
+// let btn1=document.querySelector('.btn1')
+// let btn2=document.querySelector('.btn2')
+
+
+// btn1.addEventListener('click',()=>{
+//     fetch(`https://jsonplaceholder.typicode.com/todos/8`)
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+// })
+
+
+// btn2.addEventListener('click',()=>{
+//     fetch('https://jsonplaceholder.typicode.com/todos')
+//     .then(response => response.json())
+//     .then(json => console.log(json))  
+// })
+
+
+
+// //interval stop eleme baslatma
+// let tg_btn=document.querySelector('.toggle')
+// let interval;
+// tg_btn.addEventListener('click',()=>{
+//   if (interval) {
+
+//     clearInterval(interval);
+//     interval=undefined
+//   } else {
+    
+//     interval=setInterval(()=>{
+//       console.log('intervall');
+//     },1000)
+//   }
+// })
+
+
+// let obj={a:1,b:2,c:3}
+// function myFunction(a,b){
+//     let keys=Object.keys(a)
+//     let find=keys.includes(b)
+//     return find
+// }
+
+// let check=myFunction(obj,'a')
+// console.log(check);
