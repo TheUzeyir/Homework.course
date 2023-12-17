@@ -26,7 +26,11 @@ function showData(result) {
   if (result.weather[0].icon == "13d") {
     video.setAttribute('src', './weatherWideo/snow.webm');
   }
-  
+
+  if (result.weather[0].icon == "13n") {
+    video.setAttribute('src', './weatherWideo/snow.webm');
+  }
+
   if (result.weather[0].icon == "11d") {
     video.setAttribute('src', './weatherWideo/rain.mp4');
   }
