@@ -19,10 +19,14 @@ function showData(result) {
 
   let temp=document.querySelector('.weather_information_temp')
   temp.innerText=`${result.main.temp}`
-
+  
   let decs=document.querySelector('.weather_information_decs')
   decs.innerText=`${result.weather[0].description}`
-
+  
+  if (result.weather[0].icon == "13d") {
+    video.setAttribute('src', './weatherWideo/snow.webm');
+  }
+  
   if (result.weather[0].icon == "11d") {
     video.setAttribute('src', './weatherWideo/rain.mp4');
   }
@@ -35,9 +39,6 @@ function showData(result) {
     video.setAttribute('src', './weatherWideo/rain.mp4');
   }
 
-  if (result.weather[0].icon == "13d") {
-    video.setAttribute('src', './weatherWideo/snow.webm');
-  }
 
   if (result.weather[0].icon == "50d") {
     video.setAttribute('src', './weatherWideo/cloudy.mp4');
