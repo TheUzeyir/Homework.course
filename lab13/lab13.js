@@ -43,6 +43,9 @@ function showData(result) {
     video.setAttribute('src', './weatherWideo/rain.mp4');
   }
 
+  if (result.weather[0].icon == "10n") {
+    video.setAttribute('src', './weatherWideo/rain.mp4');
+  }
 
   if (result.weather[0].icon == "50d") {
     video.setAttribute('src', './weatherWideo/cloudy.mp4');
