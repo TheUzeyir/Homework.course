@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+
+.weather{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    padding-top: 80px;
+    width: 350px;
+    height: 350px;
+
+    &_header{
+        font-size: 50px;
+    }
+
+    &_input{
+        background-color: transparent;
+        border: none;
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+        outline: none;
+
+        &::placeholder{
+            padding: 20px;
+        }
+    }
+
+    &_information{
+        text-align: center;
+
+        &_name{
+            font-size: 50px;
+            margin-top: 20px;
+        }
+
+        &_temp{
+            font-size: 35px;
+            margin-top: 20px;
+        }
+
+        &_decs{
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+    }
+}

@@ -414,49 +414,50 @@
 
 
 
-const persons = [
-    {
-        name: 'Luke Skywalker',
-        height: '172',
-        mass: '77',
-        eye_color: 'blue',
-        gender: 'male',
-    },
-    {
-        name: 'Darth Vader',
-        height: '202',
-        mass: '136',
-        eye_color: 'yellow',
-        gender: 'male',
-    },
-    {
-        name: 'Leia Organa',
-        height: '150',
-        mass: '49',
-        eye_color: 'brown',
-        gender: 'female',
-    },
-    {
-        name: 'Anakin Skywalker',
-        height: '188',
-        mass: '84',
-        eye_color: 'blue',
-        gender: 'male',
-    },
-  ];
+// const persons = [
+//     {
+//         name: 'Luke Skywalker',
+//         height: '172',
+//         mass: '77',
+//         eye_color: 'blue',
+//         gender: 'male',
+//     },
+//     {
+//         name: 'Darth Vader',
+//         height: '202',
+//         mass: '136',
+//         eye_color: 'yellow',
+//         gender: 'male',
+//     },
+//     {
+//         name: 'Leia Organa',
+//         height: '150',
+//         mass: '49',
+//         eye_color: 'brown',
+//         gender: 'female',
+//     },
+//     {
+//         name: 'Anakin Skywalker',
+//         height: '188',
+//         mass: '84',
+//         eye_color: 'blue',
+//         gender: 'male',
+//     },
+//   ];
 // //map 3,4   sort3,4
 
 
-let string='Hello world'
-function reverseString(string) {
-    for (let i = 0; i >string.length; i--) {
-        return string[i]
-    }
-}
-let value=reverseString(string)
-console.log(value);
 
-let sentence=['I am writing code now']
+
+// for (let i = 0; i < 3; i++) {
+    // repeatedString += str;
+// }
+// console.log(repeatedString);  
+
+
+
+// let sentence=['I am writing code now']
+
 // let person={
 //     name:'Uzeyir',
 //     age:20,
@@ -464,7 +465,7 @@ let sentence=['I am writing code now']
 // }
 
 // function displayPersonInfo() {
-//     let string=''
+//     // let string='' 
 //     let personInformaton=Object.keys(person)
 //     let personInformaton2=Object.values(person)
 //     let value=personInformaton2.push(personInformaton)
@@ -472,7 +473,7 @@ let sentence=['I am writing code now']
 //     return value
 // }
 
-// console.log(value);
+// console.log(displayPersonInfo()); 
 
 
 
@@ -522,3 +523,133 @@ let sentence=['I am writing code now']
 
 // let check=myFunction(obj,'a')
 // console.log(check);
+
+
+
+
+
+let get=document.querySelector('.btn_get');
+let post=document.querySelector('.btn_post');
+let put=document.querySelector('.btn_put');
+let deletes=document.querySelector('.btn_delete')
+
+
+// get.addEventListener('click',()=>{
+//     let api_url="https://jsonplaceholder.typicode.com/posts";
+//  fetch(api_url,{
+//     method:"GET",
+//     body:JSON.stringify({
+//         userId: 1,
+//         id: 2,
+//         title: "hi wordj llkhoiljs,dc iljcnlihrn cdoil piofndcpoewjnopkk",
+//         body: "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+//         },
+//     )
+// })
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+// })
+
+
+
+// post.addEventListener('click',()=>{
+//     let api_url="https://jsonplaceholder.typicode.com/posts";
+//     fetch(api_url,{
+//         method:"POST",
+//         body:JSON.stringify({
+//             userId: 1,
+//             id: 2,
+//             title: "qui est esse",
+//             body: "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+//             },
+//         )
+//     })
+// })
+
+
+
+// put.addEventListener('click',()=>{
+//     let api_url="https://jsonplaceholder.typicode.com/posts";
+//     fetch(api_url,{
+//         method:"PUT",
+//         body:JSON.stringify(
+//             {
+//                 word: "Hello today working API",
+//             },
+//         )
+//     })
+// })
+
+
+deletes.addEventListener('click',()=>{
+    fetch("https://jsonplaceholder.typicode.com/posts/1",{
+        method:"DELETE",
+    })
+})
+
+ 
+
+
+// function placeOrder(orderDetails, callback) {
+//     console.log(`Place order-------> ${orderDetails}`);
+  
+//     callback();
+//   }
+//   // chicken
+//   function orderChicken(callback) {
+//     setTimeout(() => {
+//       console.log("Chicken");
+//       callback()
+//     }, 1100);
+//   }
+//   //big menu
+//   function orderBigMenu(){
+//     setTimeout(()=>{
+//       console.log("Big menu");
+//     },1200)
+//   }
+//   //pasta
+//   function orderPasta(callback) {
+//     setTimeout(() => {
+//       console.log("pasta");
+//       callback()
+//     },1300);
+//   }
+
+  
+//   //Twister
+//   function ordertwister(callback) {
+//     setTimeout(() => {
+//       console.log("Twister");
+//       callback()
+//     }, 1400);
+//   }
+
+//   //Burger
+//   function orderBurger(callback) {
+//     setTimeout(() => {
+//       console.log("Burger");
+//       callback()
+//     }, 1500);
+//   }
+
+//   //cola
+//   function orderCola(callback) {
+//     setTimeout(() => {
+//       console.log("cola");
+//       callback()
+//     }, 1600);
+//   }
+  
+//   placeOrder("Prepare 1 big menu",function(){
+//     orderPasta (function(){
+//         ordertwister(function(){
+//             orderBurger(function(){
+//                 orderCola(function(){
+//                     console.log('Packet ready');
+//                 })
+//             })
+//         })
+//     });
+//   });
+  

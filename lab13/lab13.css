@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+.weather {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-top: 80px;
+  width: 350px;
+  height: 350px;
+}
+.weather_header {
+  font-size: 50px;
+}
+.weather_input {
+  background-color: transparent;
+  border: none;
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+.weather_input::-moz-placeholder {
+  padding: 20px;
+}
+.weather_input::placeholder {
+  padding: 20px;
+}
+.weather_information {
+  text-align: center;
+}
+.weather_information_name {
+  font-size: 50px;
+  margin-top: 20px;
+}
+.weather_information_temp {
+  font-size: 35px;
+  margin-top: 20px;
+}
+.weather_information_decs {
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 30px;
+}/*# sourceMappingURL=lab13.css.map */
