@@ -22,57 +22,21 @@ function showData(result) {
   
   let decs=document.querySelector('.weather_information_decs')
   decs.innerText=`${result.weather[0].description}`
-  
-  if (result.weather[0].icon == "13d") {
+
+
+  if (result.weather[0].main == "Snow") {
     video.setAttribute('src', './weatherWideo/snow.webm');
   }
 
-  if (result.weather[0].icon == "13n") {
-    video.setAttribute('src', './weatherWideo/snow.webm');
-  }
-
-  if (result.weather[0].icon == "11d") {
+  if (result.weather[0].main == "Rain") {
     video.setAttribute('src', './weatherWideo/rain.mp4');
   }
 
-  if (result.weather[0].icon == "09d") {
-    video.setAttribute('src', './weatherWideo/rain.mp4');
-  }
-
-  if (result.weather[0].icon == "10d") {
-    video.setAttribute('src', './weatherWideo/rain.mp4');
-  }
-
-  if (result.weather[0].icon == "10n") {
-    video.setAttribute('src', './weatherWideo/rain.mp4');
-  }
-
-  if (result.weather[0].icon == "50d") {
-    video.setAttribute('src', './weatherWideo/cloudy.mp4');
-  }
-  if (result.weather[0].icon == "02d") {
-    video.setAttribute('src', './weatherWideo/cloudy.mp4');
-  }
-  if (result.weather[0].icon == "02n") {
-    video.setAttribute('src', './weatherWideo/cloudy.mp4');
-  }
-  if (result.weather[0].icon == "03d") {
-    video.setAttribute('src', './weatherWideo/cloudy.mp4');
-  }
-  if (result.weather[0].icon == "03n") {
-    video.setAttribute('src', './weatherWideo/cloudy.mp4');
-  }
-  if (result.weather[0].icon == "04d") {
-    video.setAttribute('src', './weatherWideo/cloudy.mp4');
-  }
-  if (result.weather[0].icon == "04n") {
+  if (result.weather[0].main == "Clouds") {
     video.setAttribute('src', './weatherWideo/cloudy.mp4');
   }
 
-  if (result.weather[0].icon == "01d") {
-    video.setAttribute('src', './weatherWideo/normally.webm');
-  }
-  if (result.weather[0].icon == "01n") {
+  if (result.weather[0].main == "Clear") {
     video.setAttribute('src', './weatherWideo/normally.webm');
   }
   
