@@ -528,10 +528,10 @@
 
 
 
-let get=document.querySelector('.btn_get');
-let post=document.querySelector('.btn_post');
-let put=document.querySelector('.btn_put');
-let deletes=document.querySelector('.btn_delete')
+// let get=document.querySelector('.btn_get');
+// let post=document.querySelector('.btn_post');
+// let put=document.querySelector('.btn_put');
+// let deletes=document.querySelector('.btn_delete')
 
 
 // get.addEventListener('click',()=>{
@@ -581,11 +581,11 @@ let deletes=document.querySelector('.btn_delete')
 // })
 
 
-deletes.addEventListener('click',()=>{
-    fetch("https://jsonplaceholder.typicode.com/posts/1",{
-        method:"DELETE",
-    })
-})
+// deletes.addEventListener('click',()=>{
+//     fetch("https://jsonplaceholder.typicode.com/posts/1",{
+//         method:"DELETE",
+//     })
+// })
 
  
 
@@ -652,4 +652,43 @@ deletes.addEventListener('click',()=>{
 //         })
 //     });
 //   });
-  
+
+
+
+
+// let imgFlowers=['./Capture0.png','./licensed-image.jpeg','./ROG_Plastic-_Model_kit_FHD.jpg',]
+// let index=0
+
+// const image=document.querySelector('.image')
+// const imageBtn=document.querySelector('.imgBtn')
+
+// imageBtn.addEventListener('click', function () {
+//     image.setAttribute('src', `${imgFlowers[1]}`);
+// });
+
+
+
+// const image=document.querySelector('.image')
+// const imageBtn=document.querySelector('.imgBtn')
+
+// let imgFlowers=['./Capture0.png','./licensed-image.jpeg','./ROG_Plastic-_Model_kit_FHD.jpg',]
+// let index=0
+
+// imageBtn.addEventListener('click', function () {
+//     image.setAttribute('src', `${imgFlowers[0]}`);
+// });
+
+// let imgFlowers = ['./Capture0.png', './licensed-image.jpeg', './ROG_Plastic-_Model_kit_FHD.jpg'];
+// let index = 0;
+
+// const image = document.querySelectorAll('.image');
+// const imageBtn = document.querySelector('.imgBtn');
+
+// imageBtn.addEventListener('click', function () {
+//     if (index < imgFlowers.length) {
+//         image.forEach(function (img) {
+//             img.setAttribute('src', imgFlowers[index]);
+//         });
+//         index++;
+//     }
+// });

@@ -23,7 +23,7 @@
 // button.addEventListener('click',()=>{
 // document.querySelector('.img').setAttribute("src","wall.jpg")
 // })
-
+ 
 // -----------------------------------------------------------------PART2---------------------------------------------------------------------
 
 // Write program that will reverse string: 'Hello world' => 'dlrow olleH'    
@@ -70,25 +70,27 @@
 
 //---TASK4--???
 // Write program to find the first not repeated character: 'abacddbec' => 'e'
-// let str='abacddbec';
-// let empty='';
-// let val=0
-// function firstNotRepeatedChar(str) {
-//     for (let i = 0; i < str.length; i++) {
-//         val=0;
-//         for (let index = 0; index < str.length; index++) {
-//             if(val>1){
-//                 empty=str[i]
-//                 break;
-//             }         
-//             if (str[i]===str[index]) {
-//                 val+=1
-//             }     
-//         }        
+// let string = "abacddbec";
+
+// function givFirstNotRepeated(str) {
+//   for (let i = 0; i < str.length; i++) {
+//     let repeat = false;
+//     for (let j = 0; j < str.length; j++) {
+//       if (i !== j && str[i] === str[j]) {
+//         repeat = true;
+//         break;
+//       }
 //     }
+//     if (!repeat) {
+//       return str[i];
+//     }
+//   }
+//   return null;
 // }
-// firstNotRepeatedChar(str)
-// console.log(empty)
+
+// let result=givFirstNotRepeated(string)
+
+// console.log(result);
 
 
 

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.game-input {
+  width: 180px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+}
+.game_btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+}
+.game_guessbox {
+  text-align: center;
+}/*# sourceMappingURL=lab14.css.map */
