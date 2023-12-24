@@ -49,10 +49,16 @@ btn.addEventListener('click',()=>{
         else if (input.value<randomNumber) {
             guess_result.innerText='Guess high number'
         }
-
+        
         number++
         try_element.innerText=number
         guess_arr.innerText=`Your Guess Number${arr}`
+
+        if(number>=3){
+            alert("you lost")
+            btn.disabled=true
+        }
     }
 
 })
+// https://github.com/TheUzeyir/Homework.course/tree/main/lab14
