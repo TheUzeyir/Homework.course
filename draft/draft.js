@@ -414,40 +414,44 @@
 
 
 
-// const persons = [
-//     {
-//         name: 'Luke Skywalker',
-//         height: '172',
-//         mass: '77',
-//         eye_color: 'blue',
-//         gender: 'male',
-//     },
-//     {
-//         name: 'Darth Vader',
-//         height: '202',
-//         mass: '136',
-//         eye_color: 'yellow',
-//         gender: 'male',
-//     },
-//     {
-//         name: 'Leia Organa',
-//         height: '150',
-//         mass: '49',
-//         eye_color: 'brown',
-//         gender: 'female',
-//     },
-//     {
-//         name: 'Anakin Skywalker',
-//         height: '188',
-//         mass: '84',
-//         eye_color: 'blue',
-//         gender: 'male',
-//     },
-//   ];
+const persons = [
+    {
+        name: 'Luke Skywalker',
+        height: '172',
+        mass: '77',
+        eye_color: 'blue',
+        gender: 'male',
+    },
+    {
+        name: 'Darth Vader',
+        height: '202',
+        mass: '136',
+        eye_color: 'yellow',
+        gender: 'male',
+    },
+    {
+        name: 'Leia Organa',
+        height: '150',
+        mass: '49',
+        eye_color: 'brown',
+        gender: 'female',
+    },
+    {
+        name: 'Anakin Skywalker',
+        height: '188',
+        mass: '84',
+        eye_color: 'blue',
+        gender: 'male',
+    },
+  ];
 // //map 3,4   sort3,4
 
+let map=persons.map((item)=>{
+    let full=item.name.split(' ')
+    return full[0]
 
-
+})
+console.log(map);
 
 // for (let i = 0; i < 3; i++) {
     // repeatedString += str;
@@ -697,193 +701,35 @@
 
 
 
+// submitButton.addEventListener("click", calculateBMI);
+// resetButton.addEventListener("click", resetForm);
 
-// let bag=document.querySelector('.header_bags')
-// let bag_btn=document.querySelector('.bag_btn')
-// let active=document.querySelector('.active')
-// let bag_number=document.querySelector('.header_bags_number')
-// let card_Btn=document.querySelectorAll('.card_btn')
+// function calculateBMI() {
+//   let weight = parseFloat(weightInput.value);
+//   let height = parseFloat(heightInput.value) / 100;
 
-// bag.addEventListener('click',()=>{
-//   active.classList.toggle('active')
-// })
-
-// bag_btn.addEventListener('click',()=>{
-//   active.classList.toggle('active')
-// })
-
-
-// fetch('https://dummyjson.com/products')
-//   .then((res) => res.json())
-//   .then((data) => showData(data));
-
-//   function showData(data) {
-//     let cards = document.querySelector('.cards');
-//     cards.innerHTML = '';
-  
-//     data.products.forEach((product) => {
-//       let card = document.createElement('div');
-//       card.classList.add('card');
-//       card.dataset.id = product.id;
-//       card.innerHTML = `
-//         <img src="${product.thumbnail}" class="card_img">
-//         <p class="card_text">${product.title} - ${product.description}</p>
-//         <p class="card_price">${product.price}&#8380</p>
-//         <button class="card_btn">
-//           <i class="card_btn_icon fa-solid fa-cart-shopping"></i>Add To Cart
-//         </button>
-//       `;
-//       cards.appendChild(card);
-//     });
+//   if (isNaN(weight)||isNaN(height)||  weight <= 0 || height <= 0)  {
+//     alert("Please enter valid weight and height.");
+//     return;
 //   }
-  
 
-// function bagData(value) {
-//   let bag_container = document.querySelector('.bag_container');
-//   bag_container.innerHTML = ''; 
+//   let bmi = weight / (height *2);
+//   resultElement.textContent = `Your BMI: ${bmi.toFixed(2)}`;
 
-//   value.products.map((product) => {
-//     bag_container.innerHTML+=`
-//     <div class="bag_product">
-//     <img src="${product.thumbnail}" alt="">
-//     <div class="bag_product_text">
-//         <p class="bag_product_text_information">${product.title}</p>
-//         <p class="bag_product_text_price">${product.price} &#8380;</p> 
-        
-//         <div class="bag_product_buybox">
-//             <i class="bag_product_buybox_icon fa-solid fa-minus"></i>
-//             <p class="bag_product_buybox-number">1</p>
-//             <i class="bag_product_buybox_icon fa-solid fa-plus"></i>
-//         </div>
-//     </div>
-//     <i class="bag_product_trash-icon fa-solid fa-trash"></i>
-//   </div>
-//   `
-//   });
+//   let category =
+//     bmi < 18.5
+//       ? "Underweight"
+//       : bmi < 25
+//       ? "Normal weight"
+//       : bmi < 30
+//       ? "Overweight"
+//       : "Obese";
+//   descriptionElement.textContent = `Category: ${category}`;
 // }
 
-// let cards = document.querySelectorAll('.cards');
-
-// function displayId() {
-// cards.forEach(card => {
-//   card.addEventListener('click', (event) => {
-//     let positionClick = event.target;
-//     if (positionClick.classList.contains('card_btn')) {
-//       let product_id=positionClick.parentElement.dataset.id;
-//       console.log(product_id);
-//     }
-//   });
-// });
-// }
-// displayId();
-
-// let cardArr=[]
-
-
-
-
-
-
-
-
-// let bag=document.querySelector('.header_bags')
-// let active=document.querySelector('.active')
-// let bag_btn=document.querySelector('.bag_btn')
-// let bag_number=document.querySelector('.header_bags_number')
-// let card_AllBtn=document.querySelectorAll('.card_btn')
-// let cards = document.querySelectorAll('.cards');
-// let listCartHTML=document.querySelector('.bag_container')
-
-// bag.addEventListener('click',()=>{
-//   active.classList.toggle('active')
-// })
-
-// bag_btn.addEventListener('click',()=>{
-//   active.classList.toggle('active')
-// })
-
-// fetch('https://dummyjson.com/products')
-//   .then((res) => res.json())
-//   .then((data) => showData(data));
-
-
-//   function showData(data) {
-//     let cards = document.querySelector('.cards');
-//     cards.innerHTML = '';
-  
-//     data.products.forEach((product) => {
-//       let card = document.createElement('div');
-//       card.classList.add('card');
-//       card.dataset.id = product.id;
-//       card.innerHTML = `
-//         <img src="${product.thumbnail}" class="card_img">
-//         <p class="card_text">${product.title} - ${product.description}</p>
-//         <p class="card_price">${product.price}&#8380</p>
-//         <button class="card_btn">
-//           <i class="card_btn_icon fa-solid fa-cart-shopping"></i>Add To Cart
-//         </button>
-//       `;
-//       cards.appendChild(card);
-//     });
-//   }
-
-
-
-// cards.forEach(card => {
-//   card.addEventListener('click', (event) => {
-//     let positionClick = event.target;
-//     if (positionClick.classList.contains('card_btn')) {
-//       let product_id=positionClick.parentElement.dataset.id;
-//       addToCart(product_id)
-//     }
-//   });
-// });
-
-// let product=[]
-
-// let addToCart=(product_id)=>{
-//   let positionsThisProductInCards=product.findIndex((value)=>value.product_id==product_id)
-//   if (product.length<=0) {
-//     product=[{
-//       id:product_id,
-//       quanity:1
-//     }]
-//   }
-//   else if(positionsThisProductInCards<0){
-//     product.push({
-//       id:product_id,
-//       quanity:1
-//     })
-//   }
-//   else{
-//     product[positionsThisProductInCards].quanity=product[positionsThisProductInCards].quanity+1
-//   }
-//   addCartToHtml(product);
-// }
-
-// let addCartToHtml=()=>{
-//   listCartHTML.innerHTML='';
-//   if (product.length>0) {
-//     product.forEach(cart=>{
-//       let newCArt=document.createElement('div')
-//       newCArt.classList.add('.bag_container')
-//       newCArt.innerHTML=`
-//       <div class="bag_product">
-//       <img src="${newCArt.thumbnail}" alt="">
-//       <div class="bag_product_text">
-//           <p class="bag_product_text_information">${product.title}</p>
-//           <p class="bag_product_text_price">${product.price} &#8380;</p> 
-          
-//           <div class="bag_product_buybox">
-//               <i class="bag_product_buybox_icon fa-solid fa-minus"></i>
-//               <p class="bag_product_buybox-number">1</p>
-//               <i class="bag_product_buybox_icon fa-solid fa-plus"></i>
-//           </div>
-//       </div>
-//       <i class="bag_product_trash-icon fa-solid fa-trash"></i>
-//     </div>
-//     `
-//       listCartHTML.appendChild(newCArt)
-//     })
-//   }
+// function resetForm() {
+//   weightInput.value = "";
+//   heightInput.value = "";
+//   resultElement.textContent = "";
+//   descriptionElement.textContent = "";
 // }

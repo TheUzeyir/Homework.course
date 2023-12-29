@@ -1,202 +1,201 @@
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    font-family: system-ui;
 }
 
-ul {
-    list-style: none;
-}
 
-li:hover{
-    cursor: pointer;
-    color: blue;
-}
-
-button{
+.trash-icon{
+    padding-left: 10px;
+    color: green;
     cursor: pointer;
 }
 
-header{
-    background-color: rgb(96, 200, 69);
-    height: 100px;
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
 }
 
-.wrapper{
-    padding:20px 106px;
-}
-
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &_logo{
-        width: 50px;
-        border-radius: 50%;
-        height: 50px;
-    }
-
-    &_navbar_ul{
-        display: flex;
-        gap: 50px; 
-        font-size: 20px;
-    }
-
-    &_bags{
-
-        &_number{
-            text-align: end;
-        }
-
-        &_icon{
-            cursor: pointer;
-            font-size: 20px;
-            color: blue;
-        }
-    }
-}
-
-.bag{
-    background-color:black;
-
-    &_btn{
-        padding-top: 20px;
-        position: absolute;
-        right:20px;
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
-    }
-
-
-    &_container{
-        margin-left:20px;
-        padding:60px 0 30px 0;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 30px;
-    }
-
-    &_product{
-        display: flex;
-        gap: 10px;
-        background-color: white;
-        width: 470px;
-        height: 100px;
-        border-radius: 8px;
-        padding: 10px 10px;
-
-        img{
-            width: 80px;
-            height: 80px;
-            border-radius: 8px;
-        }
-        &_text{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            font-size: 15px;
-
-            &_information{
-                width: 180px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-
-            &_price{
-                font-weight: 600;
-            }
-        }
-
-        &_buybox{
-            border: 1px solid black;
-            width: 70px;
-            height: 25px;
-            padding: 0 5px;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            &-number{
-                font-weight: 600;
-            }
-
-            &_icon{
-                font-size: 10px;
-                cursor: pointer;
-            }
-        }
-        
-        &_trash-icon{
-            cursor: pointer;
-            padding-left: 140px;
-            color: green;
-        }
-    }
-}
-
-.active{
-    display: none;
-}
-
-main{
-    margin:20px 50px;
-}
-
-.cards{
+.container_header{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr 50px;
+    padding-top:20px ;
+
+
+    .shopping{
+        position: relative;
+        text-align: right;
+        cursor: pointer;
+
+        span{
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            position: absolute;
+            top: -5px;
+            left: 80%;
+            padding: 3px 10px;
+        }
+    }
 }
+
 
 .card{
-    width: 350px;
-    height: 450px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    top: 0;
+    left:100%;
+    width: 500px;
+    background-color: black;
+    height: 100vh;
+    transition: 0.5s;
 
-    &_img{
-        width: 200px;
-        height: 200px;
-        margin:30px 70px;
-    }
-
-    &_text{
-        font-weight: 600;
+    h1{
+        color: orange;
+        font-weight: 100;
+        margin: 0;
         padding: 0 20px;
-        height: 50px;
-        // white-space: wrap;
-        overflow: hidden;
-        // text-overflow: ellipsis;
+        height: 80px;
+        display: flex;
+        align-items: center;
     }
 
-    &_price{
-        font-weight: 600;
-        padding-left: 15px;
-    }
+    .checkOut{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
-    &_btn{
-        width: 90%;
-        height: 30px;
-        margin: 0 20px;
-        background-color: green;
-        border:none;
-        border-radius: 8px;
-        color: white;
+        div{
+            background-color: orange;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
-        &_icon{
-            padding-right: 20px;
+        div:nth-child(2){
+            background-color: black;
+            color: #fff;
         }
     }
+
+} 
+
+
+.active{
+
+    .container{
+        transform: translateX(-200px);
+    }
+    
+    .card{
+        left: calc(100% - 500px);
+    }
+    
+} 
+
+.card_btn_icon{
+    padding-right: 15px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+
+
+    .item{
+        height: 400px;
+        text-align: center;
+        background-color: white;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+        .title{
+            font-weight: 600;
+            height: 30px;
+        }
+
+        .price{
+            margin: 10px;
+            font-weight: 600;
+        }
+
+        button{
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    }
+
+
+}
+
+.shopping-icon{
+    font-size: 35px;
+}
+
+.listCard {
+
+    li{
+        display: grid;
+        grid-template-columns: 100px repeat(3, 1fr);
+        color: #fff;
+        row-gap: 10px;
+        margin-bottom: 20px;   
+
+        img{
+            width: 50px;
+            height: 50px;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    button{
+        width: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        border: none;
+    }
+
+    .count{
+        margin: 0 10px;
+    }
+
 }

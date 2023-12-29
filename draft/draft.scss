@@ -1,8 +1,54 @@
-// // * {
-// //     margin: 0;
-// //     padding: 0;
-// //     box-sizing: border-box;
-// // }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bmi{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+    .bmi_box_input{
+        margin-left: 10px;
+        height: 30px;
+    }
+
+    &_btn{
+
+        &_submit{
+            cursor: pointer;
+            background-color: green;
+            padding: 10px 25px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+
+        }
+
+        &_reset{
+            cursor: pointer;
+            background-color: red;
+            padding: 10px 25px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+
 
 // // .active {
 // //     position: absolute;
@@ -154,3 +200,5 @@
 // table,th,td{
 //     border: 1px solid black;
 // }
+
+

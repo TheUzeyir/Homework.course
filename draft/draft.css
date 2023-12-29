@@ -1,1 +1,41 @@
-/*# sourceMappingURL=draft.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+
+.bmi {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.bmi .bmi_box_input {
+  margin-left: 10px;
+  height: 30px;
+}
+.bmi_btn_submit {
+  cursor: pointer;
+  background-color: green;
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+.bmi_btn_reset {
+  cursor: pointer;
+  background-color: red;
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}/*# sourceMappingURL=draft.css.map */
