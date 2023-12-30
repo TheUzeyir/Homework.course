@@ -1,112 +1,129 @@
-let openShopping = document.querySelector('.shopping');
-let closeShopping = document.querySelector('.closeShopping');
-let list = document.querySelector('.list');
-let listCard = document.querySelector('.listCard');
-let body = document.querySelector('body');
-let total = document.querySelector('.total');
-let quantity = document.querySelector('.quantity');
-let trash=document.querySelector('.trash-icon')
-let main=document.querySelector('main')
+let openModalBtn = document.querySelector(".shopping");
+let closeModalBtn = document.querySelector(".closeShopping");
+let productList = document.querySelector(".list");
+let cartItemList = document.querySelector(".listCard");
+let body = document.querySelector("body");
+let totalElement = document.querySelector(".total");
+let quantityElement = document.querySelector(".quantity");
+let trashIcon = document.querySelector(".trash-icon");
+let main = document.querySelector("main");
 
-
-openShopping.addEventListener('click', () => {
-    main.classList.toggle('active');
+openModalBtn.addEventListener("click", () => {
+  main.classList.toggle("active");
 });
 
-closeShopping.addEventListener('click', () => {
-    main.classList.toggle('active');
+closeModalBtn.addEventListener("click", () => {
+  main.classList.toggle("active");
 });
-    
 
-fetch('https://dummyjson.com/products')
-    .then((res) => res.json())
-    .then((fetchedData) => {
-        data = fetchedData;
-        initApp(data);
-    });
+fetch("https://dummyjson.com/products")
+  .then((res) => res.json())
+  .then((fetchedData) => {
+    data = fetchedData;
+    initApp(data);
+  });
 
-let listCards = [];
+let cartItems = [];
 
 function initApp(data) {
-    data.products.forEach((value, key) => {
-        let newDiv = document.createElement('div');
-        newDiv.classList.add('item');
-        newDiv.innerHTML = `
-        <img src="${value.thumbnail}"/>
-        <div class="title">${value.title}</div>
-        <div class="price">${value.price.toLocaleString()}&#8380</div>
-        <button class="addToCardBtn">
-        <i class="card_btn_icon fa-solid fa-cart-shopping"></i>Add To Cart
-        </button>
+  data.products.forEach((product, key) => {
+    let productDiv = document.createElement("div");
+    productDiv.classList.add("item");
+    productDiv.innerHTML = `
+            <img src="${product.thumbnail}"/>
+            <div class="title">${product.title}</div>
+            <div class="price">${product.price}&#8380</div>
+            <button class="addToCartBtn">
+                <i class="cart_btn_icon fa-solid fa-cart-shopping"></i>Add To Cart
+            </button>
         `;
 
-        newDiv.querySelector('.addToCardBtn').addEventListener('click', () => {
-            addToCard(key);
-        });
-
-        list.appendChild(newDiv);
+    productDiv.querySelector(".addToCartBtn").addEventListener("click", () => {
+      addToCart(key);
     });
+
+    productList.appendChild(productDiv);
+  });
 }
 
-
-function addToCard(key) {
-    if (listCards[key] == null) {
-        listCards[key] = data.products[key];
-        listCards[key].quantity = 1;
-    }
-    reloadCard();
+function addToCart(key) {
+  if (cartItems[key] == null) {
+    cartItems[key] = {
+      ...data.products[key],
+      quantity: 1,
+      originalPrice: data.products[key].price,
+    };
+  } else {
+    cartItems[key].quantity++;
+  }
+  updateCart();
+  setCartItemsToLocalStorage(cartItems);
 }
 
+function updateCart() {
+  cartItemList.innerHTML = "";
+  let count = 0;
+  let totalPrice = 0;
 
-function reloadCard() {
-    listCard.innerHTML = '';
-    let count = 0;
-    let totalPrice = 0;
+  cartItems.forEach((cartItem, key) => {
+    if (cartItem != null) {
+      totalPrice += data.products[key].price * cartItem.quantity;
+      count += cartItem.quantity;
 
-    listCards.forEach((value, key) => {
-        if (value != null) {
-            totalPrice = totalPrice + data.products[key].price * value.quantity;
-            count = count + value.quantity;
-
-            let newDiv = document.createElement('li');
-            newDiv.innerHTML = `
-                <div><img src="${value.thumbnail}"/></div>
-                <div>${value.title}</div>
-                <div>${(data.products[key].price * value.quantity).toLocaleString()}</div>
+      let cartItemDiv = document.createElement("li");
+      cartItemDiv.innerHTML = `
+                <div><img src="${cartItem.thumbnail}"/></div>
+                <div>${cartItem.title}</div>
+                <div>${(
+                  data.products[key].price * cartItem.quantity
+                ).toLocaleString()}</div>
                 <div>
-                    <button onclick="changeQuantity(${key},${value.quantity - 1})">-</button>
-                    <div class="count">${value.quantity}</div>
-                    <button onclick="changeQuantity(${key},${value.quantity + 1})">+</button>
+                    <button onclick="changeQuantity(${key},${
+        cartItem.quantity - 1
+      })">-</button>
+                    <div class="count">${cartItem.quantity}</div>
+                    <button onclick="changeQuantity(${key},${
+        cartItem.quantity + 1
+      })" class="plusBTN">+</button>
                     <div class="trash-icon"><i class="fa-solid fa-trash"></i></div>
                 </div>
             `;
-            listCard.appendChild(newDiv);
-            newDiv.querySelector('.trash-icon').addEventListener('click', () => {
-                deleteItem(key);
-            });
-        }
-    });
+      cartItemList.appendChild(cartItemDiv);
 
-    total.innerText = totalPrice.toLocaleString();
-    quantity.innerText = count;
+      cartItemDiv.querySelector(".trash-icon").addEventListener("click", () => {
+        deleteCartItem(key);
+      });
+    }
+  });
+
+  totalElement.innerText = totalPrice.toLocaleString();
+  quantityElement.innerText = count;
 }
 
-
-function deleteItem(key) {
-    delete listCards[key];
-    reloadCard();
+function deleteCartItem(key) {
+  delete cartItems[key];
+  updateCart();
+  setCartItemsToLocalStorage(cartItems);
 }
-
-
 
 function changeQuantity(key, quantity) {
-    if (quantity == 0) {
-        delete listCards[key];
-    } else {
-        listCards[key].quantity = quantity;
-        listCards[key].price = quantity * data.products[key].price;
-    }
-    reloadCard();
+  if (quantity == 0) {
+    delete cartItems[key];
+  } else {
+    cartItems[key].quantity = quantity;
+    cartItems[key].price = quantity * cartItems[key].originalPrice;
+  }
+  updateCart();
+  setCartItemsToLocalStorage(cartItems);
 }
 
+function getCartItemsFromLocalStorage() {
+  const cartItemsJSON = localStorage.getItem("cartItems");
+  return cartItemsJSON ? JSON.parse(cartItemsJSON) : [];
+}
+
+function setCartItemsToLocalStorage(cartItems) {
+  const cartItemsJSON = JSON.stringify(cartItems);
+  localStorage.setItem("cartItems", cartItemsJSON);
+}
 {/* <div class="description">${value.description}</div> */}
