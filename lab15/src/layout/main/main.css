@@ -1,0 +1,11 @@
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

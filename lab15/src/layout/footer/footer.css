@@ -1,0 +1,14 @@
+.foreign_relations{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 300px;
+    padding: 50px 0;
+}
+footer{
+    background-color: greenyellow;
+
+}
+.footer_ul{
+    display: flex;
+    flex-direction: column;
+}

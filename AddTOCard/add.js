@@ -126,4 +126,3 @@ function setCartItemsToLocalStorage(cartItems) {
   const cartItemsJSON = JSON.stringify(cartItems);
   localStorage.setItem("cartItems", cartItemsJSON);
 }
-{/* <div class="description">${value.description}</div> */}

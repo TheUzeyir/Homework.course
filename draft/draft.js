@@ -414,44 +414,44 @@
 
 
 
-const persons = [
-    {
-        name: 'Luke Skywalker',
-        height: '172',
-        mass: '77',
-        eye_color: 'blue',
-        gender: 'male',
-    },
-    {
-        name: 'Darth Vader',
-        height: '202',
-        mass: '136',
-        eye_color: 'yellow',
-        gender: 'male',
-    },
-    {
-        name: 'Leia Organa',
-        height: '150',
-        mass: '49',
-        eye_color: 'brown',
-        gender: 'female',
-    },
-    {
-        name: 'Anakin Skywalker',
-        height: '188',
-        mass: '84',
-        eye_color: 'blue',
-        gender: 'male',
-    },
-  ];
-// //map 3,4   sort3,4
+// const persons = [
+//     {
+//         name: 'Luke Skywalker',
+//         height: '172',
+//         mass: '77',
+//         eye_color: 'blue',
+//         gender: 'male',
+//     },
+//     {
+//         name: 'Darth Vader',
+//         height: '202',
+//         mass: '136',
+//         eye_color: 'yellow',
+//         gender: 'male',
+//     },
+//     {
+//         name: 'Leia Organa',
+//         height: '150',
+//         mass: '49',
+//         eye_color: 'brown',
+//         gender: 'female',
+//     },
+//     {
+//         name: 'Anakin Skywalker',
+//         height: '188',
+//         mass: '84',
+//         eye_color: 'blue',
+//         gender: 'male',
+//     },
+//   ];
+// // //map 3,4   sort3,4
 
-let map=persons.map((item)=>{
-    let full=item.name.split(' ')
-    return full[0]
+// let map=persons.map((item)=>{
+//     let full=item.name.split(' ')
+//     return full[0]
 
-})
-console.log(map);
+// })
+// console.log(map);
 
 // for (let i = 0; i < 3; i++) {
     // repeatedString += str;
@@ -733,3 +733,82 @@ console.log(map);
 //   resultElement.textContent = "";
 //   descriptionElement.textContent = "";
 // }
+
+
+//!deyer artirib azaldan input
+// let inp=document.getElementById('inp')
+// let res=document.getElementById('result')
+// let bar=document.querySelector('.bar')
+
+// inp.oninput=()=>{
+//     res.textContent=inp.value;
+//     bar.style.width=inp.value+"%"
+// }
+
+
+
+
+
+
+
+// let input = document.querySelector('.filter_input');
+// console.log(input.value);
+// document.addEventListener("DOMContentLoaded", function () {
+//   fetch("https://dummyjson.com/products")
+//     .then((res) => res.json())
+//     .then((data) => showData(data));
+
+//   let filter_btn = document.querySelector('.filter_btn');
+
+//   filter_btn.addEventListener('click', () => {
+//     filterData();
+//   });
+// });
+
+
+
+// function showData(data) {
+//   const cardsContainer = document.querySelector(".cards");
+
+//   data.products.forEach((element) => {
+//     const card = document.createElement("div");
+//     card.className = "card";
+
+//     card.innerHTML = `
+//       <img src="${element.thumbnail}" alt="">
+//       <p class="title">${element.title}</p>
+//       <p class="text_price">${element.price} &#8380</p>
+//       <button class="button">click</button>
+//     `;
+
+//     cardsContainer.appendChild(card);
+//   });
+// }
+
+// function filterData() {
+//   const cards = document.querySelectorAll('.card');
+
+//   cards.forEach((card) => {
+//     const priceElement = card.querySelector('.text_price');
+//     const price = parseFloat(priceElement.textContent.replace(' ₽', '').replace(',', ''));
+
+//     if (price < 1000) {
+//       card.style.display = "none";
+//     } else {
+//       card.style.display = "block";
+//     }
+//   });
+// }
+
+
+
+document.getElementById('next').onclick=function () {
+    let lists=document.querySelectorAll('.item')
+    document.getElementById('slide').appendChild(lists[0])
+}
+
+document.getElementById('prew').onclick=function () {
+    let lists=document.querySelectorAll('.item')
+    document.getElementById('slide').prepend(lists[lists.length-1])
+}
+

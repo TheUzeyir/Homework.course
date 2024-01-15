@@ -1,0 +1,30 @@
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  .card_box{
+    width: 370px;
+    height: 420px;
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 20px;
+  }
