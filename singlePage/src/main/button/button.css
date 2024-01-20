@@ -1,0 +1,13 @@
+.main_btn{
+    width: 240px;
+    height: 44px;
+    border: 8px;
+    border-radius: 20px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.main_btn_icon{
+    padding-left: 10px;
+}
