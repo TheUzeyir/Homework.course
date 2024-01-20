@@ -1,0 +1,101 @@
+.card_box{
+    width: 400px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding:0 10px;
+    background-color: #F5F7FE;
+
+}
+
+.img{
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.card_box_title{
+    font-size: 25px;
+}
+
+.card_box_name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_box_name_title{
+    color: gray;
+}
+
+.card_box_view{
+    display: flex;
+    gap: 10px;
+}
+
+.card_box_view_number{
+    font-weight: 400;
+}
+
+.popularity_box_star{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.popularity_box_star_box{
+    display: flex;
+    gap: 2px;
+}
+
+.icon{
+    font-size: 12px;
+}
+
+.popularity_box_text{
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.popularity_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popularity_box_text{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.price_box_btn{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+.price_box_price{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.price_box{
+    display: flex;
+    justify-content: space-between;
+}
