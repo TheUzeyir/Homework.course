@@ -9,5 +9,8 @@
     max-width: 500px;
 }
 .slide_img img{
-    max-width: 100%;
+    max-width: 500px;
+}
+img{
+    width: 500px;
 }
