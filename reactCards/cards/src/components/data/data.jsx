@@ -1,7 +1,13 @@
+import  img1 from "./jorge-ramirez-SVpWtjXmLZg-unsplash.jpg"
+import  img2 from "./lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg"
+import  img3 from "./markus-spiske-Skf7HxARcoc-unsplash.jpg"
+
+
+
 export const data=[
     {
         id:1,
-        img:"https://unsplash.com/photos/a-man-in-a-wet-suit-swimming-in-the-ocean-pyThxd4x8Tk",
+        img:img1,
         title:"Python for Data Science and Machine learning Bootcamp",
         name:"Jose Portilla",
         price:75.82,
@@ -11,7 +17,7 @@ export const data=[
     },
     {
         id:2,
-        img:"https://unsplash.com/photos/silver-macbook-paSLTZpHCdo",
+        img:img2,
         title:"Python for Data Science and Machine learning Bootcamp",
         name:"Ava Kinn",
         price:50.55,
@@ -21,7 +27,7 @@ export const data=[
     },
     {
         id:3,
-        img:"https://unsplash.com/photos/blue-and-yellow-lights-on-black-and-blue-dj-mixer--HlaGdSiC-gU",
+        img:img3,
         title:"Python for Data Science and Machine learning Bootcamp",
         name:"Lucas Rodriguez",
         price:25.33,
