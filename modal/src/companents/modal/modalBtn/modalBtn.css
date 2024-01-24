@@ -1,0 +1,14 @@
+.btn{
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.succes{
+  background-color: blue;    
+  color: white;
+}
+
+.simple{
+    background-color: rgb(243, 239, 239);
+    color: black;
+} 

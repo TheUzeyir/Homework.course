@@ -1,0 +1,59 @@
+.modal{
+    width: 500px;
+    height: 320px;
+    padding:0 50px 0 30px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.main_modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_header_btn{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.modal_mainText{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.modalCart{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modalCart_box_title{
+    font-size: 20px;
+}
+
+.modalCart_box_input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.modal_Btn_box{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 240px;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
