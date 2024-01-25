@@ -1,0 +1,24 @@
+.btn_box{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counter_box{
+    display: flex;
+    gap: 20px;
+
+}
+
+.counter_box_text{
+    width: 100px;
+    height: 30px;
+    background:palevioletred;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    margin-top: -0px;
+}

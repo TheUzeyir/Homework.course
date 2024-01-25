@@ -1,7 +1,12 @@
 button{
-    width: 200px;
+    width: 100px;
     height: 40px;
     background-color: rgb(53, 187, 53);
     border-radius: 8px;
     border: none;
+    cursor: pointer;
+}
+.btn{
+    color: white;
+    font-size: 20px;
 }
