@@ -5,10 +5,6 @@ import { useState } from 'react'
  
 const modal = () => {
 
-    const saveData=()=>{
-        console.log("save");
-    }
-
     const displayNoneModal=()=>{
         let modal=document.querySelector(".modal")
         let Icon=document.querySelector(".modal_header_btn")
@@ -60,7 +56,7 @@ const modal = () => {
             </div>
 
             <div className="modal_Btn_box">
-                <ModalBtn type="succes" btnText="Save" handleClick={saveData} />
+                <ModalBtn type="succes" btnText="Save" />
                 <ModalBtn type="simple" btnText="Cancel" handleClick={displayNoneModal}/>
             </div>
         </div>
