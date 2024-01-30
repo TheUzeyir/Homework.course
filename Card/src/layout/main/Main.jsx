@@ -57,7 +57,7 @@ const Main = () => {
                 <span className={styles.product_info_sale_box_price}>${count*125.00}</span>
                 <span className={styles.product_info_sale_box_percentage}>50%</span>
               </div>
-              <p className={styles["product_info_sale_dis-percentage"]}><del>$250.00</del></p>
+              <p className={styles["product_info_sale_dis-percentage"]}><del>{"$"+" "+count*250.00}</del></p>
             </div>
 
               <div className={styles.product_buy}>
@@ -66,10 +66,14 @@ const Main = () => {
                     <span className={styles.product_buy_counter_count}>{count}</span>
                     <span className={styles.product_buy_counter_plus} onClick={handleClickPlus}>+</span>
                 </div>
-                  <button className={styles.product_buy_btn}>
-                    <CiShoppingCart className={styles.product_buy_btn_icon}/>
-                    <span className={styles.product_buy_btn_desc}>Add to cart</span>
-                  </button>
+                  <div className={styles.button} data-tooltip={count*125.00+" "+"$"}>
+                    <div className={styles["button-wrapper"]}>
+                      <div className={styles.text}>Add To Cart</div>
+                      <span className={styles.icon}>
+                        <CiShoppingCart className={styles.product_buy_btn}/>
+                      </span>
+                    </div>
+                  </div>
               </div>
           </div>
       </div>
