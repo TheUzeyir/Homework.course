@@ -1,6 +1,6 @@
-.img_box{
-    width: 200px;
-    height: 200px;
+.img_boxes{
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
     position: relative;
   }
@@ -11,9 +11,9 @@
     object-fit: contain;
   }
   
-  .heart_img{
+  .heart_imges{
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 20px;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
   }

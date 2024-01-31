@@ -5,22 +5,22 @@ import "./card.css";
 const Card = ({ title }) => {
   const [size, setSize] = useState(50);
 
-  function handlerScale() {
+  function handleScale() {
     setSize((prev) => prev + 10);
   }
 
   return (
     <>
-      <div className="img_box">
-        <img src={animalsImg[title]} alt="" />
+      <div className="img_boxes">
+        <img src={animalsImg[title]} alt="animals" />
         <img
-          onClick={handlerScale}
-          className="heart_img"
+          onClick={handleScale}
+          className="heart_imges"
           src="src/assets/images/heart.svg"
           alt=""
           style={{ width: `${size}px` }}
         />
-        <span>{title}</span>
+        <p>{title}</p>
       </div>
     </>
   );

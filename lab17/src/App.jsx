@@ -19,12 +19,12 @@ const App = () => {
   return (
     <>
       <button className="btn" onClick={clickRandom}>
-        Get random animal
+        Get random animals
       </button>
       <div className="app">
         {animals.map((title, index) => {
           return <Card title={title} key={index} />;
-        })}
+        })}        
       </div>
     </>
   );
