@@ -3,7 +3,7 @@
     border-radius: 8px;
 }
 
-.succes{
+.success{
   background-color: blue;    
   color: white;
 }
@@ -12,3 +12,9 @@
     background-color: rgb(243, 239, 239);
     color: black;
 } 
+
+.create{
+  background-color: green;
+  color: white;
+  margin: 20px;
+}
