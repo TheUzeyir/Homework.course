@@ -1,0 +1,10 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.product_box{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}

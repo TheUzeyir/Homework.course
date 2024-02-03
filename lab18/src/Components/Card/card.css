@@ -1,0 +1,15 @@
+.card{
+    margin: 20px;
+    min-width: 200px;
+    gap: 20px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+h3{
+    color: #fff;
+}
