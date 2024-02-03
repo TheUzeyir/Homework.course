@@ -43,7 +43,6 @@ render() {
                 <Btn type="minus" btnText="-" handleClick={this.handleClickMinus} />
             </div>
             <Btn type="reset" btnText="Reset" handleClick={this.handleClickReset} />
-
         </div>
     )
 }
