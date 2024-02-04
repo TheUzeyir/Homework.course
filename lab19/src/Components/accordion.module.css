@@ -1,0 +1,43 @@
+
+.accordion_icon{
+    color: #fff;
+    cursor: pointer;
+}
+h2,p{
+    color: #fff;
+}
+p {
+    margin-bottom: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.visible {
+    max-height: 100px;
+}
+
+.animation{
+    transition: 1s;
+    margin: 30px 30px;
+}
+
+.style{
+    color: #fff;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.accordion_box_title{
+    margin: 30px 30px;
+    border-bottom:1px solid #fff;
+}
+.accordion_box_header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.accordion_box:nth-child(4){
+    border-bottom: none;
+}
