@@ -14,7 +14,7 @@ const App = () => {
       .then((data) => {setPost(data.products);});
     },[]);
   
-  const filterPost=post.filter((post)=>post.brand.toLowerCase().includes(input.toLowerCase()));
+  const filterPost=post.filter((post)=>post.brand.toLowerCase().includes(input.trim().toLowerCase()));
   const filterData=filterPost.map((post) => (
     <Card key={post.brand.id} brand={post.brand} />
   ));

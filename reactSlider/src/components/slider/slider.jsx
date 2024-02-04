@@ -1,8 +1,5 @@
-
 import React,{useState} from 'react';
-
 import { GrChapterPrevious, GrChapterNext } from 'react-icons/gr';
-
 import "./slider.css"
 
 const Slider = ({ data }) => {
