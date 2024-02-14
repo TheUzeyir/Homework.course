@@ -1,0 +1,27 @@
+.ToDo_li{
+    list-style: none;
+    height: 65px;
+    width: 100%;
+    border-top: 1px  solid gray;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+.ToDo_task_icon{
+    margin:20px;
+    font-size: 20px;
+    cursor: pointer;
+    background: rgb(47, 206, 255);
+    border-radius: 50%;
+}
+.toDOTask{
+    display: flex;
+    align-items: center;
+}
+.completed{
+    display: none;
+}

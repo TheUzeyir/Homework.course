@@ -1,12 +1,14 @@
 import './App.css'
-import TodoApp from './todoApp/Todo_app'
+import ToDoWrapper from './Components/toDoWrapper/ToDoWrapper'
+
+
 
 function App() {
 
   return (
-    <>
-      <TodoApp/>
-    </>
+    <div  className="App">
+      <ToDoWrapper/>
+    </div>
   )
 }
 

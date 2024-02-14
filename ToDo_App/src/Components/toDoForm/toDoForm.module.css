@@ -1,0 +1,15 @@
+.toDoForm_input{
+ width: 98%;
+ height: 65px;
+ border: none;
+ border-radius: 8px;
+}
+.ToDoForm{
+    display: flex;
+    align-items: center;    
+}
+.ToDoForm_icon{
+    margin: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
