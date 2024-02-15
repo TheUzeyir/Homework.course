@@ -34,7 +34,7 @@
   
   .completed {
     color: gray;
-    text-decoration-line: line-through;
+    text-decoration-line: li;
   }
   
   .taskText {

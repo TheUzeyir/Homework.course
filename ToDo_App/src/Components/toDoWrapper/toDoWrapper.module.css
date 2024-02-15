@@ -46,20 +46,23 @@ img {
   border-top: 0.063rem solid gray;
 }
 
-ul {
-  display: flex;
-  gap: 1.125rem;
-}
-
-li {
+p:hover {
   cursor: pointer;
-}
-
-li:hover {
   color: blue;
 }
 
-p:hover {
+ul{
+  display: flex;
+  flex-direction: column;
+}
+.todoform_box_footer_status_filter_box{
+  display: flex;
+  gap: 1.5rem;
+}
+.todoform_box_footer_status_filter{
   cursor: pointer;
+}
+
+.todoform_box_footer_status_filter:hover{
   color: blue;
 }

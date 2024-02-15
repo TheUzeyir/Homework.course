@@ -29,6 +29,10 @@
       );
     };
 
+    const deleteComponent=()=>{
+      
+    }
+
     return (
       <div className={style.toDoWrapper}>
         <div className={style.toDoWrapper_imgbox}>
@@ -39,20 +43,22 @@
           <IoMoon />
         </div>
         <div className={style.todoform_box}>
-          <ToDoForm addTodo={addTodo} />
-          {todos.map((todo) => (
-            <ToDo task={todo} key={todo.id} toggleComplete={toggleComplete}/>
-          ))}
+          <ToDoForm addTodo={addTodo}/>
+          <ul className={style.ToDo}>
+            {todos.map((todo) => (
+              <ToDo task={todo} key={todo.id} toggleComplete={toggleComplete}/>
+            ))}
+          </ul>
           <div className={style.todoform_box_footer}>
             <span>{todos.filter((todo) => !todo.completed).length} items left</span>
             <div className={style.todoform_box_footer_status}>
-              <ul>
-                <li>All</li>
-                <li>Active</li>
-                <li>Completed</li>
-              </ul>
+              <div className={style.todoform_box_footer_status_filter_box}>
+                <span className={style.todoform_box_footer_status_filter}>All</span>
+                <span className={style.todoform_box_footer_status_filter}>Active</span>
+                <span className={style.todoform_box_footer_status_filter}>Completed</span>
+              </div>
             </div>
-            <p>Clear Completed</p>
+            <p onClick={deleteComponent}>Clear Completed</p>
           </div>
         </div>
       </div>
