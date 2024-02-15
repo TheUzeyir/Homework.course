@@ -1,27 +1,43 @@
-.ToDo_li{
+.ToDo_li {
     list-style: none;
     height: 65px;
     width: 100%;
-    border-top: 1px  solid gray;
+    border-top: 1px solid gray;
     font-size: 18px;
     display: flex;
     align-items: center;
-}
-
-textarea:focus, input:focus{
+  }
+  
+  textarea:focus, input:focus {
     outline: none;
-}
-.ToDo_task_icon{
-    margin:20px;
+  }
+  
+  .ToDo_task_icon{
+    margin: 20px;
     font-size: 20px;
     cursor: pointer;
-    background: rgb(47, 206, 255);
+  }
+
+  .ToDo_task_icon_completed {
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background:#007FFF;
+    color: #fff;
     border-radius: 50%;
-}
-.toDOTask{
+  }
+
+  .toDOTask {
     display: flex;
     align-items: center;
-}
-.completed{
-    display: none;
-}
+  }
+  
+  .completed {
+    color: gray;
+    text-decoration-line: line-through;
+  }
+  
+  .taskText {
+    margin-left: 10px;
+  }
+  
