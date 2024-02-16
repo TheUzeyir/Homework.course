@@ -20,7 +20,7 @@ img {
   top: 9.875rem;
   width: 33.75rem; 
   min-height: 4.375rem;
-  background: #FFF;
+  background: var(--body-bg-color);
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 0.313rem 0.938rem; 
 }
@@ -36,7 +36,7 @@ img {
   letter-spacing: 0.938rem;
   width: 33.813rem; 
   height: 3rem;
-  color: #fff;
+  color:var(--body-bg-color);
 }
 
 .todoform_box_footer {
@@ -44,12 +44,13 @@ img {
   justify-content: space-between;
   padding: 1.25rem;
   border-top: 0.063rem solid gray;
+  color: var(--body-text);
 }
 
 p:hover {
   cursor: pointer;
   color: blue;
-}
+} 
 
 ul{
   display: flex;
@@ -65,4 +66,7 @@ ul{
 
 .todoform_box_footer_status_filter:hover{
   color: blue;
+}
+.moonIcon{
+  cursor: pointer;
 }

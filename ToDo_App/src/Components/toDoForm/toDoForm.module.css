@@ -3,6 +3,8 @@
  height: 65px;
  border: none;
  border-radius: 8px;
+ background: var(--body-bg-color);
+ color: var(--body-text);
 }
 .ToDoForm{
     display: flex;
@@ -12,4 +14,5 @@
     margin: 20px;
     font-size: 24px;
     cursor: pointer;
+    color: var(--body-text);
 }

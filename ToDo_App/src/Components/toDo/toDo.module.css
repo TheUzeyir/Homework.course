@@ -12,10 +12,15 @@
     outline: none;
   }
   
-  .ToDo_task_icon{
+  .ToDo_task_icon{ 
     margin: 20px;
     font-size: 20px;
     cursor: pointer;
+    color:var(--body-text);
+  }
+
+  .taskText{
+    color: var(--body-text);
   }
 
   .ToDo_task_icon_completed {
@@ -23,7 +28,7 @@
     font-size: 20px;
     cursor: pointer;
     background:#007FFF;
-    color: #fff;
+    color: var(--body-bg-color);
     border-radius: 50%;
   }
 
@@ -34,7 +39,7 @@
   
   .completed {
     color: gray;
-    text-decoration-line: li;
+    text-decoration-line: line-through;
   }
   
   .taskText {
