@@ -1,11 +1,12 @@
-import Main from './layout/main/Main'
+import './App.css'
+import Main from './common/main/Main'
 
 function App() {
 
   return (
-    <>  
+    <>
       <Main/>
-    </>
+    </> 
   )
 }
 

@@ -53,18 +53,19 @@ const ToDoWrapper = () => {
   };
 
   const toggleMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prev)=>!prev);
     if (!darkMode) {
       setDarkModes();
     } else {
       setLightModes();
     }
   };
+  console.log(darkMode)
 
   return (
     <div className={`${style.toDoWrapper} ${darkMode ? style.darkMode : ''}`}>
       <div className={style.toDoWrapper_imgbox}>
-        <img src={darkMode ? darkModeImg : lightModeImg} alt="img" />
+        <img src={darkMode ? darkModeImg : lightModeImg } alt="img" />
       </div>
       <div className={style.toDoWrapper_header}>
         <h2>TODO</h2>

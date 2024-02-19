@@ -1,31 +1,23 @@
-import React from 'react'
-import styles from "./card.module.css"
+import style from "./card.module.css";
+import { useDispatch } from "react-redux";
+import { addItem } from "../../store/cardSlice";
 
-interface productType{
-  name:string,
-  desc:string,
-  price:number,
-}
+const Card = (item ) => {
+  const dispatch = useDispatch();
 
-const Card: React.FC<productType> = (props) => {
-  function handleClickBtn() {
-    
-    console.log(props.id);
-  }
+  const handleAddToCart = () => {
+    dispatch(addItem(item));
+  };
 
   return (
-    <div className={styles.card}>
-      <div className={styles.card_img_bpx}>
-        <img src={props.img} alt="phone" className={styles.card_img}/>
-      </div>
-      <div className={styles.card_product_name}><h2>{props.name}</h2></div>
-      <div className={styles.card_product_desc}>{props.desc}</div>
-      <p>${props.price}</p>
-      <button onClick={handleClickBtn}>Add TO Card</button>
+    <div className={style.card_products}>
+      <h2 className={style.card_products_title}>{item.title}</h2>
+      <p className={style.card_products_price}>Price - {item.price}</p>
+      <button className={style.card_products_btn} onClick={handleAddToCart}>
+        Add To Cart
+      </button>
     </div>
   );
 };
 
-
-
-export default Card
+export default Card;

@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import style from './toDoForm.module.css';
 import { MdRadioButtonUnchecked } from 'react-icons/md';
+import { setInputValue } from '../../store/toDoSlice.js';
+import { useDispatch } from 'react-redux';
 
-const ToDoForm = ({ addTodo }) => {
+const ToDoForm = () => {
   const [value, setValue] = useState('');
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTodo(value);
+    dispatch(setInputValue(value));
     setValue('');
   };
 
