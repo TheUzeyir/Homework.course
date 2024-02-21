@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import style from './toDoForm.module.css';
 import { MdRadioButtonUnchecked } from 'react-icons/md';
-import { setInputValue } from '../../store/toDoSlice.js';
 import { useDispatch } from 'react-redux';
+import { addTodo } from '../../store/toDoSlice';
 
 const ToDoForm = () => {
   const [value, setValue] = useState('');
@@ -10,7 +10,12 @@ const ToDoForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(setInputValue(value));
+    if (!value.trim()) return;
+    dispatch(addTodo({
+      id: new Date().getTime(),
+      task: value,
+      completed: false
+    }));
     setValue('');
   };
 
