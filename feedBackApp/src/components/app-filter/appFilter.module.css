@@ -1,0 +1,30 @@
+.appMain_logo{
+    width: 255px;
+    height: 137px;
+    background-image: linear-gradient(90deg, #7950f2 0%, #f783ac 100%);
+    color: white;
+    padding: 64px 0 0 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.appMain_logo_mainText{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.appMain_logo_title{
+    color: #d8d6d6;
+    font-weight: 500;
+    font-size: 15px;
+}
+.appMain_filterBox{
+    width: 255px;
+    height: 166px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+}
+.appMain_filterBox_btn{
+    padding: 5px 16px;
+    background: blue;
+    margin: 14px 8px;
+}
