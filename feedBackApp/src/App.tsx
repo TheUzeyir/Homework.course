@@ -1,17 +1,23 @@
 import AppFilter from './components/app-filter/AppFilter'
 import AppMain from './components/app-main/AppMain'
 import style from "./App.module.css"
-import Errorpage from './components/errorpage/Errorpage'
 import CreateFeedBack from './components/createFeedBack/CreateFeedBack'
+import Errorpage from './components/errorpage/Errorpage'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+
 
 function App() {
 
   return (
     <div className={style.appbox}>
-    <AppFilter/>
-    <AppMain/>
-    {/* <CreateFeedBack/> */}
-    {/* <Errorpage/>   */}
+    <BrowserRouter>
+      <Routes>
+        {/* <Route index path='/' element={<AppFilter/>}/> */}
+        <Route path="/" element={<AppMain />}></Route>
+        <Route index path='createFeedBack' element={<CreateFeedBack/>}/>
+        <Route index path='*' element={<Errorpage/>}/>
+      </Routes>
+    </BrowserRouter>
     </div>
   )
 }
