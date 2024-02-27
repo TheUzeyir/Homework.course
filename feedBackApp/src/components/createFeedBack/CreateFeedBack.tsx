@@ -8,7 +8,7 @@ import { setInputValue as setInputValueAction } from "../store/dataSlice";
 
 const CreateFeedBack = () => {
   const [showAccordion, setShowAccordion] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState('All'); 
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [inputValueLocal, setInputValueLocal] = useState('');

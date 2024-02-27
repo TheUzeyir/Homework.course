@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     gap: 68px;
+    padding-bottom: 40px;
+    margin-top: -60px;
 }
 
 .createFeedBack_page_return{
@@ -18,7 +20,6 @@
 
 .createFeedBack{
     width: 540px;
-    min-height: 650px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: #3A4374;
     padding:0 42px;
@@ -27,6 +28,7 @@
     align-items: end;
     border-radius: 4px;
 }
+
 .createFeedBack_Icon{
     width: 56px;
     min-height: 56px;
@@ -78,7 +80,7 @@ margin-top: 16px;
 }
 .createFeedBack_btn{
     background: #A337F6;
-    margin-top: 40px;
+    margin: 40px 0;
 }
 .createFeedBack_category_box_accordion{
     min-height: 48px;
