@@ -1,4 +1,3 @@
-// ToDoWrapper.tsx
 import React, { useState, useEffect } from 'react';
 import ToDoForm from '../toDoForm/ToDoForm';
 import ToDo from '../toDo/ToDo';
@@ -74,7 +73,7 @@ const ToDoWrapper = () => {
         <ul className={style.ToDo}>
           {todos.map(todo => (
             <ToDo task={todo} key={todo.id} toggleComplete={toggleComplete} />
-          ))}
+          ))} 
         </ul>
         <div className={style.todoform_box_footer}>
           <span>{todos.filter(todo => !todo.completed).length} items left</span>

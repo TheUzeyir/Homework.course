@@ -17,7 +17,7 @@ const ToDoForm = () => {
       completed: false
     }));
     setValue('');
-  };
+  }; 
 
   return (
     <form className={style.ToDoForm} onSubmit={handleSubmit}>
