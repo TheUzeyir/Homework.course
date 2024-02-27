@@ -1,3 +1,6 @@
+.appMain_box{
+    display: flex;
+}
 .appMain{
     display: flex;
     flex-direction: column;

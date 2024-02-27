@@ -1,4 +1,3 @@
-import AppFilter from './components/app-filter/AppFilter'
 import AppMain from './components/app-main/AppMain'
 import style from "./App.module.css"
 import CreateFeedBack from './components/createFeedBack/CreateFeedBack'
@@ -12,7 +11,6 @@ function App() {
     <div className={style.appbox}>
     <BrowserRouter>
       <Routes>
-        {/* <Route index path='/' element={<AppFilter/>}/> */}
         <Route path="/" element={<AppMain />}></Route>
         <Route index path='createFeedBack' element={<CreateFeedBack/>}/>
         <Route index path='*' element={<Errorpage/>}/>
