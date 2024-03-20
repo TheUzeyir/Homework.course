@@ -6,7 +6,7 @@ export interface ICart {
 }
 
 const initialState: ICart = {
-  items: [],
+  items: [], 
 }
 
 export const cardSlice = createSlice({

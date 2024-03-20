@@ -1,3 +1,1038 @@
-{
-    "name":"uzeyir"
-}
+[
+    {
+    "id":1,
+    "product":"Laptop",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Laptop",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":2,
+    "product":"Laptop",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Laptop",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":3,
+    "product":"Laptop",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Laptop",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":4,
+    "product":"Laptop",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Laptop",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":5,
+    "product":"Laptop",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Laptop",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":6,
+    "product":"Laptop",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Laptop",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":7,
+    "product":"Laptop",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Laptop",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":8,
+    "product":"Laptop",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Laptop",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":9,
+    "product":"Laptop",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Laptop",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":10,
+    "product":"Laptop",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Laptop",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":11,
+    "product":"Monitor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Monitor",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":12,
+    "product":"Monitor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Monitor",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":13,
+    "product":"Monitor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Monitor",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":14,
+    "product":"Monitor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Monitor",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":15,
+    "product":"Monitor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Monitor",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":16,
+    "product":"Monitor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Monitor",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":17,
+    "product":"Monitor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Monitor",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":18,
+    "product":"Monitor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Monitor",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":19,
+    "product":"Monitor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Monitor",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":20,
+    "product":"Monitor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Monitor",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":21,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":22,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":23,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":24,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":25,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":26,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":27,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":28,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":29,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":30,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":30,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },    {
+    "id":30,
+    "product":"Computers",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computers",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":32,
+    "product":"Keyboard",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":33,
+    "product":"Keyboard",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":34,
+    "product":"Keyboard",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":35,
+    "product":"Keyboard",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":36,
+    "product":"Mice",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":37,
+    "product":"Mice",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":38,
+    "product":"Mice",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":39,
+    "product":"Mice",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":40,
+    "product":"Mice",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":41,
+    "product":"Microphone",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":42,
+    "product":"Microphone",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":43,
+    "product":"Microphone",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":44,
+    "product":"Microphone",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":45,
+    "product":"Microphone",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Accessories",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":46,
+    "product":"SSD and HDD",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":47,
+    "product":"SSD and HDD",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":48,
+    "product":"SSD and HDD",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":49,
+    "product":"Graphics Card",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":50,
+    "product":"Graphics Card",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":51,
+    "product":"Graphics Card",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":52,
+    "product":"Motherboard",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":53,
+    "product":"Motherboard",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":54,
+    "product":"Motherboard",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":55,
+    "product":"Prosessor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":56,
+    "product":"Prosessor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":57,
+    "product":"Prosessor",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":58,
+    "product":"Case for the system block",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":59,
+    "product":"Case for the system block",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    },
+    {
+    "id":60,
+    "product":"Case for the system block",
+    "tile":"",
+    "description": "",
+    "price": 542,
+    "category": "Computer parts",
+    "thumbnail": "",
+    "liked":false,
+    "images": [
+        "",
+        "",
+        "",
+        "",
+        ""
+        ]
+    }
+]

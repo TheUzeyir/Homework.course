@@ -2,7 +2,7 @@ import style from "./modal.module.css";
 import { useSelector, useDispatch } from 'react-redux';
 import type { RootState } from '../../store/store';
 import { removeItem } from '../../store/cardSlice';
-
+ 
 const Modal = () => {
   const addedProducts = useSelector((state: RootState) => state.cardSlice.items);
   const dispatch = useDispatch();
@@ -19,4 +19,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default Modal; 

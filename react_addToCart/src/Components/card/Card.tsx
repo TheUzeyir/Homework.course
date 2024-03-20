@@ -7,7 +7,7 @@ const Card = (item ) => {
 
   const handleAddToCart = () => {
     dispatch(addItem(item));
-  };
+  }; 
 
   return (
     <div className={style.card_products}>
@@ -17,7 +17,7 @@ const Card = (item ) => {
         Add To Cart
       </button>
     </div>
-  );
+  ); 
 };
 
 export default Card;
